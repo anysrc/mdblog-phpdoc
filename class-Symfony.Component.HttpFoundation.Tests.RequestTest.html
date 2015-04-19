@@ -1,0 +1,2558 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Symfony\Component\HttpFoundation\Tests\RequestTest | AnySrc Markdown Blog</title>
+
+	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
+	<script type="text/javascript" src="elementlist.js?1213552095"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+						</li>
+				<li><a href="namespace-AnySrc.Security.html">Security</a>
+						</li>
+				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PerryFlynn.html">PerryFlynn</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Pimple.html">Pimple<span></span></a>
+						<ul>
+				<li><a href="namespace-Pimple.Tests.html">Tests</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Psr.html">Psr<span></span></a>
+						<ul>
+				<li><a href="namespace-Psr.Log.html">Log<span></span></a>
+						<ul>
+				<li><a href="namespace-Psr.Log.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Silex.html">Silex<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Application.html">Application</a>
+						</li>
+				<li><a href="namespace-Silex.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Silex.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Silex.Provider.html">Provider</a>
+						</li>
+				<li><a href="namespace-Silex.Route.html">Route</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Application.html">Application</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.Provider.html">Provider<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Provider.ValidatorServiceProviderTest.html">ValidatorServiceProviderTest<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Provider.ValidatorServiceProviderTest.Constraint.html">Constraint</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Silex.Tests.Route.html">Route</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Silex.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Symfony.html">Symfony<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.html">Bridge<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.html">Twig<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Node.html">Node</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.NodeVisitor.html">NodeVisitor</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Extension.html">Extension<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Extension.Fixtures.html">Fixtures</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Node.html">Node</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.NodeVisitor.html">NodeVisitor</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.TokenParser.html">TokenParser</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Translation.html">Translation</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Bridge.Twig.TokenParser.html">TokenParser</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Translation.html">Translation</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.html">Component<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.FatalErrorHandler.html">FatalErrorHandler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.FatalErrorHandler.html">FatalErrorHandler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.html">File<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.MimeType.html">MimeType</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Attribute.html">Attribute</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Flash.html">Flash</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.html">Storage<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.Handler.html">Handler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.Proxy.html">Proxy</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.HttpFoundation.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.File.html">File<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.File.MimeType.html">MimeType</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Attribute.html">Attribute</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Flash.html">Flash</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.html">Storage<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.html">Handler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.Proxy.html">Proxy</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.html">HttpKernel<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Bundle.html">Bundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.CacheClearer.html">CacheClearer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.CacheWarmer.html">CacheWarmer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Config.html">Config</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DataCollector.html">DataCollector<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DataCollector.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Fragment.html">Fragment</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.HttpCache.html">HttpCache</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Profiler.html">Profiler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Bundle.html">Bundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.CacheClearer.html">CacheClearer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.CacheWarmer.html">CacheWarmer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Config.html">Config</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DataCollector.html">DataCollector<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DataCollector.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.html">Fixtures<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionAbsentBundle.html">ExtensionAbsentBundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fragment.html">Fragment</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.HttpCache.html">HttpCache</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Profiler.html">Profiler<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Profiler.Mock.html">Mock</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.html">Routing<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Annotation.html">Annotation</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Generator.html">Generator<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Generator.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Loader.html">Loader</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Matcher.html">Matcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Matcher.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Annotation.html">Annotation</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.html">Fixtures<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Loader.html">Loader</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Matcher.html">Matcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Matcher.Dumper.html">Dumper</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.Yaml.html">Yaml<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Yaml.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Yaml.Tests.html">Tests</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.AcceptHeaderItemTest.html">AcceptHeaderItemTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.AcceptHeaderTest.html">AcceptHeaderTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.ApacheRequestTest.html">ApacheRequestTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.BinaryFileResponseTest.html">BinaryFileResponseTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.CookieTest.html">CookieTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.ExpressionRequestMatcherTest.html">ExpressionRequestMatcherTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.FileBagTest.html">FileBagTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.HeaderBagTest.html">HeaderBagTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.IpUtilsTest.html">IpUtilsTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.JsonResponseTest.html">JsonResponseTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.JsonSerializableObject.html">JsonSerializableObject</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.NewRequest.html">NewRequest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.ParameterBagTest.html">ParameterBagTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.RedirectResponseTest.html">RedirectResponseTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.RequestContentProxy.html">RequestContentProxy</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.RequestMatcherTest.html">RequestMatcherTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.RequestStackTest.html">RequestStackTest</a></li>
+				<li class="active"><a href="class-Symfony.Component.HttpFoundation.Tests.RequestTest.html">RequestTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.ResponseHeaderBagTest.html">ResponseHeaderBagTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.ResponseTest.html">ResponseTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.ResponseTestCase.html">ResponseTestCase</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.ServerBagTest.html">ServerBagTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.StreamedResponseTest.html">StreamedResponseTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.StringableObject.html">StringableObject</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Symfony.Component.HttpFoundation.Tests.html" title="Summary of Symfony\Component\HttpFoundation\Tests"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class RequestTest</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+PHPUnit_Framework_TestCase
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Symfony\Component\HttpFoundation\Tests\RequestTest</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation</a>\<a href="namespace-Symfony.Component.HttpFoundation.Tests.html">Tests</a><br>
+		
+
+		<b>Located at</b> <a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#18-1743" title="Go to source code">vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Tests/RequestTest.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="testConstructor" id="_testConstructor">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testConstructor">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#20-26" title="Go to source code">testConstructor</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Symfony\Component\HttpFoundation\Request::__construct<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testInitialize" id="_testInitialize">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testInitialize">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#28-46" title="Go to source code">testInitialize</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Symfony\Component\HttpFoundation\Request::initialize<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetLocale" id="_testGetLocale">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetLocale">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#48-54" title="Go to source code">testGetLocale</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetUser" id="_testGetUser">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetUser">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#56-62" title="Go to source code">testGetUser</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetPassword" id="_testGetPassword">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetPassword">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#64-70" title="Go to source code">testGetPassword</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testIsNoCache" id="_testIsNoCache">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testIsNoCache">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#72-78" title="Go to source code">testIsNoCache</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetContentType" id="_testGetContentType">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetContentType">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#80-86" title="Go to source code">testGetContentType</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testSetDefaultLocale" id="_testSetDefaultLocale">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testSetDefaultLocale">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#88-95" title="Go to source code">testSetDefaultLocale</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testCreate" id="_testCreate">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testCreate">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#97-241" title="Go to source code">testCreate</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Symfony\Component\HttpFoundation\Request::create<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testCreateCheckPrecedence" id="_testCreateCheckPrecedence">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testCreateCheckPrecedence">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#243-278" title="Go to source code">testCreateCheckPrecedence</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Symfony\Component\HttpFoundation\Request::create<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testDuplicate" id="_testDuplicate">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testDuplicate">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#280-296" title="Go to source code">testDuplicate</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testDuplicateWithFormat" id="_testDuplicateWithFormat">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testDuplicateWithFormat">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#298-311" title="Go to source code">testDuplicateWithFormat</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetFormatFromMimeType" id="_testGetFormatFromMimeType">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetFormatFromMimeType">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#313-328" title="Go to source code">testGetFormatFromMimeType</a>( <span>mixed <var>$format</var></span>, <span>mixed <var>$mimeTypes</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Symfony\Component\HttpFoundation\Request::getFormat<br>
+						Symfony\Component\HttpFoundation\Request::setFormat<br>
+				</div>
+				<h4>DataProvider</h4>
+				<div class="list">
+						getFormatToMimeTypeMapProvider<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetFormatFromMimeTypeWithParameters" id="_testGetFormatFromMimeTypeWithParameters">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetFormatFromMimeTypeWithParameters">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#330-337" title="Go to source code">testGetFormatFromMimeTypeWithParameters</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Symfony\Component\HttpFoundation\Request::getFormat<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetMimeTypeFromFormat" id="_testGetMimeTypeFromFormat">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetMimeTypeFromFormat">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#339-349" title="Go to source code">testGetMimeTypeFromFormat</a>( <span>mixed <var>$format</var></span>, <span>mixed <var>$mimeTypes</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Symfony\Component\HttpFoundation\Request::getMimeType<br>
+				</div>
+				<h4>DataProvider</h4>
+				<div class="list">
+						getFormatToMimeTypeMapProvider<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFormatToMimeTypeMapProvider" id="_getFormatToMimeTypeMapProvider">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFormatToMimeTypeMapProvider">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#351-363" title="Go to source code">getFormatToMimeTypeMapProvider</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetUri" id="_testGetUri">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetUri">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#365-481" title="Go to source code">testGetUri</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Symfony\Component\HttpFoundation\Request::getUri<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetUriForPath" id="_testGetUriForPath">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetUriForPath">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#483-591" title="Go to source code">testGetUriForPath</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Symfony\Component\HttpFoundation\Request::getUriForPath<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetUserInfo" id="_testGetUserInfo">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetUserInfo">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#593-611" title="Go to source code">testGetUserInfo</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Symfony\Component\HttpFoundation\Request::getUserInfo<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetSchemeAndHttpHost" id="_testGetSchemeAndHttpHost">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetSchemeAndHttpHost">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#613-637" title="Go to source code">testGetSchemeAndHttpHost</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Symfony\Component\HttpFoundation\Request::getSchemeAndHttpHost<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetQueryString" id="_testGetQueryString">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetQueryString">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#639-650" title="Go to source code">testGetQueryString</a>( <span>mixed <var>$query</var></span>, <span>mixed <var>$expectedQuery</var></span>, <span>mixed <var>$msg</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Symfony\Component\HttpFoundation\Request::getQueryString<br>
+						Symfony\Component\HttpFoundation\Request::normalizeQueryString<br>
+				</div>
+				<h4>DataProvider</h4>
+				<div class="list">
+						getQueryStringNormalizationData<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getQueryStringNormalizationData" id="_getQueryStringNormalizationData">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getQueryStringNormalizationData">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#652-677" title="Go to source code">getQueryStringNormalizationData</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetQueryStringReturnsNull" id="_testGetQueryStringReturnsNull">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetQueryStringReturnsNull">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#679-687" title="Go to source code">testGetQueryStringReturnsNull</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetHost" id="_testGetHost">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetHost">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#689-709" title="Go to source code">testGetHost</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetPort" id="_testGetPort">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetPort">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#711-765" title="Go to source code">testGetPort</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetHostWithFakeHttpHostValue" id="_testGetHostWithFakeHttpHostValue">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetHostWithFakeHttpHostValue">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#767-775" title="Go to source code">testGetHostWithFakeHttpHostValue</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\RuntimeException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetSetMethod" id="_testGetSetMethod">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetSetMethod">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#777-834" title="Go to source code">testGetSetMethod</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Symfony\Component\HttpFoundation\Request::setMethod<br>
+						Symfony\Component\HttpFoundation\Request::getMethod<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetClientIp" id="_testGetClientIp">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetClientIp">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#836-846" title="Go to source code">testGetClientIp</a>( <span>mixed <var>$expected</var></span>, <span>mixed <var>$remoteAddr</var></span>, <span>mixed <var>$httpForwardedFor</var></span>, <span>mixed <var>$trustedProxies</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>DataProvider</h4>
+				<div class="list">
+						testGetClientIpsProvider<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetClientIps" id="_testGetClientIps">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetClientIps">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#848-858" title="Go to source code">testGetClientIps</a>( <span>mixed <var>$expected</var></span>, <span>mixed <var>$remoteAddr</var></span>, <span>mixed <var>$httpForwardedFor</var></span>, <span>mixed <var>$trustedProxies</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>DataProvider</h4>
+				<div class="list">
+						testGetClientIpsProvider<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetClientIpsProvider" id="_testGetClientIpsProvider">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetClientIpsProvider">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#860-909" title="Go to source code">testGetClientIpsProvider</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetContentWorksTwiceInDefaultMode" id="_testGetContentWorksTwiceInDefaultMode">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetContentWorksTwiceInDefaultMode">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#911-916" title="Go to source code">testGetContentWorksTwiceInDefaultMode</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetContentReturnsResource" id="_testGetContentReturnsResource">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetContentReturnsResource">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#918-925" title="Go to source code">testGetContentReturnsResource</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetContentCantBeCalledTwiceWithResources" id="_testGetContentCantBeCalledTwiceWithResources">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetContentCantBeCalledTwiceWithResources">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#927-936" title="Go to source code">testGetContentCantBeCalledTwiceWithResources</a>( <span>mixed <var>$first</var></span>, <span>mixed <var>$second</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>DataProvider</h4>
+				<div class="list">
+						getContentCantBeCalledTwiceWithResourcesProvider<br>
+				</div>
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\LogicException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getContentCantBeCalledTwiceWithResourcesProvider" id="_getContentCantBeCalledTwiceWithResourcesProvider">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getContentCantBeCalledTwiceWithResourcesProvider">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#938-945" title="Go to source code">getContentCantBeCalledTwiceWithResourcesProvider</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="provideOverloadedMethods" id="_provideOverloadedMethods">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_provideOverloadedMethods">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#947-958" title="Go to source code">provideOverloadedMethods</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testCreateFromGlobals" id="_testCreateFromGlobals">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testCreateFromGlobals">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#960-1002" title="Go to source code">testCreateFromGlobals</a>( <span>mixed <var>$method</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>DataProvider</h4>
+				<div class="list">
+						provideOverloadedMethods<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testOverrideGlobals" id="_testOverrideGlobals">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testOverrideGlobals">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1004-1054" title="Go to source code">testOverrideGlobals</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetScriptName" id="_testGetScriptName">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetScriptName">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1056-1080" title="Go to source code">testGetScriptName</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetBasePath" id="_testGetBasePath">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetBasePath">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1082-1112" title="Go to source code">testGetBasePath</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetPathInfo" id="_testGetPathInfo">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetPathInfo">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1114-1130" title="Go to source code">testGetPathInfo</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetPreferredLanguage" id="_testGetPreferredLanguage">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetPreferredLanguage">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1132-1157" title="Go to source code">testGetPreferredLanguage</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testIsXmlHttpRequest" id="_testIsXmlHttpRequest">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testIsXmlHttpRequest">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1159-1169" title="Go to source code">testIsXmlHttpRequest</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testIntlLocale" id="_testIntlLocale">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testIntlLocale">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1171-1190" title="Go to source code">testIntlLocale</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetCharsets" id="_testGetCharsets">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetCharsets">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1192-1206" title="Go to source code">testGetCharsets</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetEncodings" id="_testGetEncodings">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetEncodings">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1208-1222" title="Go to source code">testGetEncodings</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetAcceptableContentTypes" id="_testGetAcceptableContentTypes">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetAcceptableContentTypes">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1224-1234" title="Go to source code">testGetAcceptableContentTypes</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetLanguages" id="_testGetLanguages">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetLanguages">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1236-1261" title="Go to source code">testGetLanguages</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetRequestFormat" id="_testGetRequestFormat">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetRequestFormat">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1263-1274" title="Go to source code">testGetRequestFormat</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testHasSession" id="_testHasSession">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testHasSession">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1276-1283" title="Go to source code">testHasSession</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetSession" id="_testGetSession">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetSession">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1285-1296" title="Go to source code">testGetSession</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testHasPreviousSession" id="_testHasPreviousSession">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testHasPreviousSession">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1298-1307" title="Go to source code">testHasPreviousSession</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testToString" id="_testToString">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testToString">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1309-1316" title="Go to source code">testToString</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testIsMethod" id="_testIsMethod">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testIsMethod">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1318-1332" title="Go to source code">testIsMethod</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetBaseUrl" id="_testGetBaseUrl">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetBaseUrl">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1334-1343" title="Go to source code">testGetBaseUrl</a>( <span>mixed <var>$uri</var></span>, <span>mixed <var>$server</var></span>, <span>mixed <var>$expectedBaseUrl</var></span>, <span>mixed <var>$expectedPathInfo</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>DataProvider</h4>
+				<div class="list">
+						getBaseUrlData<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBaseUrlData" id="_getBaseUrlData">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBaseUrlData">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1345-1399" title="Go to source code">getBaseUrlData</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testUrlencodedStringPrefix" id="_testUrlencodedStringPrefix">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testUrlencodedStringPrefix">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1401-1412" title="Go to source code">testUrlencodedStringPrefix</a>( <span>mixed <var>$string</var></span>, <span>mixed <var>$prefix</var></span>, <span>mixed <var>$expect</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>DataProvider</h4>
+				<div class="list">
+						urlencodedStringPrefixData<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="urlencodedStringPrefixData" id="_urlencodedStringPrefixData">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_urlencodedStringPrefixData">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1414-1426" title="Go to source code">urlencodedStringPrefixData</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testTrustedProxies" id="_testTrustedProxies">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testTrustedProxies">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1454-1528" title="Go to source code">testTrustedProxies</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testSetTrustedProxiesInvalidHeaderName" id="_testSetTrustedProxiesInvalidHeaderName">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testSetTrustedProxiesInvalidHeaderName">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1530-1537" title="Go to source code">testSetTrustedProxiesInvalidHeaderName</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\InvalidArgumentException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetTrustedProxiesInvalidHeaderName" id="_testGetTrustedProxiesInvalidHeaderName">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetTrustedProxiesInvalidHeaderName">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1539-1546" title="Go to source code">testGetTrustedProxiesInvalidHeaderName</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\InvalidArgumentException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testIISRequestUri" id="_testIISRequestUri">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testIISRequestUri">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1548-1562" title="Go to source code">testIISRequestUri</a>( <span>mixed <var>$headers</var></span>, <span>mixed <var>$server</var></span>, <span>mixed <var>$expectedRequestUri</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>DataProvider</h4>
+				<div class="list">
+						iisRequestUriProvider<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="iisRequestUriProvider" id="_iisRequestUriProvider">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_iisRequestUriProvider">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1564-1635" title="Go to source code">iisRequestUriProvider</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testTrustedHosts" id="_testTrustedHosts">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testTrustedHosts">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1637-1678" title="Go to source code">testTrustedHosts</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testFactory" id="_testFactory">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testFactory">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1680-1689" title="Go to source code">testFactory</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testVeryLongHosts" id="_testVeryLongHosts">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testVeryLongHosts">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1691-1702" title="Go to source code">testVeryLongHosts</a>( <span>mixed <var>$host</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>DataProvider</h4>
+				<div class="list">
+						getLongHostNames<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testHostValidity" id="_testHostValidity">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testHostValidity">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1704-1721" title="Go to source code">testHostValidity</a>( <span>mixed <var>$host</var></span>, <span>mixed <var>$isValid</var></span>, <span>mixed <var>$expectedHost</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$expectedPort</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>DataProvider</h4>
+				<div class="list">
+						getHostValidities<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHostValidities" id="_getHostValidities">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHostValidities">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1723-1734" title="Go to source code">getHostValidities</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLongHostNames" id="_getLongHostNames">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLongHostNames">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.RequestTest.html#1736-1742" title="Go to source code">getLongHostNames</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Symfony\Component\Debug\ErrorHandler | AnySrc Markdown Blog</title>
+
+	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
+	<script type="text/javascript" src="elementlist.js?1213552095"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+						</li>
+				<li><a href="namespace-AnySrc.Security.html">Security</a>
+						</li>
+				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PerryFlynn.html">PerryFlynn</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Pimple.html">Pimple<span></span></a>
+						<ul>
+				<li><a href="namespace-Pimple.Tests.html">Tests</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Psr.html">Psr<span></span></a>
+						<ul>
+				<li><a href="namespace-Psr.Log.html">Log<span></span></a>
+						<ul>
+				<li><a href="namespace-Psr.Log.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Silex.html">Silex<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Application.html">Application</a>
+						</li>
+				<li><a href="namespace-Silex.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Silex.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Silex.Provider.html">Provider</a>
+						</li>
+				<li><a href="namespace-Silex.Route.html">Route</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Application.html">Application</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.Provider.html">Provider<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Provider.ValidatorServiceProviderTest.html">ValidatorServiceProviderTest<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Provider.ValidatorServiceProviderTest.Constraint.html">Constraint</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Silex.Tests.Route.html">Route</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Silex.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Symfony.html">Symfony<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.html">Bridge<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.html">Twig<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Node.html">Node</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.NodeVisitor.html">NodeVisitor</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Extension.html">Extension<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Extension.Fixtures.html">Fixtures</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Node.html">Node</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.NodeVisitor.html">NodeVisitor</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.TokenParser.html">TokenParser</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Translation.html">Translation</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Bridge.Twig.TokenParser.html">TokenParser</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Translation.html">Translation</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.html">Component<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.FatalErrorHandler.html">FatalErrorHandler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.FatalErrorHandler.html">FatalErrorHandler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.html">File<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.MimeType.html">MimeType</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Attribute.html">Attribute</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Flash.html">Flash</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.html">Storage<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.Handler.html">Handler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.Proxy.html">Proxy</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.File.html">File<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.File.MimeType.html">MimeType</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Attribute.html">Attribute</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Flash.html">Flash</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.html">Storage<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.html">Handler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.Proxy.html">Proxy</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.html">HttpKernel<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Bundle.html">Bundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.CacheClearer.html">CacheClearer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.CacheWarmer.html">CacheWarmer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Config.html">Config</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DataCollector.html">DataCollector<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DataCollector.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Fragment.html">Fragment</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.HttpCache.html">HttpCache</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Profiler.html">Profiler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Bundle.html">Bundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.CacheClearer.html">CacheClearer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.CacheWarmer.html">CacheWarmer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Config.html">Config</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DataCollector.html">DataCollector<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DataCollector.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.html">Fixtures<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionAbsentBundle.html">ExtensionAbsentBundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fragment.html">Fragment</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.HttpCache.html">HttpCache</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Profiler.html">Profiler<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Profiler.Mock.html">Mock</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.html">Routing<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Annotation.html">Annotation</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Generator.html">Generator<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Generator.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Loader.html">Loader</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Matcher.html">Matcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Matcher.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Annotation.html">Annotation</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.html">Fixtures<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Loader.html">Loader</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Matcher.html">Matcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Matcher.Dumper.html">Dumper</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.Yaml.html">Yaml<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Yaml.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Yaml.Tests.html">Tests</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Symfony.Component.Debug.Debug.html">Debug</a></li>
+				<li><a href="class-Symfony.Component.Debug.DebugClassLoader.html">DebugClassLoader</a></li>
+				<li class="active"><a href="class-Symfony.Component.Debug.ErrorHandler.html">ErrorHandler</a></li>
+				<li><a href="class-Symfony.Component.Debug.ExceptionHandler.html">ExceptionHandler</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Symfony.Component.Debug.html" title="Summary of Symfony\Component\Debug"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ErrorHandler</h1>
+
+
+	<div class="description">
+	
+<p>A generic ErrorHandler for the PHP engine.</p>
+
+<p>Provides five bit fields that control how errors are handled:</p>
+
+<ul>
+	<li>thrownErrors: errors thrown as \ErrorException</li>
+
+	<li>loggedErrors: logged errors, when not @-silenced</li>
+
+	<li>scopedErrors: errors thrown or logged with their local context</li>
+
+	<li>tracedErrors: errors logged with their stack trace, only once for repeated
+	errors</li>
+
+	<li>screamedErrors: never @-silenced errors</li>
+</ul>
+
+<p>Each error level can be logged by a dedicated PSR-3 logger object. Screaming
+only applies to logging. Throwing takes precedence over logging. Uncaught
+exceptions are logged as E_ERROR. E_DEPRECATED and E_USER_DEPRECATED levels
+never throw. E_RECOVERABLE_ERROR and E_USER_ERROR levels always throw. Non
+catchable errors that can be detected at shutdown time are logged when the
+scream bit field allows so. As errors have a performance cost, repeated errors
+are all logged, so that the developer can see them and weight them as more
+important to fix than others of the same level.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.Debug.html">Debug</a><br>
+		
+
+				<b>Author:</b>
+				Nicolas Grekas &lt;<a
+href="mailto:p&#64;tchwork.com">p&#64;<!-- -->tchwork.com</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-Symfony.Component.Debug.ErrorHandler.html#24-660" title="Go to source code">vendor/symfony/debug/Symfony/Component/Debug/ErrorHandler.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="register" id="_register">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-Symfony.Component.Debug.ErrorHandler.html">Symfony\Component\Debug\ErrorHandler</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_register">#</a>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#110-151" title="Go to source code">register</a>( <span><code><a href="class-Symfony.Component.Debug.ErrorHandler.html">Symfony\Component\Debug\ErrorHandler</a></code>|null|integer <var>$handler</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Registers the error handler.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Registers the error handler.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$handler</var></dt>
+					<dd><code><code><a href="class-Symfony.Component.Debug.ErrorHandler.html">Symfony\Component\Debug\ErrorHandler</a></code>|null|integer</code><br>$handler The handler to register, or @deprecated (since 2.6, to be removed in
+3.0) bit field of thrown levels</dd>
+					<dt><var>$replace</var></dt>
+					<dd><code>boolean</code><br>$replace Whether to replace or not any existing handler</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.Debug.ErrorHandler.html">Symfony\Component\Debug\ErrorHandler</a></code></code><br>The registered error handler<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDefaultLogger" id="_setDefaultLogger">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDefaultLogger">#</a>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#153-183" title="Go to source code">setDefaultLogger</a>( <span><code><a href="class-Psr.Log.LoggerInterface.html">Psr\Log\LoggerInterface</a></code> <var>$logger</var></span>, <span>array|integer <var>$levels</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets a logger to non assigned errors levels.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets a logger to non assigned errors levels.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$logger</var></dt>
+					<dd><code><code><a href="class-Psr.Log.LoggerInterface.html">Psr\Log\LoggerInterface</a></code></code><br>$logger A PSR-3 logger to put as default for the given levels</dd>
+					<dt><var>$levels</var></dt>
+					<dd><code>array|integer</code><br>$levels An array map of E_* to LogLevel::* or an integer bit field of E_*
+constants</dd>
+					<dt><var>$replace</var></dt>
+					<dd><code>boolean</code><br>$replace Whether to replace or not any existing logger</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setLoggers" id="_setLoggers">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setLoggers">#</a>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#185-220" title="Go to source code">setLoggers</a>( <span>array <var>$loggers</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets a logger for each error level.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets a logger for each error level.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$loggers</var></dt>
+					<dd><code>array</code><br>$loggers Error levels to [LoggerInterface|null, LogLevel::*] map</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>The previous map<br>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code></code><br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setExceptionHandler" id="_setExceptionHandler">
+
+		<td class="attributes"><code>
+			 public 
+			callable|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setExceptionHandler">#</a>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#222-240" title="Go to source code">setExceptionHandler</a>( <span>callable <var>$handler</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets a user exception handler.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets a user exception handler.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$handler</var></dt>
+					<dd><code>callable</code><br>$handler A handler that will be called on Exception</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>callable|null</code><br>The previous exception handler<br>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code></code><br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="throwAt" id="_throwAt">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_throwAt">#</a>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#242-263" title="Go to source code">throwAt</a>( <span>integer <var>$levels</var></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the error levels that are to be thrown.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the error levels that are to be thrown.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$levels</var></dt>
+					<dd><code>integer</code><br>$levels A bit field of E_* constants for thrown errors</dd>
+					<dt><var>$replace</var></dt>
+					<dd><code>boolean</code><br>$replace Replace or amend the previous value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The previous value<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="scopeAt" id="_scopeAt">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_scopeAt">#</a>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#265-282" title="Go to source code">scopeAt</a>( <span>integer <var>$levels</var></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the error levels that are logged or thrown with their local scope.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the error levels that are logged or thrown with their local scope.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$levels</var></dt>
+					<dd><code>integer</code><br>$levels A bit field of E_* constants for scoped errors</dd>
+					<dt><var>$replace</var></dt>
+					<dd><code>boolean</code><br>$replace Replace or amend the previous value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The previous value<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="traceAt" id="_traceAt">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_traceAt">#</a>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#284-301" title="Go to source code">traceAt</a>( <span>integer <var>$levels</var></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the error levels that are logged with their stack trace.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the error levels that are logged with their stack trace.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$levels</var></dt>
+					<dd><code>integer</code><br>$levels A bit field of E_* constants for traced errors</dd>
+					<dt><var>$replace</var></dt>
+					<dd><code>boolean</code><br>$replace Replace or amend the previous value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The previous value<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="screamAt" id="_screamAt">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_screamAt">#</a>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#303-320" title="Go to source code">screamAt</a>( <span>integer <var>$levels</var></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the error levels where the @-operator is ignored.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the error levels where the @-operator is ignored.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$levels</var></dt>
+					<dd><code>integer</code><br>$levels A bit field of E_* constants for screamed errors</dd>
+					<dt><var>$replace</var></dt>
+					<dd><code>boolean</code><br>$replace Replace or amend the previous value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The previous value<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="stackErrors" id="_stackErrors">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_stackErrors">#</a>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#527-541" title="Go to source code">stackErrors</a>( )</code>
+
+		<div class="description short">
+			
+<p>Configures the error handler for delayed handling. Ensures also that
+non-catchable fatal errors are never silenced.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Configures the error handler for delayed handling. Ensures also that
+non-catchable fatal errors are never silenced.</p>
+
+<p>As shown by <a href="http://bugs.php.net/42098">http://bugs.php.net/42098</a>
+and <a href="http://bugs.php.net/60724">http://bugs.php.net/60724</a> PHP has a
+compile stage where it behaves unusually. To workaround it, we plug an error
+handler that only stacks errors for later.</p>
+
+<p>The most important feature of this is to prevent autoloading until
+unstackErrors() is called.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="unstackErrors" id="_unstackErrors">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_unstackErrors">#</a>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#543-566" title="Go to source code">unstackErrors</a>( )</code>
+
+		<div class="description short">
+			
+<p>Unstacks stacked errors and forwards to the logger</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Unstacks stacked errors and forwards to the logger</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

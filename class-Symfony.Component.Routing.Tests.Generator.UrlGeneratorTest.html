@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Symfony\Component\Routing\Tests\Generator\UrlGeneratorTest | AnySrc Markdown Blog</title>
+
+	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
+	<script type="text/javascript" src="elementlist.js?1213552095"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+						</li>
+				<li><a href="namespace-AnySrc.Security.html">Security</a>
+						</li>
+				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PerryFlynn.html">PerryFlynn</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Pimple.html">Pimple<span></span></a>
+						<ul>
+				<li><a href="namespace-Pimple.Tests.html">Tests</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Psr.html">Psr<span></span></a>
+						<ul>
+				<li><a href="namespace-Psr.Log.html">Log<span></span></a>
+						<ul>
+				<li><a href="namespace-Psr.Log.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Silex.html">Silex<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Application.html">Application</a>
+						</li>
+				<li><a href="namespace-Silex.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Silex.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Silex.Provider.html">Provider</a>
+						</li>
+				<li><a href="namespace-Silex.Route.html">Route</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Application.html">Application</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.Provider.html">Provider<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Provider.ValidatorServiceProviderTest.html">ValidatorServiceProviderTest<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Provider.ValidatorServiceProviderTest.Constraint.html">Constraint</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Silex.Tests.Route.html">Route</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Silex.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Symfony.html">Symfony<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.html">Bridge<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.html">Twig<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Node.html">Node</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.NodeVisitor.html">NodeVisitor</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Extension.html">Extension<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Extension.Fixtures.html">Fixtures</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Node.html">Node</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.NodeVisitor.html">NodeVisitor</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.TokenParser.html">TokenParser</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Translation.html">Translation</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Bridge.Twig.TokenParser.html">TokenParser</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Translation.html">Translation</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.html">Component<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.FatalErrorHandler.html">FatalErrorHandler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.FatalErrorHandler.html">FatalErrorHandler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.html">File<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.MimeType.html">MimeType</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Attribute.html">Attribute</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Flash.html">Flash</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.html">Storage<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.Handler.html">Handler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.Proxy.html">Proxy</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.File.html">File<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.File.MimeType.html">MimeType</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Attribute.html">Attribute</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Flash.html">Flash</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.html">Storage<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.html">Handler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.Proxy.html">Proxy</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.html">HttpKernel<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Bundle.html">Bundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.CacheClearer.html">CacheClearer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.CacheWarmer.html">CacheWarmer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Config.html">Config</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DataCollector.html">DataCollector<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DataCollector.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Fragment.html">Fragment</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.HttpCache.html">HttpCache</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Profiler.html">Profiler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Bundle.html">Bundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.CacheClearer.html">CacheClearer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.CacheWarmer.html">CacheWarmer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Config.html">Config</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DataCollector.html">DataCollector<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DataCollector.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.html">Fixtures<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionAbsentBundle.html">ExtensionAbsentBundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fragment.html">Fragment</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.HttpCache.html">HttpCache</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Profiler.html">Profiler<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Profiler.Mock.html">Mock</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.Routing.html">Routing<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Annotation.html">Annotation</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Generator.html">Generator<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Generator.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Loader.html">Loader</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Matcher.html">Matcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Matcher.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.Routing.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Annotation.html">Annotation</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.html">Fixtures<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Loader.html">Loader</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Matcher.html">Matcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Matcher.Dumper.html">Dumper</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.Yaml.html">Yaml<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Yaml.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Yaml.Tests.html">Tests</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html">UrlGeneratorTest</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Symfony.Component.Routing.Tests.Generator.html" title="Summary of Symfony\Component\Routing\Tests\Generator"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class UrlGeneratorTest</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+PHPUnit_Framework_TestCase
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Symfony\Component\Routing\Tests\Generator\UrlGeneratorTest</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.Routing.html">Routing</a>\<a href="namespace-Symfony.Component.Routing.Tests.html">Tests</a>\<a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator</a><br>
+		
+
+		<b>Located at</b> <a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#20-678" title="Go to source code">vendor/symfony/routing/Symfony/Component/Routing/Tests/Generator/UrlGeneratorTest.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="testAbsoluteUrlWithPort80" id="_testAbsoluteUrlWithPort80">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testAbsoluteUrlWithPort80">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#22-28" title="Go to source code">testAbsoluteUrlWithPort80</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testAbsoluteSecureUrlWithPort443" id="_testAbsoluteSecureUrlWithPort443">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testAbsoluteSecureUrlWithPort443">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#30-36" title="Go to source code">testAbsoluteSecureUrlWithPort443</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testAbsoluteUrlWithNonStandardPort" id="_testAbsoluteUrlWithNonStandardPort">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testAbsoluteUrlWithNonStandardPort">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#38-44" title="Go to source code">testAbsoluteUrlWithNonStandardPort</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testAbsoluteSecureUrlWithNonStandardPort" id="_testAbsoluteSecureUrlWithNonStandardPort">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testAbsoluteSecureUrlWithNonStandardPort">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#46-52" title="Go to source code">testAbsoluteSecureUrlWithNonStandardPort</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRelativeUrlWithoutParameters" id="_testRelativeUrlWithoutParameters">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRelativeUrlWithoutParameters">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#54-60" title="Go to source code">testRelativeUrlWithoutParameters</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRelativeUrlWithParameter" id="_testRelativeUrlWithParameter">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRelativeUrlWithParameter">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#62-68" title="Go to source code">testRelativeUrlWithParameter</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRelativeUrlWithNullParameter" id="_testRelativeUrlWithNullParameter">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRelativeUrlWithNullParameter">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#70-76" title="Go to source code">testRelativeUrlWithNullParameter</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRelativeUrlWithNullParameterButNotOptional" id="_testRelativeUrlWithNullParameterButNotOptional">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRelativeUrlWithNullParameterButNotOptional">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#78-87" title="Go to source code">testRelativeUrlWithNullParameterButNotOptional</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\Symfony\Component\Routing\Exception\InvalidParameterException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRelativeUrlWithOptionalZeroParameter" id="_testRelativeUrlWithOptionalZeroParameter">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRelativeUrlWithOptionalZeroParameter">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#89-95" title="Go to source code">testRelativeUrlWithOptionalZeroParameter</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testNotPassedOptionalParameterInBetween" id="_testNotPassedOptionalParameterInBetween">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testNotPassedOptionalParameterInBetween">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#97-102" title="Go to source code">testNotPassedOptionalParameterInBetween</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRelativeUrlWithExtraParameters" id="_testRelativeUrlWithExtraParameters">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRelativeUrlWithExtraParameters">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#104-110" title="Go to source code">testRelativeUrlWithExtraParameters</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testAbsoluteUrlWithExtraParameters" id="_testAbsoluteUrlWithExtraParameters">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testAbsoluteUrlWithExtraParameters">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#112-118" title="Go to source code">testAbsoluteUrlWithExtraParameters</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testUrlWithNullExtraParameters" id="_testUrlWithNullExtraParameters">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testUrlWithNullExtraParameters">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#120-126" title="Go to source code">testUrlWithNullExtraParameters</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testUrlWithExtraParametersFromGlobals" id="_testUrlWithExtraParametersFromGlobals">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testUrlWithExtraParametersFromGlobals">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#128-138" title="Go to source code">testUrlWithExtraParametersFromGlobals</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testUrlWithGlobalParameter" id="_testUrlWithGlobalParameter">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testUrlWithGlobalParameter">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#140-150" title="Go to source code">testUrlWithGlobalParameter</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGlobalParameterHasHigherPriorityThanDefault" id="_testGlobalParameterHasHigherPriorityThanDefault">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGlobalParameterHasHigherPriorityThanDefault">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#152-162" title="Go to source code">testGlobalParameterHasHigherPriorityThanDefault</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGenerateWithoutRoutes" id="_testGenerateWithoutRoutes">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGenerateWithoutRoutes">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#164-171" title="Go to source code">testGenerateWithoutRoutes</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\Symfony\Component\Routing\Exception\RouteNotFoundException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGenerateForRouteWithoutMandatoryParameter" id="_testGenerateForRouteWithoutMandatoryParameter">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGenerateForRouteWithoutMandatoryParameter">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#173-180" title="Go to source code">testGenerateForRouteWithoutMandatoryParameter</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\Symfony\Component\Routing\Exception\MissingMandatoryParametersException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGenerateForRouteWithInvalidOptionalParameter" id="_testGenerateForRouteWithInvalidOptionalParameter">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGenerateForRouteWithInvalidOptionalParameter">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#182-189" title="Go to source code">testGenerateForRouteWithInvalidOptionalParameter</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\Symfony\Component\Routing\Exception\InvalidParameterException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGenerateForRouteWithInvalidParameter" id="_testGenerateForRouteWithInvalidParameter">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGenerateForRouteWithInvalidParameter">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#191-198" title="Go to source code">testGenerateForRouteWithInvalidParameter</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\Symfony\Component\Routing\Exception\InvalidParameterException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGenerateForRouteWithInvalidOptionalParameterNonStrict" id="_testGenerateForRouteWithInvalidOptionalParameterNonStrict">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGenerateForRouteWithInvalidOptionalParameterNonStrict">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#200-206" title="Go to source code">testGenerateForRouteWithInvalidOptionalParameterNonStrict</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGenerateForRouteWithInvalidOptionalParameterNonStrictWithLogger" id="_testGenerateForRouteWithInvalidOptionalParameterNonStrictWithLogger">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGenerateForRouteWithInvalidOptionalParameterNonStrictWithLogger">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#208-217" title="Go to source code">testGenerateForRouteWithInvalidOptionalParameterNonStrictWithLogger</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGenerateForRouteWithInvalidParameterButDisabledRequirementsCheck" id="_testGenerateForRouteWithInvalidParameterButDisabledRequirementsCheck">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGenerateForRouteWithInvalidParameterButDisabledRequirementsCheck">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#219-225" title="Go to source code">testGenerateForRouteWithInvalidParameterButDisabledRequirementsCheck</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGenerateForRouteWithInvalidMandatoryParameter" id="_testGenerateForRouteWithInvalidMandatoryParameter">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGenerateForRouteWithInvalidMandatoryParameter">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#227-234" title="Go to source code">testGenerateForRouteWithInvalidMandatoryParameter</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\Symfony\Component\Routing\Exception\InvalidParameterException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequiredParamAndEmptyPassed" id="_testRequiredParamAndEmptyPassed">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequiredParamAndEmptyPassed">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#236-243" title="Go to source code">testRequiredParamAndEmptyPassed</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\Symfony\Component\Routing\Exception\InvalidParameterException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testSchemeRequirementDoesNothingIfSameCurrentScheme" id="_testSchemeRequirementDoesNothingIfSameCurrentScheme">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testSchemeRequirementDoesNothingIfSameCurrentScheme">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#245-258" title="Go to source code">testSchemeRequirementDoesNothingIfSameCurrentScheme</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testSchemeRequirementForcesAbsoluteUrl" id="_testSchemeRequirementForcesAbsoluteUrl">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testSchemeRequirementForcesAbsoluteUrl">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#260-273" title="Go to source code">testSchemeRequirementForcesAbsoluteUrl</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testSchemeRequirementCreatesUrlForFirstRequiredScheme" id="_testSchemeRequirementCreatesUrlForFirstRequiredScheme">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testSchemeRequirementCreatesUrlForFirstRequiredScheme">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#275-279" title="Go to source code">testSchemeRequirementCreatesUrlForFirstRequiredScheme</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testPathWithTwoStartingSlashes" id="_testPathWithTwoStartingSlashes">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testPathWithTwoStartingSlashes">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#281-287" title="Go to source code">testPathWithTwoStartingSlashes</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testNoTrailingSlashForMultipleOptionalParameters" id="_testNoTrailingSlashForMultipleOptionalParameters">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testNoTrailingSlashForMultipleOptionalParameters">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#289-294" title="Go to source code">testNoTrailingSlashForMultipleOptionalParameters</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testWithAnIntegerAsADefaultValue" id="_testWithAnIntegerAsADefaultValue">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testWithAnIntegerAsADefaultValue">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#296-301" title="Go to source code">testWithAnIntegerAsADefaultValue</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testNullForOptionalParameterIsIgnored" id="_testNullForOptionalParameterIsIgnored">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testNullForOptionalParameterIsIgnored">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#303-308" title="Go to source code">testNullForOptionalParameterIsIgnored</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testQueryParamSameAsDefault" id="_testQueryParamSameAsDefault">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testQueryParamSameAsDefault">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#310-317" title="Go to source code">testQueryParamSameAsDefault</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGenerateWithSpecialRouteName" id="_testGenerateWithSpecialRouteName">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGenerateWithSpecialRouteName">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#319-324" title="Go to source code">testGenerateWithSpecialRouteName</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testUrlEncoding" id="_testUrlEncoding">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testUrlEncoding">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#326-340" title="Go to source code">testUrlEncoding</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testEncodingOfRelativePathSegments" id="_testEncodingOfRelativePathSegments">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testEncodingOfRelativePathSegments">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#342-350" title="Go to source code">testEncodingOfRelativePathSegments</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testAdjacentVariables" id="_testAdjacentVariables">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testAdjacentVariables">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#352-363" title="Go to source code">testAdjacentVariables</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testOptionalVariableWithNoRealSeparator" id="_testOptionalVariableWithNoRealSeparator">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testOptionalVariableWithNoRealSeparator">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#365-372" title="Go to source code">testOptionalVariableWithNoRealSeparator</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequiredVariableWithNoRealSeparator" id="_testRequiredVariableWithNoRealSeparator">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequiredVariableWithNoRealSeparator">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#374-380" title="Go to source code">testRequiredVariableWithNoRealSeparator</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testDefaultRequirementOfVariable" id="_testDefaultRequirementOfVariable">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testDefaultRequirementOfVariable">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#382-388" title="Go to source code">testDefaultRequirementOfVariable</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testDefaultRequirementOfVariableDisallowsSlash" id="_testDefaultRequirementOfVariableDisallowsSlash">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testDefaultRequirementOfVariableDisallowsSlash">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#390-397" title="Go to source code">testDefaultRequirementOfVariableDisallowsSlash</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\Symfony\Component\Routing\Exception\InvalidParameterException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testDefaultRequirementOfVariableDisallowsNextSeparator" id="_testDefaultRequirementOfVariableDisallowsNextSeparator">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testDefaultRequirementOfVariableDisallowsNextSeparator">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#399-406" title="Go to source code">testDefaultRequirementOfVariableDisallowsNextSeparator</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\Symfony\Component\Routing\Exception\InvalidParameterException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testWithHostDifferentFromContext" id="_testWithHostDifferentFromContext">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testWithHostDifferentFromContext">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#408-413" title="Go to source code">testWithHostDifferentFromContext</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testWithHostSameAsContext" id="_testWithHostSameAsContext">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testWithHostSameAsContext">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#415-420" title="Go to source code">testWithHostSameAsContext</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testWithHostSameAsContextAndAbsolute" id="_testWithHostSameAsContextAndAbsolute">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testWithHostSameAsContextAndAbsolute">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#422-427" title="Go to source code">testWithHostSameAsContextAndAbsolute</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testUrlWithInvalidParameterInHost" id="_testUrlWithInvalidParameterInHost">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testUrlWithInvalidParameterInHost">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#429-436" title="Go to source code">testUrlWithInvalidParameterInHost</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\Symfony\Component\Routing\Exception\InvalidParameterException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testUrlWithInvalidParameterInHostWhenParamHasADefaultValue" id="_testUrlWithInvalidParameterInHostWhenParamHasADefaultValue">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testUrlWithInvalidParameterInHostWhenParamHasADefaultValue">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#438-445" title="Go to source code">testUrlWithInvalidParameterInHostWhenParamHasADefaultValue</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\Symfony\Component\Routing\Exception\InvalidParameterException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testUrlWithInvalidParameterEqualsDefaultValueInHost" id="_testUrlWithInvalidParameterEqualsDefaultValueInHost">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testUrlWithInvalidParameterEqualsDefaultValueInHost">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#447-454" title="Go to source code">testUrlWithInvalidParameterEqualsDefaultValueInHost</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\Symfony\Component\Routing\Exception\InvalidParameterException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testUrlWithInvalidParameterInHostInNonStrictMode" id="_testUrlWithInvalidParameterInHostInNonStrictMode">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testUrlWithInvalidParameterInHostInNonStrictMode">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#456-462" title="Go to source code">testUrlWithInvalidParameterInHostInNonStrictMode</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testHostIsCaseInsensitive" id="_testHostIsCaseInsensitive">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testHostIsCaseInsensitive">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#464-469" title="Go to source code">testHostIsCaseInsensitive</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGenerateNetworkPathBC" id="_testGenerateNetworkPathBC">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGenerateNetworkPathBC">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#471-487" title="Go to source code">testGenerateNetworkPathBC</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGenerateNetworkPath" id="_testGenerateNetworkPath">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGenerateNetworkPath">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#489-505" title="Go to source code">testGenerateNetworkPath</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGenerateRelativePath" id="_testGenerateRelativePath">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGenerateRelativePath">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#507-543" title="Go to source code">testGenerateRelativePath</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetRelativePath" id="_testGetRelativePath">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetRelativePath">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#545-551" title="Go to source code">testGetRelativePath</a>( <span>mixed <var>$sourcePath</var></span>, <span>mixed <var>$targetPath</var></span>, <span>mixed <var>$expectedPath</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>DataProvider</h4>
+				<div class="list">
+						provideRelativePaths<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="provideRelativePaths" id="_provideRelativePaths">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_provideRelativePaths">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Tests.Generator.UrlGeneratorTest.html#553-657" title="Go to source code">provideRelativePaths</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

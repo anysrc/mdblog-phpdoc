@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Symfony\Component\HttpFoundation\Tests\Session\Storage\Handler\MockPdo | AnySrc Markdown Blog</title>
+
+	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
+	<script type="text/javascript" src="elementlist.js?1213552095"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+						</li>
+				<li><a href="namespace-AnySrc.Security.html">Security</a>
+						</li>
+				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PerryFlynn.html">PerryFlynn</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Pimple.html">Pimple<span></span></a>
+						<ul>
+				<li><a href="namespace-Pimple.Tests.html">Tests</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Psr.html">Psr<span></span></a>
+						<ul>
+				<li><a href="namespace-Psr.Log.html">Log<span></span></a>
+						<ul>
+				<li><a href="namespace-Psr.Log.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Silex.html">Silex<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Application.html">Application</a>
+						</li>
+				<li><a href="namespace-Silex.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Silex.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Silex.Provider.html">Provider</a>
+						</li>
+				<li><a href="namespace-Silex.Route.html">Route</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Application.html">Application</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.Provider.html">Provider<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Provider.ValidatorServiceProviderTest.html">ValidatorServiceProviderTest<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Provider.ValidatorServiceProviderTest.Constraint.html">Constraint</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Silex.Tests.Route.html">Route</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Silex.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Symfony.html">Symfony<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.html">Bridge<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.html">Twig<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Node.html">Node</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.NodeVisitor.html">NodeVisitor</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Extension.html">Extension<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Extension.Fixtures.html">Fixtures</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Node.html">Node</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.NodeVisitor.html">NodeVisitor</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.TokenParser.html">TokenParser</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Translation.html">Translation</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Bridge.Twig.TokenParser.html">TokenParser</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Translation.html">Translation</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.html">Component<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.FatalErrorHandler.html">FatalErrorHandler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.FatalErrorHandler.html">FatalErrorHandler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.html">File<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.MimeType.html">MimeType</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Attribute.html">Attribute</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Flash.html">Flash</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.html">Storage<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.Handler.html">Handler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.Proxy.html">Proxy</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.HttpFoundation.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.File.html">File<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.File.MimeType.html">MimeType</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Attribute.html">Attribute</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Flash.html">Flash</a>
+						</li>
+				<li class="active"><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.html">Storage<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.html">Handler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.Proxy.html">Proxy</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.html">HttpKernel<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Bundle.html">Bundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.CacheClearer.html">CacheClearer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.CacheWarmer.html">CacheWarmer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Config.html">Config</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DataCollector.html">DataCollector<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DataCollector.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Fragment.html">Fragment</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.HttpCache.html">HttpCache</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Profiler.html">Profiler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Bundle.html">Bundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.CacheClearer.html">CacheClearer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.CacheWarmer.html">CacheWarmer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Config.html">Config</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DataCollector.html">DataCollector<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DataCollector.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.html">Fixtures<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionAbsentBundle.html">ExtensionAbsentBundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fragment.html">Fragment</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.HttpCache.html">HttpCache</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Profiler.html">Profiler<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Profiler.Mock.html">Mock</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.html">Routing<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Annotation.html">Annotation</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Generator.html">Generator<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Generator.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Loader.html">Loader</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Matcher.html">Matcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Matcher.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Annotation.html">Annotation</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.html">Fixtures<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Loader.html">Loader</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Matcher.html">Matcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Matcher.Dumper.html">Dumper</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.Yaml.html">Yaml<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Yaml.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Yaml.Tests.html">Tests</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.LegacyPdoSessionHandlerTest.html">LegacyPdoSessionHandlerTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.MemcachedSessionHandlerTest.html">MemcachedSessionHandlerTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.MemcacheSessionHandlerTest.html">MemcacheSessionHandlerTest</a></li>
+				<li class="active"><a href="class-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.MockPdo.html">MockPdo</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.MongoDbSessionHandlerTest.html">MongoDbSessionHandlerTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.NativeFileSessionHandlerTest.html">NativeFileSessionHandlerTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.NativeSessionHandlerTest.html">NativeSessionHandlerTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.NullSessionHandlerTest.html">NullSessionHandlerTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.PdoSessionHandlerTest.html">PdoSessionHandlerTest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.WriteCheckSessionHandlerTest.html">WriteCheckSessionHandlerTest</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.html" title="Summary of Symfony\Component\HttpFoundation\Tests\Session\Storage\Handler"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class MockPdo</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-PDO.html"><span>PDO</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Symfony\Component\HttpFoundation\Tests\Session\Storage\Handler\MockPdo</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation</a>\<a href="namespace-Symfony.Component.HttpFoundation.Tests.html">Tests</a>\<a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.html">Session</a>\<a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.html">Storage</a>\<a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.html">Handler</a><br>
+		
+
+		<b>Located at</b> <a href="source-class-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.MockPdo.html#324-359" title="Go to source code">vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Tests/Session/Storage/Handler/PdoSessionHandlerTest.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.MockPdo.html#330-334" title="Go to source code">__construct</a>( <span>mixed <var>$driverName</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$errorMode</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-PDO.html#___construct">PDO::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAttribute" id="_getAttribute">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAttribute">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.MockPdo.html#336-347" title="Go to source code">getAttribute</a>( <span>mixed <var>$attribute</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-PDO.html#_getAttribute">PDO::getAttribute()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="prepare" id="_prepare">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_prepare">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.MockPdo.html#349-354" title="Go to source code">prepare</a>( <span>mixed <var>$statement</var></span>, <span>mixed <var>$driverOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-PDO.html#_prepare">PDO::prepare()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="beginTransaction" id="_beginTransaction">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_beginTransaction">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.MockPdo.html#356-358" title="Go to source code">beginTransaction</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-PDO.html#_beginTransaction">PDO::beginTransaction()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-PDO.html#methods">PDO</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-PDO.html#___sleep">__sleep()</a>, 
+			<a href="class-PDO.html#___wakeup">__wakeup()</a>, 
+			<a href="class-PDO.html#_commit">commit()</a>, 
+			<a href="class-PDO.html#_errorCode">errorCode()</a>, 
+			<a href="class-PDO.html#_errorInfo">errorInfo()</a>, 
+			<a href="class-PDO.html#_exec">exec()</a>, 
+			<a href="class-PDO.html#_getAvailableDrivers">getAvailableDrivers()</a>, 
+			<a href="class-PDO.html#_inTransaction">inTransaction()</a>, 
+			<a href="class-PDO.html#_lastInsertId">lastInsertId()</a>, 
+			<a href="class-PDO.html#_query">query()</a>, 
+			<a href="class-PDO.html#_quote">quote()</a>, 
+			<a href="class-PDO.html#_rollBack">rollBack()</a>, 
+			<a href="class-PDO.html#_setAttribute">setAttribute()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-PDO.html#constants">PDO</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-PDO.html#ATTR_AUTOCOMMIT"><b>ATTR_AUTOCOMMIT</b></a>, 
+			<a href="class-PDO.html#ATTR_CASE"><b>ATTR_CASE</b></a>, 
+			<a href="class-PDO.html#ATTR_CLIENT_VERSION"><b>ATTR_CLIENT_VERSION</b></a>, 
+			<a href="class-PDO.html#ATTR_CONNECTION_STATUS"><b>ATTR_CONNECTION_STATUS</b></a>, 
+			<a href="class-PDO.html#ATTR_CURSOR"><b>ATTR_CURSOR</b></a>, 
+			<a href="class-PDO.html#ATTR_CURSOR_NAME"><b>ATTR_CURSOR_NAME</b></a>, 
+			<a href="class-PDO.html#ATTR_DEFAULT_FETCH_MODE"><b>ATTR_DEFAULT_FETCH_MODE</b></a>, 
+			<a href="class-PDO.html#ATTR_DRIVER_NAME"><b>ATTR_DRIVER_NAME</b></a>, 
+			<a href="class-PDO.html#ATTR_EMULATE_PREPARES"><b>ATTR_EMULATE_PREPARES</b></a>, 
+			<a href="class-PDO.html#ATTR_ERRMODE"><b>ATTR_ERRMODE</b></a>, 
+			<a href="class-PDO.html#ATTR_FETCH_CATALOG_NAMES"><b>ATTR_FETCH_CATALOG_NAMES</b></a>, 
+			<a href="class-PDO.html#ATTR_FETCH_TABLE_NAMES"><b>ATTR_FETCH_TABLE_NAMES</b></a>, 
+			<a href="class-PDO.html#ATTR_MAX_COLUMN_LEN"><b>ATTR_MAX_COLUMN_LEN</b></a>, 
+			<a href="class-PDO.html#ATTR_ORACLE_NULLS"><b>ATTR_ORACLE_NULLS</b></a>, 
+			<a href="class-PDO.html#ATTR_PERSISTENT"><b>ATTR_PERSISTENT</b></a>, 
+			<a href="class-PDO.html#ATTR_PREFETCH"><b>ATTR_PREFETCH</b></a>, 
+			<a href="class-PDO.html#ATTR_SERVER_INFO"><b>ATTR_SERVER_INFO</b></a>, 
+			<a href="class-PDO.html#ATTR_SERVER_VERSION"><b>ATTR_SERVER_VERSION</b></a>, 
+			<a href="class-PDO.html#ATTR_STATEMENT_CLASS"><b>ATTR_STATEMENT_CLASS</b></a>, 
+			<a href="class-PDO.html#ATTR_STRINGIFY_FETCHES"><b>ATTR_STRINGIFY_FETCHES</b></a>, 
+			<a href="class-PDO.html#ATTR_TIMEOUT"><b>ATTR_TIMEOUT</b></a>, 
+			<a href="class-PDO.html#CASE_LOWER"><b>CASE_LOWER</b></a>, 
+			<a href="class-PDO.html#CASE_NATURAL"><b>CASE_NATURAL</b></a>, 
+			<a href="class-PDO.html#CASE_UPPER"><b>CASE_UPPER</b></a>, 
+			<a href="class-PDO.html#CURSOR_FWDONLY"><b>CURSOR_FWDONLY</b></a>, 
+			<a href="class-PDO.html#CURSOR_SCROLL"><b>CURSOR_SCROLL</b></a>, 
+			<a href="class-PDO.html#ERRMODE_EXCEPTION"><b>ERRMODE_EXCEPTION</b></a>, 
+			<a href="class-PDO.html#ERRMODE_SILENT"><b>ERRMODE_SILENT</b></a>, 
+			<a href="class-PDO.html#ERRMODE_WARNING"><b>ERRMODE_WARNING</b></a>, 
+			<a href="class-PDO.html#ERR_NONE"><b>ERR_NONE</b></a>, 
+			<a href="class-PDO.html#FETCH_ASSOC"><b>FETCH_ASSOC</b></a>, 
+			<a href="class-PDO.html#FETCH_BOTH"><b>FETCH_BOTH</b></a>, 
+			<a href="class-PDO.html#FETCH_BOUND"><b>FETCH_BOUND</b></a>, 
+			<a href="class-PDO.html#FETCH_CLASS"><b>FETCH_CLASS</b></a>, 
+			<a href="class-PDO.html#FETCH_CLASSTYPE"><b>FETCH_CLASSTYPE</b></a>, 
+			<a href="class-PDO.html#FETCH_COLUMN"><b>FETCH_COLUMN</b></a>, 
+			<a href="class-PDO.html#FETCH_FUNC"><b>FETCH_FUNC</b></a>, 
+			<a href="class-PDO.html#FETCH_GROUP"><b>FETCH_GROUP</b></a>, 
+			<a href="class-PDO.html#FETCH_INTO"><b>FETCH_INTO</b></a>, 
+			<a href="class-PDO.html#FETCH_KEY_PAIR"><b>FETCH_KEY_PAIR</b></a>, 
+			<a href="class-PDO.html#FETCH_LAZY"><b>FETCH_LAZY</b></a>, 
+			<a href="class-PDO.html#FETCH_NAMED"><b>FETCH_NAMED</b></a>, 
+			<a href="class-PDO.html#FETCH_NUM"><b>FETCH_NUM</b></a>, 
+			<a href="class-PDO.html#FETCH_OBJ"><b>FETCH_OBJ</b></a>, 
+			<a href="class-PDO.html#FETCH_ORI_ABS"><b>FETCH_ORI_ABS</b></a>, 
+			<a href="class-PDO.html#FETCH_ORI_FIRST"><b>FETCH_ORI_FIRST</b></a>, 
+			<a href="class-PDO.html#FETCH_ORI_LAST"><b>FETCH_ORI_LAST</b></a>, 
+			<a href="class-PDO.html#FETCH_ORI_NEXT"><b>FETCH_ORI_NEXT</b></a>, 
+			<a href="class-PDO.html#FETCH_ORI_PRIOR"><b>FETCH_ORI_PRIOR</b></a>, 
+			<a href="class-PDO.html#FETCH_ORI_REL"><b>FETCH_ORI_REL</b></a>, 
+			<a href="class-PDO.html#FETCH_PROPS_LATE"><b>FETCH_PROPS_LATE</b></a>, 
+			<a href="class-PDO.html#FETCH_SERIALIZE"><b>FETCH_SERIALIZE</b></a>, 
+			<a href="class-PDO.html#FETCH_UNIQUE"><b>FETCH_UNIQUE</b></a>, 
+			<a href="class-PDO.html#MYSQL_ATTR_COMPRESS"><b>MYSQL_ATTR_COMPRESS</b></a>, 
+			<a href="class-PDO.html#MYSQL_ATTR_DIRECT_QUERY"><b>MYSQL_ATTR_DIRECT_QUERY</b></a>, 
+			<a href="class-PDO.html#MYSQL_ATTR_FOUND_ROWS"><b>MYSQL_ATTR_FOUND_ROWS</b></a>, 
+			<a href="class-PDO.html#MYSQL_ATTR_IGNORE_SPACE"><b>MYSQL_ATTR_IGNORE_SPACE</b></a>, 
+			<a href="class-PDO.html#MYSQL_ATTR_INIT_COMMAND"><b>MYSQL_ATTR_INIT_COMMAND</b></a>, 
+			<a href="class-PDO.html#MYSQL_ATTR_LOCAL_INFILE"><b>MYSQL_ATTR_LOCAL_INFILE</b></a>, 
+			<a href="class-PDO.html#MYSQL_ATTR_MAX_BUFFER_SIZE"><b>MYSQL_ATTR_MAX_BUFFER_SIZE</b></a>, 
+			<a href="class-PDO.html#MYSQL_ATTR_READ_DEFAULT_FILE"><b>MYSQL_ATTR_READ_DEFAULT_FILE</b></a>, 
+			<a href="class-PDO.html#MYSQL_ATTR_READ_DEFAULT_GROUP"><b>MYSQL_ATTR_READ_DEFAULT_GROUP</b></a>, 
+			<a href="class-PDO.html#MYSQL_ATTR_SSL_CA"><b>MYSQL_ATTR_SSL_CA</b></a>, 
+			<a href="class-PDO.html#MYSQL_ATTR_SSL_CAPATH"><b>MYSQL_ATTR_SSL_CAPATH</b></a>, 
+			<a href="class-PDO.html#MYSQL_ATTR_SSL_CERT"><b>MYSQL_ATTR_SSL_CERT</b></a>, 
+			<a href="class-PDO.html#MYSQL_ATTR_SSL_CIPHER"><b>MYSQL_ATTR_SSL_CIPHER</b></a>, 
+			<a href="class-PDO.html#MYSQL_ATTR_SSL_KEY"><b>MYSQL_ATTR_SSL_KEY</b></a>, 
+			<a href="class-PDO.html#MYSQL_ATTR_USE_BUFFERED_QUERY"><b>MYSQL_ATTR_USE_BUFFERED_QUERY</b></a>, 
+			<a href="class-PDO.html#NULL_EMPTY_STRING"><b>NULL_EMPTY_STRING</b></a>, 
+			<a href="class-PDO.html#NULL_NATURAL"><b>NULL_NATURAL</b></a>, 
+			<a href="class-PDO.html#NULL_TO_STRING"><b>NULL_TO_STRING</b></a>, 
+			<a href="class-PDO.html#PARAM_BOOL"><b>PARAM_BOOL</b></a>, 
+			<a href="class-PDO.html#PARAM_EVT_ALLOC"><b>PARAM_EVT_ALLOC</b></a>, 
+			<a href="class-PDO.html#PARAM_EVT_EXEC_POST"><b>PARAM_EVT_EXEC_POST</b></a>, 
+			<a href="class-PDO.html#PARAM_EVT_EXEC_PRE"><b>PARAM_EVT_EXEC_PRE</b></a>, 
+			<a href="class-PDO.html#PARAM_EVT_FETCH_POST"><b>PARAM_EVT_FETCH_POST</b></a>, 
+			<a href="class-PDO.html#PARAM_EVT_FETCH_PRE"><b>PARAM_EVT_FETCH_PRE</b></a>, 
+			<a href="class-PDO.html#PARAM_EVT_FREE"><b>PARAM_EVT_FREE</b></a>, 
+			<a href="class-PDO.html#PARAM_EVT_NORMALIZE"><b>PARAM_EVT_NORMALIZE</b></a>, 
+			<a href="class-PDO.html#PARAM_INPUT_OUTPUT"><b>PARAM_INPUT_OUTPUT</b></a>, 
+			<a href="class-PDO.html#PARAM_INT"><b>PARAM_INT</b></a>, 
+			<a href="class-PDO.html#PARAM_LOB"><b>PARAM_LOB</b></a>, 
+			<a href="class-PDO.html#PARAM_NULL"><b>PARAM_NULL</b></a>, 
+			<a href="class-PDO.html#PARAM_STMT"><b>PARAM_STMT</b></a>, 
+			<a href="class-PDO.html#PARAM_STR"><b>PARAM_STR</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="prepareResult" id="$prepareResult">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.MockPdo.html#326" title="Go to source code"><var>$prepareResult</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$prepareResult" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

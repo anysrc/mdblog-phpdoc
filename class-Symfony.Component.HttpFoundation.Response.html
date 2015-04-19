@@ -1,0 +1,4227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Symfony\Component\HttpFoundation\Response | AnySrc Markdown Blog</title>
+
+	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
+	<script type="text/javascript" src="elementlist.js?1213552095"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+						</li>
+				<li><a href="namespace-AnySrc.Security.html">Security</a>
+						</li>
+				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PerryFlynn.html">PerryFlynn</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Pimple.html">Pimple<span></span></a>
+						<ul>
+				<li><a href="namespace-Pimple.Tests.html">Tests</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Psr.html">Psr<span></span></a>
+						<ul>
+				<li><a href="namespace-Psr.Log.html">Log<span></span></a>
+						<ul>
+				<li><a href="namespace-Psr.Log.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Silex.html">Silex<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Application.html">Application</a>
+						</li>
+				<li><a href="namespace-Silex.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Silex.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Silex.Provider.html">Provider</a>
+						</li>
+				<li><a href="namespace-Silex.Route.html">Route</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Application.html">Application</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.Provider.html">Provider<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Provider.ValidatorServiceProviderTest.html">ValidatorServiceProviderTest<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Provider.ValidatorServiceProviderTest.Constraint.html">Constraint</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Silex.Tests.Route.html">Route</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Silex.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Symfony.html">Symfony<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.html">Bridge<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.html">Twig<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Node.html">Node</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.NodeVisitor.html">NodeVisitor</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Extension.html">Extension<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Extension.Fixtures.html">Fixtures</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Node.html">Node</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.NodeVisitor.html">NodeVisitor</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.TokenParser.html">TokenParser</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Translation.html">Translation</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Bridge.Twig.TokenParser.html">TokenParser</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Translation.html">Translation</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.html">Component<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.FatalErrorHandler.html">FatalErrorHandler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.FatalErrorHandler.html">FatalErrorHandler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.html">File<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.MimeType.html">MimeType</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Attribute.html">Attribute</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Flash.html">Flash</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.html">Storage<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.Handler.html">Handler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.Proxy.html">Proxy</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.File.html">File<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.File.MimeType.html">MimeType</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Attribute.html">Attribute</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Flash.html">Flash</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.html">Storage<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.html">Handler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.Proxy.html">Proxy</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.html">HttpKernel<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Bundle.html">Bundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.CacheClearer.html">CacheClearer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.CacheWarmer.html">CacheWarmer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Config.html">Config</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DataCollector.html">DataCollector<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DataCollector.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Fragment.html">Fragment</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.HttpCache.html">HttpCache</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Profiler.html">Profiler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Bundle.html">Bundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.CacheClearer.html">CacheClearer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.CacheWarmer.html">CacheWarmer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Config.html">Config</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DataCollector.html">DataCollector<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DataCollector.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.html">Fixtures<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionAbsentBundle.html">ExtensionAbsentBundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fragment.html">Fragment</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.HttpCache.html">HttpCache</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Profiler.html">Profiler<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Profiler.Mock.html">Mock</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.html">Routing<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Annotation.html">Annotation</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Generator.html">Generator<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Generator.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Loader.html">Loader</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Matcher.html">Matcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Matcher.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Annotation.html">Annotation</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.html">Fixtures<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Loader.html">Loader</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Matcher.html">Matcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Matcher.Dumper.html">Dumper</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.Yaml.html">Yaml<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Yaml.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Yaml.Tests.html">Tests</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Symfony.Component.HttpFoundation.AcceptHeader.html">AcceptHeader</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.AcceptHeaderItem.html">AcceptHeaderItem</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.ApacheRequest.html">ApacheRequest</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.BinaryFileResponse.html">BinaryFileResponse</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Cookie.html">Cookie</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.ExpressionRequestMatcher.html">ExpressionRequestMatcher</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.FileBag.html">FileBag</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.HeaderBag.html">HeaderBag</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.IpUtils.html">IpUtils</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.JsonResponse.html">JsonResponse</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.ParameterBag.html">ParameterBag</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.RedirectResponse.html">RedirectResponse</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.Request.html">Request</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.RequestMatcher.html">RequestMatcher</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.RequestStack.html">RequestStack</a></li>
+				<li class="active"><a href="class-Symfony.Component.HttpFoundation.Response.html">Response</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.ResponseHeaderBag.html">ResponseHeaderBag</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.ServerBag.html">ServerBag</a></li>
+				<li><a href="class-Symfony.Component.HttpFoundation.StreamedResponse.html">StreamedResponse</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Symfony.Component.HttpFoundation.RequestMatcherInterface.html">RequestMatcherInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Symfony.Component.HttpFoundation.html" title="Summary of Symfony\Component\HttpFoundation"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Response</h1>
+
+
+	<div class="description">
+	
+<p>Response represents an HTTP response.</p>
+
+	</div>
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Silex.Tests.Provider.UnsendableResponse.html">Silex\Tests\Provider\UnsendableResponse</a>, 
+			<a href="class-Symfony.Component.HttpFoundation.BinaryFileResponse.html">Symfony\Component\HttpFoundation\BinaryFileResponse</a>, 
+			<a href="class-Symfony.Component.HttpFoundation.JsonResponse.html">Symfony\Component\HttpFoundation\JsonResponse</a>, 
+			<a href="class-Symfony.Component.HttpFoundation.RedirectResponse.html">Symfony\Component\HttpFoundation\RedirectResponse</a>, 
+			<a href="class-Symfony.Component.HttpFoundation.StreamedResponse.html">Symfony\Component\HttpFoundation\StreamedResponse</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation</a><br>
+		
+
+				<b>Author:</b>
+				Fabien Potencier &lt;<a
+href="mailto:fabien&#64;symfony.com">fabien&#64;<!-- -->symfony.com</a>&gt;<br>
+				<b>Api</b>
+				<br>
+		<b>Located at</b> <a href="source-class-Symfony.Component.HttpFoundation.Response.html#14-1275" title="Go to source code">vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#188-208" title="Go to source code">__construct</a>( <span>mixed <var>$content</var> = <span class="php-quote">''</span></span>, <span>integer <var>$status</var> = <span class="php-num">200</span></span>, <span>array <var>$headers</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Constructor.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Constructor.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$content</var></dt>
+					<dd><code>mixed</code><br>$content The response content, see setContent()</dd>
+					<dt><var>$status</var></dt>
+					<dd><code>integer</code><br>$status The response status code</dd>
+					<dt><var>$headers</var></dt>
+					<dd><code>array</code><br>$headers An array of response headers</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code></code><br>When the HTTP status code is not valid<br>
+				</div>
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="create" id="_create">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_create">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#210-227" title="Go to source code">create</a>( <span>mixed <var>$content</var> = <span class="php-quote">''</span></span>, <span>integer <var>$status</var> = <span class="php-num">200</span></span>, <span>array <var>$headers</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Factory method for chainability.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Factory method for chainability.</p>
+
+<p>Example:<br />
+return Response::create($body, 200) -&gt;setSharedMaxAge(300);</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$content</var></dt>
+					<dd><code>mixed</code><br>$content The response content, see setContent()</dd>
+					<dt><var>$status</var></dt>
+					<dd><code>integer</code><br>$status The response status code</dd>
+					<dt><var>$headers</var></dt>
+					<dd><code>array</code><br>$headers An array of response headers</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__toString" id="___toString">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___toString">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#229-246" title="Go to source code">__toString</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the Response as an HTTP string.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the Response as an HTTP string.</p>
+
+<p>The string representation of the Response is the same as the one that will be
+sent to the client only if the prepare() method has been called before.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The Response as an HTTP string<br>
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html#_prepare">Symfony\Component\HttpFoundation\Response::prepare()</a></code></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__clone" id="___clone">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___clone">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#248-254" title="Go to source code">__clone</a>( )</code>
+
+		<div class="description short">
+			
+<p>Clones the current Response instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Clones the current Response instance.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="prepare" id="_prepare">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_prepare">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#256-322" title="Go to source code">prepare</a>( <span><code><a href="class-Symfony.Component.HttpFoundation.Request.html">Symfony\Component\HttpFoundation\Request</a></code> <var>$request</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Prepares the Response before it is sent to the client.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Prepares the Response before it is sent to the client.</p>
+
+<p>This method tweaks the Response to ensure that it is compliant with RFC 2616.
+Most of the changes are based on the Request that is "associated" with this
+Response.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$request</var></dt>
+					<dd><code><code><a href="class-Symfony.Component.HttpFoundation.Request.html">Symfony\Component\HttpFoundation\Request</a></code></code><br>$request A Request instance</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>The current response.<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sendHeaders" id="_sendHeaders">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sendHeaders">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#324-352" title="Go to source code">sendHeaders</a>( )</code>
+
+		<div class="description short">
+			
+<p>Sends HTTP headers.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sends HTTP headers.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sendContent" id="_sendContent">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sendContent">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#354-364" title="Go to source code">sendContent</a>( )</code>
+
+		<div class="description short">
+			
+<p>Sends content for the current web response.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sends content for the current web response.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="send" id="_send">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_send">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#366-385" title="Go to source code">send</a>( )</code>
+
+		<div class="description short">
+			
+<p>Sends HTTP headers and content.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sends HTTP headers and content.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setContent" id="_setContent">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setContent">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#387-409" title="Go to source code">setContent</a>( <span>mixed <var>$content</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the response content.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the response content.</p>
+
+<p>Valid types are strings, numbers, null, and objects that implement a
+__toString() method.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$content</var></dt>
+					<dd><code>mixed</code><br>$content Content that can be cast to string</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-UnexpectedValueException.html">UnexpectedValueException</a></code></code><br>
+				</div>
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getContent" id="_getContent">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getContent">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#411-421" title="Go to source code">getContent</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the current response content.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the current response content.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Content<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setProtocolVersion" id="_setProtocolVersion">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setProtocolVersion">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#423-437" title="Go to source code">setProtocolVersion</a>( <span>string <var>$version</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the HTTP protocol version (1.0 or 1.1).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the HTTP protocol version (1.0 or 1.1).</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$version</var></dt>
+					<dd><code>string</code><br>$version The HTTP protocol version</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getProtocolVersion" id="_getProtocolVersion">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getProtocolVersion">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#439-449" title="Go to source code">getProtocolVersion</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the HTTP protocol version.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the HTTP protocol version.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The HTTP protocol version<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setStatusCode" id="_setStatusCode">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setStatusCode">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#451-488" title="Go to source code">setStatusCode</a>( <span>integer <var>$code</var></span>, <span>mixed <var>$text</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the response status code.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the response status code.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$code</var></dt>
+					<dd><code>integer</code><br>$code HTTP status code</dd>
+					<dt><var>$text</var></dt>
+					<dd><code>mixed</code><br>$text HTTP status text If the status text is null it will be automatically
+populated for the known status codes and left empty otherwise.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code></code><br>When the HTTP status code is not valid<br>
+				</div>
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStatusCode" id="_getStatusCode">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getStatusCode">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#490-500" title="Go to source code">getStatusCode</a>( )</code>
+
+		<div class="description short">
+			
+<p>Retrieves the status code for the current web response.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieves the status code for the current web response.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>Status code<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCharset" id="_setCharset">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCharset">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#502-516" title="Go to source code">setCharset</a>( <span>string <var>$charset</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the response charset.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the response charset.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$charset</var></dt>
+					<dd><code>string</code><br>$charset Character set</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCharset" id="_getCharset">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCharset">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#518-528" title="Go to source code">getCharset</a>( )</code>
+
+		<div class="description short">
+			
+<p>Retrieves the response charset.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieves the response charset.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Character set<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isCacheable" id="_isCacheable">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isCacheable">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#530-554" title="Go to source code">isCacheable</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns true if the response is worth caching under any circumstance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns true if the response is worth caching under any circumstance.</p>
+
+<p>Responses marked "private" with an explicit Cache-Control directive are
+considered uncacheable.</p>
+
+<p>Responses with neither a freshness lifetime (Expires, max-age) nor cache
+validator (Last-Modified, ETag) are considered uncacheable.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>true if the response is worth caching, false otherwise<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isFresh" id="_isFresh">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isFresh">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#556-570" title="Go to source code">isFresh</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns true if the response is "fresh".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns true if the response is "fresh".</p>
+
+<p>Fresh responses may be served from cache without any interaction with the
+origin. A response is considered fresh when it includes a Cache-Control/max-age
+indicator or Expires header and the calculated age is less than the freshness
+lifetime.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>true if the response is fresh, false otherwise<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isValidateable" id="_isValidateable">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isValidateable">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#572-583" title="Go to source code">isValidateable</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns true if the response includes headers that can be used to validate
+the response with the origin server using a conditional GET request.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns true if the response includes headers that can be used to validate
+the response with the origin server using a conditional GET request.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>true if the response is validateable, false otherwise<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPrivate" id="_setPrivate">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPrivate">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#585-600" title="Go to source code">setPrivate</a>( )</code>
+
+		<div class="description short">
+			
+<p>Marks the response as "private".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Marks the response as "private".</p>
+
+<p>It makes the response ineligible for serving other clients.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPublic" id="_setPublic">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPublic">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#602-617" title="Go to source code">setPublic</a>( )</code>
+
+		<div class="description short">
+			
+<p>Marks the response as "public".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Marks the response as "public".</p>
+
+<p>It makes the response eligible for serving other clients.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="mustRevalidate" id="_mustRevalidate">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_mustRevalidate">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#619-634" title="Go to source code">mustRevalidate</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns true if the response must be revalidated by caches.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns true if the response must be revalidated by caches.</p>
+
+<p>This method indicates that the response must not be served stale by a cache
+in any circumstance without first revalidating with the origin. When present,
+the TTL of the response should not be overridden to be greater than the value
+provided by the origin.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>true if the response must be revalidated by a cache, false otherwise<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDate" id="_getDate">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DateTime.html">DateTime</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDate">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#636-648" title="Go to source code">getDate</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the Date header as a DateTime instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the Date header as a DateTime instance.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DateTime.html">DateTime</a></code></code><br>A \DateTime instance<br>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-RuntimeException.html">RuntimeException</a></code></code><br>When the header is not parseable<br>
+				</div>
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDate" id="_setDate">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDate">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#650-665" title="Go to source code">setDate</a>( <span><code><a href="class-DateTime.html">DateTime</a></code> <var>$date</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the Date header.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the Date header.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$date</var></dt>
+					<dd><code><code><a href="class-DateTime.html">DateTime</a></code></code><br>$date A \DateTime instance</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAge" id="_getAge">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAge">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#667-679" title="Go to source code">getAge</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the age of the response.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the age of the response.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The age of the response in seconds<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="expire" id="_expire">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_expire">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#681-695" title="Go to source code">expire</a>( )</code>
+
+		<div class="description short">
+			
+<p>Marks the response stale by setting the Age header to be equal to the maximum
+age of the response.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Marks the response stale by setting the Age header to be equal to the maximum
+age of the response.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getExpires" id="_getExpires">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DateTime.html">DateTime</a></code>|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getExpires">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#697-712" title="Go to source code">getExpires</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the value of the Expires header as a DateTime instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the value of the Expires header as a DateTime instance.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DateTime.html">DateTime</a></code>|null</code><br>A DateTime instance or null if the header does not exist<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setExpires" id="_setExpires">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setExpires">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#714-736" title="Go to source code">setExpires</a>( <span><code><a href="class-DateTime.html">DateTime</a></code> <var>$date</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the Expires HTTP header with a DateTime instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the Expires HTTP header with a DateTime instance.</p>
+
+<p>Passing null as value will remove the header.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$date</var></dt>
+					<dd><code><code><a href="class-DateTime.html">DateTime</a></code>|null</code><br>$date A \DateTime instance or null to remove the header</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMaxAge" id="_getMaxAge">
+
+		<td class="attributes"><code>
+			 public 
+			integer|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMaxAge">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#738-762" title="Go to source code">getMaxAge</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the number of seconds after the time specified in the response's Date
+header when the response should no longer be considered fresh.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the number of seconds after the time specified in the response's Date
+header when the response should no longer be considered fresh.</p>
+
+<p>First, it checks for a s-maxage directive, then a max-age directive, and then
+it falls back on an expires header. It returns null when no maximum age can be
+established.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer|null</code><br>Number of seconds<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setMaxAge" id="_setMaxAge">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMaxAge">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#764-780" title="Go to source code">setMaxAge</a>( <span>integer <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the number of seconds after which the response should no longer be
+considered fresh.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the number of seconds after which the response should no longer be
+considered fresh.</p>
+
+<p>This methods sets the Cache-Control max-age directive.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>integer</code><br>$value Number of seconds</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setSharedMaxAge" id="_setSharedMaxAge">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setSharedMaxAge">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#782-799" title="Go to source code">setSharedMaxAge</a>( <span>integer <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the number of seconds after which the response should no longer be
+considered fresh by shared caches.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the number of seconds after which the response should no longer be
+considered fresh by shared caches.</p>
+
+<p>This methods sets the Cache-Control s-maxage directive.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>integer</code><br>$value Number of seconds</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTtl" id="_getTtl">
+
+		<td class="attributes"><code>
+			 public 
+			integer|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTtl">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#801-818" title="Go to source code">getTtl</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the response's time-to-live in seconds.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the response's time-to-live in seconds.</p>
+
+<p>It returns null when no freshness information is present in the response.</p>
+
+<p>When the responses TTL is &lt;= 0, the response may not be served from cache
+without first revalidating with the origin.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer|null</code><br>The TTL in seconds<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTtl" id="_setTtl">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTtl">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#820-836" title="Go to source code">setTtl</a>( <span>integer <var>$seconds</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the response's time-to-live for shared caches.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the response's time-to-live for shared caches.</p>
+
+<p>This method adjusts the Cache-Control/s-maxage directive.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$seconds</var></dt>
+					<dd><code>integer</code><br>$seconds Number of seconds</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setClientTtl" id="_setClientTtl">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setClientTtl">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#838-854" title="Go to source code">setClientTtl</a>( <span>integer <var>$seconds</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the response's time-to-live for private/client caches.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the response's time-to-live for private/client caches.</p>
+
+<p>This method adjusts the Cache-Control/max-age directive.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$seconds</var></dt>
+					<dd><code>integer</code><br>$seconds Number of seconds</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLastModified" id="_getLastModified">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DateTime.html">DateTime</a></code>|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLastModified">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#856-868" title="Go to source code">getLastModified</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the Last-Modified HTTP header as a DateTime instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the Last-Modified HTTP header as a DateTime instance.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DateTime.html">DateTime</a></code>|null</code><br>A DateTime instance or null if the header does not exist<br>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-RuntimeException.html">RuntimeException</a></code></code><br>When the HTTP header is not parseable<br>
+				</div>
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setLastModified" id="_setLastModified">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setLastModified">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#870-892" title="Go to source code">setLastModified</a>( <span><code><a href="class-DateTime.html">DateTime</a></code> <var>$date</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the Last-Modified HTTP header with a DateTime instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the Last-Modified HTTP header with a DateTime instance.</p>
+
+<p>Passing null as value will remove the header.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$date</var></dt>
+					<dd><code><code><a href="class-DateTime.html">DateTime</a></code>|null</code><br>$date A \DateTime instance or null to remove the header</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEtag" id="_getEtag">
+
+		<td class="attributes"><code>
+			 public 
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEtag">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#894-904" title="Go to source code">getEtag</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the literal value of the ETag HTTP header.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the literal value of the ETag HTTP header.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string|null</code><br>The ETag HTTP header or null if it does not exist<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setEtag" id="_setEtag">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setEtag">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#906-929" title="Go to source code">setEtag</a>( <span>string|null <var>$etag</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$weak</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the ETag value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the ETag value.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$etag</var></dt>
+					<dd><code>string|null</code><br>$etag The ETag unique identifier or null to remove the header</dd>
+					<dt><var>$weak</var></dt>
+					<dd><code>boolean</code><br>$weak Whether you want a weak ETag or not</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCache" id="_setCache">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCache">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#931-983" title="Go to source code">setCache</a>( <span>array <var>$options</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the response's cache headers (validation and/or expiration).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the response's cache headers (validation and/or expiration).</p>
+
+<p>Available options are: etag, last_modified, max_age, s_maxage, private, and
+public.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$options</var></dt>
+					<dd><code>array</code><br>$options An array of cache options</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code></code><br>
+				</div>
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setNotModified" id="_setNotModified">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setNotModified">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#985-1008" title="Go to source code">setNotModified</a>( )</code>
+
+		<div class="description short">
+			
+<p>Modifies the response so that it conforms to the rules defined for a 304
+status code.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Modifies the response so that it conforms to the rules defined for a 304
+status code.</p>
+
+<p>This sets the status, removes the body, and discards any headers that MUST
+NOT be included in 304 responses.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						<a
+href="http://tools.ietf.org/html/rfc2616#section-10.3.5">http://tools.ietf.org/html/rfc2616#section-10.3.5</a><br>
+				</div>
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasVary" id="_hasVary">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasVary">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#1010-1020" title="Go to source code">hasVary</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns true if the response includes a Vary header.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns true if the response includes a Vary header.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>true if the response includes a Vary header, false otherwise<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getVary" id="_getVary">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getVary">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#1022-1041" title="Go to source code">getVary</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns an array of header names given in the Vary header.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns an array of header names given in the Vary header.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>An array of Vary names<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setVary" id="_setVary">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setVary">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#1043-1058" title="Go to source code">setVary</a>( <span>string|array <var>$headers</var></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the Vary header.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the Vary header.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$headers</var></dt>
+					<dd><code>string|array</code><br>$headers</dd>
+					<dt><var>$replace</var></dt>
+					<dd><code>boolean</code><br>$replace Whether to replace the actual value of not (true by default)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpFoundation.Response.html">Symfony\Component\HttpFoundation\Response</a></code></code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isNotModified" id="_isNotModified">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isNotModified">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#1060-1096" title="Go to source code">isNotModified</a>( <span><code><a href="class-Symfony.Component.HttpFoundation.Request.html">Symfony\Component\HttpFoundation\Request</a></code> <var>$request</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Determines if the Response validators (ETag, Last-Modified) match a
+conditional value specified in the Request.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determines if the Response validators (ETag, Last-Modified) match a
+conditional value specified in the Request.</p>
+
+<p>If the Response is not modified, it sets the status code to 304 and removes
+the actual content by calling the setNotModified() method.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$request</var></dt>
+					<dd><code><code><a href="class-Symfony.Component.HttpFoundation.Request.html">Symfony\Component\HttpFoundation\Request</a></code></code><br>$request A Request instance</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>true if the Response validators match the Request, false otherwise<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isInvalid" id="_isInvalid">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isInvalid">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#1099-1109" title="Go to source code">isInvalid</a>( )</code>
+
+		<div class="description short">
+			
+<p>Is response invalid?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is response invalid?</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isInformational" id="_isInformational">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isInformational">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#1111-1121" title="Go to source code">isInformational</a>( )</code>
+
+		<div class="description short">
+			
+<p>Is response informative?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is response informative?</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isSuccessful" id="_isSuccessful">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isSuccessful">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#1123-1133" title="Go to source code">isSuccessful</a>( )</code>
+
+		<div class="description short">
+			
+<p>Is response successful?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is response successful?</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isRedirection" id="_isRedirection">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isRedirection">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#1135-1145" title="Go to source code">isRedirection</a>( )</code>
+
+		<div class="description short">
+			
+<p>Is the response a redirect?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is the response a redirect?</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isClientError" id="_isClientError">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isClientError">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#1147-1157" title="Go to source code">isClientError</a>( )</code>
+
+		<div class="description short">
+			
+<p>Is there a client error?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is there a client error?</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isServerError" id="_isServerError">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isServerError">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#1159-1169" title="Go to source code">isServerError</a>( )</code>
+
+		<div class="description short">
+			
+<p>Was there a server side error?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Was there a server side error?</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isOk" id="_isOk">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isOk">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#1171-1181" title="Go to source code">isOk</a>( )</code>
+
+		<div class="description short">
+			
+<p>Is the response OK?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is the response OK?</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isForbidden" id="_isForbidden">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isForbidden">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#1183-1193" title="Go to source code">isForbidden</a>( )</code>
+
+		<div class="description short">
+			
+<p>Is the response forbidden?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is the response forbidden?</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isNotFound" id="_isNotFound">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isNotFound">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#1195-1205" title="Go to source code">isNotFound</a>( )</code>
+
+		<div class="description short">
+			
+<p>Is the response a not found error?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is the response a not found error?</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isRedirect" id="_isRedirect">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isRedirect">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#1207-1219" title="Go to source code">isRedirect</a>( <span>string <var>$location</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Is the response a redirect of some form?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is the response a redirect of some form?</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$location</var></dt>
+					<dd><code>string</code><br>$location</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isEmpty" id="_isEmpty">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isEmpty">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#1221-1231" title="Go to source code">isEmpty</a>( )</code>
+
+		<div class="description short">
+			
+<p>Is the response empty?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is the response empty?</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="closeOutputBuffers" id="_closeOutputBuffers">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_closeOutputBuffers">#</a>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Response.html#1233-1260" title="Go to source code">closeOutputBuffers</a>( <span>integer <var>$targetLevel</var></span>, <span>boolean <var>$flush</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Cleans or flushes output buffers up to target level.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Cleans or flushes output buffers up to target level.</p>
+
+<p>Resulting level can be greater than target level if a non-removable buffer
+has been encountered.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$targetLevel</var></dt>
+					<dd><code>integer</code><br>$targetLevel The target output buffering level</dd>
+					<dt><var>$flush</var></dt>
+					<dd><code>boolean</code><br>$flush Whether to flush or clean the buffers</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="HTTP_CONTINUE" id="HTTP_CONTINUE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#23" title="Go to source code"><b>HTTP_CONTINUE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">100</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_CONTINUE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_SWITCHING_PROTOCOLS" id="HTTP_SWITCHING_PROTOCOLS">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#24" title="Go to source code"><b>HTTP_SWITCHING_PROTOCOLS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">101</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_SWITCHING_PROTOCOLS" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_PROCESSING" id="HTTP_PROCESSING">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#25" title="Go to source code"><b>HTTP_PROCESSING</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">102</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_PROCESSING" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_OK" id="HTTP_OK">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#26" title="Go to source code"><b>HTTP_OK</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">200</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_OK" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_CREATED" id="HTTP_CREATED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#27" title="Go to source code"><b>HTTP_CREATED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">201</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_CREATED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_ACCEPTED" id="HTTP_ACCEPTED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#28" title="Go to source code"><b>HTTP_ACCEPTED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">202</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_ACCEPTED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_NON_AUTHORITATIVE_INFORMATION" id="HTTP_NON_AUTHORITATIVE_INFORMATION">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#29" title="Go to source code"><b>HTTP_NON_AUTHORITATIVE_INFORMATION</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">203</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_NON_AUTHORITATIVE_INFORMATION" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_NO_CONTENT" id="HTTP_NO_CONTENT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#30" title="Go to source code"><b>HTTP_NO_CONTENT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">204</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_NO_CONTENT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_RESET_CONTENT" id="HTTP_RESET_CONTENT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#31" title="Go to source code"><b>HTTP_RESET_CONTENT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">205</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_RESET_CONTENT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_PARTIAL_CONTENT" id="HTTP_PARTIAL_CONTENT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#32" title="Go to source code"><b>HTTP_PARTIAL_CONTENT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">206</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_PARTIAL_CONTENT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_MULTI_STATUS" id="HTTP_MULTI_STATUS">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#33" title="Go to source code"><b>HTTP_MULTI_STATUS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">207</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_MULTI_STATUS" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_ALREADY_REPORTED" id="HTTP_ALREADY_REPORTED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#34" title="Go to source code"><b>HTTP_ALREADY_REPORTED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">208</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_ALREADY_REPORTED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_IM_USED" id="HTTP_IM_USED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#35" title="Go to source code"><b>HTTP_IM_USED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">226</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_IM_USED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_MULTIPLE_CHOICES" id="HTTP_MULTIPLE_CHOICES">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#36" title="Go to source code"><b>HTTP_MULTIPLE_CHOICES</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">300</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_MULTIPLE_CHOICES" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_MOVED_PERMANENTLY" id="HTTP_MOVED_PERMANENTLY">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#37" title="Go to source code"><b>HTTP_MOVED_PERMANENTLY</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">301</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_MOVED_PERMANENTLY" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_FOUND" id="HTTP_FOUND">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#38" title="Go to source code"><b>HTTP_FOUND</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">302</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_FOUND" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_SEE_OTHER" id="HTTP_SEE_OTHER">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#39" title="Go to source code"><b>HTTP_SEE_OTHER</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">303</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_SEE_OTHER" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_NOT_MODIFIED" id="HTTP_NOT_MODIFIED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#40" title="Go to source code"><b>HTTP_NOT_MODIFIED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">304</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_NOT_MODIFIED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_USE_PROXY" id="HTTP_USE_PROXY">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#41" title="Go to source code"><b>HTTP_USE_PROXY</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">305</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_USE_PROXY" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_RESERVED" id="HTTP_RESERVED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#42" title="Go to source code"><b>HTTP_RESERVED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">306</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_RESERVED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_TEMPORARY_REDIRECT" id="HTTP_TEMPORARY_REDIRECT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#43" title="Go to source code"><b>HTTP_TEMPORARY_REDIRECT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">307</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_TEMPORARY_REDIRECT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_PERMANENTLY_REDIRECT" id="HTTP_PERMANENTLY_REDIRECT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#44" title="Go to source code"><b>HTTP_PERMANENTLY_REDIRECT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">308</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_PERMANENTLY_REDIRECT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_BAD_REQUEST" id="HTTP_BAD_REQUEST">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#45" title="Go to source code"><b>HTTP_BAD_REQUEST</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">400</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_BAD_REQUEST" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_UNAUTHORIZED" id="HTTP_UNAUTHORIZED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#46" title="Go to source code"><b>HTTP_UNAUTHORIZED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">401</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_UNAUTHORIZED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_PAYMENT_REQUIRED" id="HTTP_PAYMENT_REQUIRED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#47" title="Go to source code"><b>HTTP_PAYMENT_REQUIRED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">402</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_PAYMENT_REQUIRED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_FORBIDDEN" id="HTTP_FORBIDDEN">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#48" title="Go to source code"><b>HTTP_FORBIDDEN</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">403</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_FORBIDDEN" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_NOT_FOUND" id="HTTP_NOT_FOUND">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#49" title="Go to source code"><b>HTTP_NOT_FOUND</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">404</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_NOT_FOUND" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_METHOD_NOT_ALLOWED" id="HTTP_METHOD_NOT_ALLOWED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#50" title="Go to source code"><b>HTTP_METHOD_NOT_ALLOWED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">405</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_METHOD_NOT_ALLOWED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_NOT_ACCEPTABLE" id="HTTP_NOT_ACCEPTABLE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#51" title="Go to source code"><b>HTTP_NOT_ACCEPTABLE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">406</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_NOT_ACCEPTABLE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_PROXY_AUTHENTICATION_REQUIRED" id="HTTP_PROXY_AUTHENTICATION_REQUIRED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#52" title="Go to source code"><b>HTTP_PROXY_AUTHENTICATION_REQUIRED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">407</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_PROXY_AUTHENTICATION_REQUIRED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_REQUEST_TIMEOUT" id="HTTP_REQUEST_TIMEOUT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#53" title="Go to source code"><b>HTTP_REQUEST_TIMEOUT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">408</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_REQUEST_TIMEOUT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_CONFLICT" id="HTTP_CONFLICT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#54" title="Go to source code"><b>HTTP_CONFLICT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">409</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_CONFLICT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_GONE" id="HTTP_GONE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#55" title="Go to source code"><b>HTTP_GONE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">410</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_GONE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_LENGTH_REQUIRED" id="HTTP_LENGTH_REQUIRED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#56" title="Go to source code"><b>HTTP_LENGTH_REQUIRED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">411</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_LENGTH_REQUIRED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_PRECONDITION_FAILED" id="HTTP_PRECONDITION_FAILED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#57" title="Go to source code"><b>HTTP_PRECONDITION_FAILED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">412</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_PRECONDITION_FAILED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_REQUEST_ENTITY_TOO_LARGE" id="HTTP_REQUEST_ENTITY_TOO_LARGE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#58" title="Go to source code"><b>HTTP_REQUEST_ENTITY_TOO_LARGE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">413</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_REQUEST_ENTITY_TOO_LARGE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_REQUEST_URI_TOO_LONG" id="HTTP_REQUEST_URI_TOO_LONG">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#59" title="Go to source code"><b>HTTP_REQUEST_URI_TOO_LONG</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">414</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_REQUEST_URI_TOO_LONG" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_UNSUPPORTED_MEDIA_TYPE" id="HTTP_UNSUPPORTED_MEDIA_TYPE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#60" title="Go to source code"><b>HTTP_UNSUPPORTED_MEDIA_TYPE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">415</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_UNSUPPORTED_MEDIA_TYPE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_REQUESTED_RANGE_NOT_SATISFIABLE" id="HTTP_REQUESTED_RANGE_NOT_SATISFIABLE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#61" title="Go to source code"><b>HTTP_REQUESTED_RANGE_NOT_SATISFIABLE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">416</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_REQUESTED_RANGE_NOT_SATISFIABLE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_EXPECTATION_FAILED" id="HTTP_EXPECTATION_FAILED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#62" title="Go to source code"><b>HTTP_EXPECTATION_FAILED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">417</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_EXPECTATION_FAILED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_I_AM_A_TEAPOT" id="HTTP_I_AM_A_TEAPOT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#63" title="Go to source code"><b>HTTP_I_AM_A_TEAPOT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">418</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_I_AM_A_TEAPOT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_UNPROCESSABLE_ENTITY" id="HTTP_UNPROCESSABLE_ENTITY">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#64" title="Go to source code"><b>HTTP_UNPROCESSABLE_ENTITY</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">422</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_UNPROCESSABLE_ENTITY" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_LOCKED" id="HTTP_LOCKED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#65" title="Go to source code"><b>HTTP_LOCKED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">423</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_LOCKED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_FAILED_DEPENDENCY" id="HTTP_FAILED_DEPENDENCY">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#66" title="Go to source code"><b>HTTP_FAILED_DEPENDENCY</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">424</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_FAILED_DEPENDENCY" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL" id="HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#67" title="Go to source code"><b>HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">425</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_UPGRADE_REQUIRED" id="HTTP_UPGRADE_REQUIRED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#68" title="Go to source code"><b>HTTP_UPGRADE_REQUIRED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">426</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_UPGRADE_REQUIRED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_PRECONDITION_REQUIRED" id="HTTP_PRECONDITION_REQUIRED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#69" title="Go to source code"><b>HTTP_PRECONDITION_REQUIRED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">428</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_PRECONDITION_REQUIRED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_TOO_MANY_REQUESTS" id="HTTP_TOO_MANY_REQUESTS">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#70" title="Go to source code"><b>HTTP_TOO_MANY_REQUESTS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">429</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_TOO_MANY_REQUESTS" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE" id="HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#71" title="Go to source code"><b>HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">431</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_INTERNAL_SERVER_ERROR" id="HTTP_INTERNAL_SERVER_ERROR">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#72" title="Go to source code"><b>HTTP_INTERNAL_SERVER_ERROR</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">500</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_INTERNAL_SERVER_ERROR" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_NOT_IMPLEMENTED" id="HTTP_NOT_IMPLEMENTED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#73" title="Go to source code"><b>HTTP_NOT_IMPLEMENTED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">501</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_NOT_IMPLEMENTED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_BAD_GATEWAY" id="HTTP_BAD_GATEWAY">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#74" title="Go to source code"><b>HTTP_BAD_GATEWAY</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">502</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_BAD_GATEWAY" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_SERVICE_UNAVAILABLE" id="HTTP_SERVICE_UNAVAILABLE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#75" title="Go to source code"><b>HTTP_SERVICE_UNAVAILABLE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">503</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_SERVICE_UNAVAILABLE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_GATEWAY_TIMEOUT" id="HTTP_GATEWAY_TIMEOUT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#76" title="Go to source code"><b>HTTP_GATEWAY_TIMEOUT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">504</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_GATEWAY_TIMEOUT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_VERSION_NOT_SUPPORTED" id="HTTP_VERSION_NOT_SUPPORTED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#77" title="Go to source code"><b>HTTP_VERSION_NOT_SUPPORTED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">505</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_VERSION_NOT_SUPPORTED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL" id="HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#78" title="Go to source code"><b>HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">506</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_INSUFFICIENT_STORAGE" id="HTTP_INSUFFICIENT_STORAGE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#79" title="Go to source code"><b>HTTP_INSUFFICIENT_STORAGE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">507</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_INSUFFICIENT_STORAGE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_LOOP_DETECTED" id="HTTP_LOOP_DETECTED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#80" title="Go to source code"><b>HTTP_LOOP_DETECTED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">508</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_LOOP_DETECTED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_NOT_EXTENDED" id="HTTP_NOT_EXTENDED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#81" title="Go to source code"><b>HTTP_NOT_EXTENDED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">510</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_NOT_EXTENDED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTTP_NETWORK_AUTHENTICATION_REQUIRED" id="HTTP_NETWORK_AUTHENTICATION_REQUIRED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#82" title="Go to source code"><b>HTTP_NETWORK_AUTHENTICATION_REQUIRED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">511</span></code></td>
+		<td class="description"><div>
+			<a href="#HTTP_NETWORK_AUTHENTICATION_REQUIRED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="headers" id="$headers">
+		<td class="attributes"><code>
+			public  
+			<code><a href="class-Symfony.Component.HttpFoundation.ResponseHeaderBag.html">Symfony\Component\HttpFoundation\ResponseHeaderBag</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#84-87" title="Go to source code"><var>$headers</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$headers" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="statusTexts" id="$statusTexts">
+		<td class="attributes"><code>
+			public static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Symfony.Component.HttpFoundation.Response.html#114-186" title="Go to source code"><var>$statusTexts</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(
+    <span class="php-num">100</span> =&gt; <span class="php-quote">'Continue'</span>,
+    <span class="php-num">101</span> =&gt; <span class="php-quote">'Switching Protocols'</span>,
+    <span class="php-num">102</span> =&gt; <span class="php-quote">'Processing'</span>,            <span class="php-comment">// RFC2518</span>
+    <span class="php-num">200</span> =&gt; <span class="php-quote">'OK'</span>,
+    <span class="php-num">201</span> =&gt; <span class="php-quote">'Created'</span>,
+    <span class="php-num">202</span> =&gt; <span class="php-quote">'Accepted'</span>,
+    <span class="php-num">203</span> =&gt; <span class="php-quote">'Non-Authoritative Information'</span>,
+    <span class="php-num">204</span> =&gt; <span class="php-quote">'No Content'</span>,
+    <span class="php-num">205</span> =&gt; <span class="php-quote">'Reset Content'</span>,
+    <span class="php-num">206</span> =&gt; <span class="php-quote">'Partial Content'</span>,
+    <span class="php-num">207</span> =&gt; <span class="php-quote">'Multi-Status'</span>,          <span class="php-comment">// RFC4918</span>
+    <span class="php-num">208</span> =&gt; <span class="php-quote">'Already Reported'</span>,      <span class="php-comment">// RFC5842</span>
+    <span class="php-num">226</span> =&gt; <span class="php-quote">'IM Used'</span>,               <span class="php-comment">// RFC3229</span>
+    <span class="php-num">300</span> =&gt; <span class="php-quote">'Multiple Choices'</span>,
+    <span class="php-num">301</span> =&gt; <span class="php-quote">'Moved Permanently'</span>,
+    <span class="php-num">302</span> =&gt; <span class="php-quote">'Found'</span>,
+    <span class="php-num">303</span> =&gt; <span class="php-quote">'See Other'</span>,
+    <span class="php-num">304</span> =&gt; <span class="php-quote">'Not Modified'</span>,
+    <span class="php-num">305</span> =&gt; <span class="php-quote">'Use Proxy'</span>,
+    <span class="php-num">306</span> =&gt; <span class="php-quote">'Reserved'</span>,
+    <span class="php-num">307</span> =&gt; <span class="php-quote">'Temporary Redirect'</span>,
+    <span class="php-num">308</span> =&gt; <span class="php-quote">'Permanent Redirect'</span>,    <span class="php-comment">// RFC7238</span>
+    <span class="php-num">400</span> =&gt; <span class="php-quote">'Bad Request'</span>,
+    <span class="php-num">401</span> =&gt; <span class="php-quote">'Unauthorized'</span>,
+    <span class="php-num">402</span> =&gt; <span class="php-quote">'Payment Required'</span>,
+    <span class="php-num">403</span> =&gt; <span class="php-quote">'Forbidden'</span>,
+    <span class="php-num">404</span> =&gt; <span class="php-quote">'Not Found'</span>,
+    <span class="php-num">405</span> =&gt; <span class="php-quote">'Method Not Allowed'</span>,
+    <span class="php-num">406</span> =&gt; <span class="php-quote">'Not Acceptable'</span>,
+    <span class="php-num">407</span> =&gt; <span class="php-quote">'Proxy Authentication Required'</span>,
+    <span class="php-num">408</span> =&gt; <span class="php-quote">'Request Timeout'</span>,
+    <span class="php-num">409</span> =&gt; <span class="php-quote">'Conflict'</span>,
+    <span class="php-num">410</span> =&gt; <span class="php-quote">'Gone'</span>,
+    <span class="php-num">411</span> =&gt; <span class="php-quote">'Length Required'</span>,
+    <span class="php-num">412</span> =&gt; <span class="php-quote">'Precondition Failed'</span>,
+    <span class="php-num">413</span> =&gt; <span class="php-quote">'Request Entity Too Large'</span>,
+    <span class="php-num">414</span> =&gt; <span class="php-quote">'Request-URI Too Long'</span>,
+    <span class="php-num">415</span> =&gt; <span class="php-quote">'Unsupported Media Type'</span>,
+    <span class="php-num">416</span> =&gt; <span class="php-quote">'Requested Range Not Satisfiable'</span>,
+    <span class="php-num">417</span> =&gt; <span class="php-quote">'Expectation Failed'</span>,
+    <span class="php-num">418</span> =&gt; <span class="php-quote">'I\'m a teapot'</span>,                                               <span class="php-comment">// RFC2324</span>
+    <span class="php-num">422</span> =&gt; <span class="php-quote">'Unprocessable Entity'</span>,                                        <span class="php-comment">// RFC4918</span>
+    <span class="php-num">423</span> =&gt; <span class="php-quote">'Locked'</span>,                                                      <span class="php-comment">// RFC4918</span>
+    <span class="php-num">424</span> =&gt; <span class="php-quote">'Failed Dependency'</span>,                                           <span class="php-comment">// RFC4918</span>
+    <span class="php-num">425</span> =&gt; <span class="php-quote">'Reserved for WebDAV advanced collections expired proposal'</span>,   <span class="php-comment">// RFC2817</span>
+    <span class="php-num">426</span> =&gt; <span class="php-quote">'Upgrade Required'</span>,                                            <span class="php-comment">// RFC2817</span>
+    <span class="php-num">428</span> =&gt; <span class="php-quote">'Precondition Required'</span>,                                       <span class="php-comment">// RFC6585</span>
+    <span class="php-num">429</span> =&gt; <span class="php-quote">'Too Many Requests'</span>,                                           <span class="php-comment">// RFC6585</span>
+    <span class="php-num">431</span> =&gt; <span class="php-quote">'Request Header Fields Too Large'</span>,                             <span class="php-comment">// RFC6585</span>
+    <span class="php-num">500</span> =&gt; <span class="php-quote">'Internal Server Error'</span>,
+    <span class="php-num">501</span> =&gt; <span class="php-quote">'Not Implemented'</span>,
+    <span class="php-num">502</span> =&gt; <span class="php-quote">'Bad Gateway'</span>,
+    <span class="php-num">503</span> =&gt; <span class="php-quote">'Service Unavailable'</span>,
+    <span class="php-num">504</span> =&gt; <span class="php-quote">'Gateway Timeout'</span>,
+    <span class="php-num">505</span> =&gt; <span class="php-quote">'HTTP Version Not Supported'</span>,
+    <span class="php-num">506</span> =&gt; <span class="php-quote">'Variant Also Negotiates (Experimental)'</span>,                      <span class="php-comment">// RFC2295</span>
+    <span class="php-num">507</span> =&gt; <span class="php-quote">'Insufficient Storage'</span>,                                        <span class="php-comment">// RFC4918</span>
+    <span class="php-num">508</span> =&gt; <span class="php-quote">'Loop Detected'</span>,                                               <span class="php-comment">// RFC5842</span>
+    <span class="php-num">510</span> =&gt; <span class="php-quote">'Not Extended'</span>,                                                <span class="php-comment">// RFC2774</span>
+    <span class="php-num">511</span> =&gt; <span class="php-quote">'Network Authentication Required'</span>,                             <span class="php-comment">// RFC6585</span>
+)</code></td>
+		<td class="description"><div>
+			<a href="#$statusTexts" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Status codes translation table.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Status codes translation table.</p>
+
+<p>The list of codes is complete according to the <a href="http://www.iana.org/assignments/http-status-codes/">Hypertext Transfer Protocol (HTTP) Status Code Registry</a> (last updated
+2012-02-13).</p>
+
+<p>Unless otherwise noted, the status code is defined in RFC2616.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

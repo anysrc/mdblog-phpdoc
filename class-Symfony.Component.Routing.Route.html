@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Symfony\Component\Routing\Route | AnySrc Markdown Blog</title>
+
+	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
+	<script type="text/javascript" src="elementlist.js?1213552095"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+						</li>
+				<li><a href="namespace-AnySrc.Security.html">Security</a>
+						</li>
+				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PerryFlynn.html">PerryFlynn</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Pimple.html">Pimple<span></span></a>
+						<ul>
+				<li><a href="namespace-Pimple.Tests.html">Tests</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Psr.html">Psr<span></span></a>
+						<ul>
+				<li><a href="namespace-Psr.Log.html">Log<span></span></a>
+						<ul>
+				<li><a href="namespace-Psr.Log.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Silex.html">Silex<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Application.html">Application</a>
+						</li>
+				<li><a href="namespace-Silex.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Silex.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Silex.Provider.html">Provider</a>
+						</li>
+				<li><a href="namespace-Silex.Route.html">Route</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Application.html">Application</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.Provider.html">Provider<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Provider.ValidatorServiceProviderTest.html">ValidatorServiceProviderTest<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Provider.ValidatorServiceProviderTest.Constraint.html">Constraint</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Silex.Tests.Route.html">Route</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Silex.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Symfony.html">Symfony<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.html">Bridge<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.html">Twig<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Node.html">Node</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.NodeVisitor.html">NodeVisitor</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Extension.html">Extension<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Extension.Fixtures.html">Fixtures</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Node.html">Node</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.NodeVisitor.html">NodeVisitor</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.TokenParser.html">TokenParser</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Translation.html">Translation</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Bridge.Twig.TokenParser.html">TokenParser</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Translation.html">Translation</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.html">Component<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.FatalErrorHandler.html">FatalErrorHandler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.FatalErrorHandler.html">FatalErrorHandler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.html">File<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.MimeType.html">MimeType</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Attribute.html">Attribute</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Flash.html">Flash</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.html">Storage<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.Handler.html">Handler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.Proxy.html">Proxy</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.File.html">File<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.File.MimeType.html">MimeType</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Attribute.html">Attribute</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Flash.html">Flash</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.html">Storage<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.html">Handler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.Proxy.html">Proxy</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.html">HttpKernel<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Bundle.html">Bundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.CacheClearer.html">CacheClearer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.CacheWarmer.html">CacheWarmer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Config.html">Config</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DataCollector.html">DataCollector<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DataCollector.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Fragment.html">Fragment</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.HttpCache.html">HttpCache</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Profiler.html">Profiler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Bundle.html">Bundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.CacheClearer.html">CacheClearer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.CacheWarmer.html">CacheWarmer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Config.html">Config</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DataCollector.html">DataCollector<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DataCollector.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.html">Fixtures<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionAbsentBundle.html">ExtensionAbsentBundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fragment.html">Fragment</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.HttpCache.html">HttpCache</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Profiler.html">Profiler<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Profiler.Mock.html">Mock</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.Routing.html">Routing<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Annotation.html">Annotation</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Generator.html">Generator<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Generator.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Loader.html">Loader</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Matcher.html">Matcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Matcher.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Annotation.html">Annotation</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.html">Fixtures<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Loader.html">Loader</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Matcher.html">Matcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Matcher.Dumper.html">Dumper</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.Yaml.html">Yaml<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Yaml.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Yaml.Tests.html">Tests</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Symfony.Component.Routing.CompiledRoute.html">CompiledRoute</a></li>
+				<li><a href="class-Symfony.Component.Routing.RequestContext.html">RequestContext</a></li>
+				<li class="active"><a href="class-Symfony.Component.Routing.Route.html">Route</a></li>
+				<li><a href="class-Symfony.Component.Routing.RouteCollection.html">RouteCollection</a></li>
+				<li><a href="class-Symfony.Component.Routing.RouteCompiler.html">RouteCompiler</a></li>
+				<li><a href="class-Symfony.Component.Routing.Router.html">Router</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Symfony.Component.Routing.RequestContextAwareInterface.html">RequestContextAwareInterface</a></li>
+				<li><a href="class-Symfony.Component.Routing.RouteCompilerInterface.html">RouteCompilerInterface</a></li>
+				<li><a href="class-Symfony.Component.Routing.RouterInterface.html">RouterInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Symfony.Component.Routing.html" title="Summary of Symfony\Component\Routing"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Route</h1>
+
+
+	<div class="description">
+	
+<p>A Route describes a route and its parameters.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Symfony\Component\Routing\Route</span></b>			
+			 implements 
+				<a href="class-Serializable.html"><span>Serializable</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Silex.Route.html">Silex\Route</a>
+	</div>
+
+	<div>
+		<h4>Indirect known subclasses</h4>
+			<a href="class-Silex.Tests.MyRoute.html">Silex\Tests\MyRoute</a>, 
+			<a href="class-Silex.Tests.MyRoute1.html">Silex\Tests\MyRoute1</a>, 
+			<a href="class-Silex.Tests.Route.SecurityRoute.html">Silex\Tests\Route\SecurityRoute</a>
+	</div>
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.Routing.html">Routing</a><br>
+		
+
+				<b>Author:</b>
+				Fabien Potencier &lt;<a
+href="mailto:fabien&#64;symfony.com">fabien&#64;<!-- -->symfony.com</a>&gt;<br>
+				<b>Author:</b>
+				Tobias Schultze &lt;<a href="http://tobion.de">http://tobion.de</a>&gt;<br>
+				<b>Api</b>
+				<br>
+		<b>Located at</b> <a href="source-class-Symfony.Component.Routing.Route.html#14-655" title="Go to source code">vendor/symfony/routing/Symfony/Component/Routing/Route.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#69-103" title="Go to source code">__construct</a>( <span>string <var>$path</var></span>, <span>array <var>$defaults</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$requirements</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$host</var> = <span class="php-quote">''</span></span>, <span>string|array <var>$schemes</var> = <span class="php-keyword1">array</span>()</span>, <span>string|array <var>$methods</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$condition</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Constructor.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Constructor.</p>
+
+<p>Available options:<br />
+* compiler_class: A class name able to compile this route instance
+(RouteCompiler by default)</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd><code>string</code><br>$path The path pattern to match</dd>
+					<dt><var>$defaults</var></dt>
+					<dd><code>array</code><br>$defaults An array of default parameter values</dd>
+					<dt><var>$requirements</var></dt>
+					<dd><code>array</code><br>$requirements An array of requirements for parameters (regexes)</dd>
+					<dt><var>$options</var></dt>
+					<dd><code>array</code><br>$options An array of options</dd>
+					<dt><var>$host</var></dt>
+					<dd><code>string</code><br>$host The host pattern to match</dd>
+					<dt><var>$schemes</var></dt>
+					<dd><code>string|array</code><br>$schemes A required URI scheme or an array of restricted schemes</dd>
+					<dt><var>$methods</var></dt>
+					<dd><code>string|array</code><br>$methods A required HTTP method or an array of restricted methods</dd>
+					<dt><var>$condition</var></dt>
+					<dd><code>string</code><br>$condition A condition that should evaluate to true for the route to match</dd>
+				</dl></div>
+
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="serialize" id="_serialize">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_serialize">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#105-121" title="Go to source code">serialize</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Serializable.html#_serialize">Serializable::serialize()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="unserialize" id="_unserialize">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_unserialize">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#123-143" title="Go to source code">unserialize</a>( <span>mixed <var>$serialized</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Serializable.html#_unserialize">Serializable::unserialize()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPath" id="_getPath">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPath">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#173-181" title="Go to source code">getPath</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the pattern for the path.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the pattern for the path.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The path pattern<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPath" id="_setPath">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPath">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#183-200" title="Go to source code">setPath</a>( <span>string <var>$pattern</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the pattern for the path.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the pattern for the path.</p>
+
+<p>This method implements a fluent interface.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$pattern</var></dt>
+					<dd><code>string</code><br>$pattern The path pattern</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code></code><br>The current Route instance<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHost" id="_getHost">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHost">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#202-210" title="Go to source code">getHost</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the pattern for the host.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the pattern for the host.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The host pattern<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setHost" id="_setHost">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setHost">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#212-227" title="Go to source code">setHost</a>( <span>string <var>$pattern</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the pattern for the host.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the pattern for the host.</p>
+
+<p>This method implements a fluent interface.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$pattern</var></dt>
+					<dd><code>string</code><br>$pattern The host pattern</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code></code><br>The current Route instance<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSchemes" id="_getSchemes">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSchemes">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#229-238" title="Go to source code">getSchemes</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the lowercased schemes this route is restricted to. So an empty array
+means that any scheme is allowed.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the lowercased schemes this route is restricted to. So an empty array
+means that any scheme is allowed.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>The schemes<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setSchemes" id="_setSchemes">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setSchemes">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#240-264" title="Go to source code">setSchemes</a>( <span>string|array <var>$schemes</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the schemes (e.g. 'https') this route is restricted to. So an empty
+array means that any scheme is allowed.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the schemes (e.g. 'https') this route is restricted to. So an empty
+array means that any scheme is allowed.</p>
+
+<p>This method implements a fluent interface.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$schemes</var></dt>
+					<dd><code>string|array</code><br>$schemes The scheme or an array of schemes</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code></code><br>The current Route instance<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasScheme" id="_hasScheme">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasScheme">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#266-276" title="Go to source code">hasScheme</a>( <span>string <var>$scheme</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Checks if a scheme requirement has been set.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks if a scheme requirement has been set.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$scheme</var></dt>
+					<dd><code>string</code><br>$scheme</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>true if the scheme requirement exists, otherwise false<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMethods" id="_getMethods">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMethods">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#278-287" title="Go to source code">getMethods</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the uppercased HTTP methods this route is restricted to. So an empty
+array means that any method is allowed.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the uppercased HTTP methods this route is restricted to. So an empty
+array means that any method is allowed.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>The methods<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setMethods" id="_setMethods">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMethods">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#289-313" title="Go to source code">setMethods</a>( <span>string|array <var>$methods</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the HTTP methods (e.g. 'POST') this route is restricted to. So an empty
+array means that any method is allowed.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the HTTP methods (e.g. 'POST') this route is restricted to. So an empty
+array means that any method is allowed.</p>
+
+<p>This method implements a fluent interface.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$methods</var></dt>
+					<dd><code>string|array</code><br>$methods The method or an array of methods</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code></code><br>The current Route instance<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOptions" id="_getOptions">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOptions">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#315-323" title="Go to source code">getOptions</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the options.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the options.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>The options<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setOptions" id="_setOptions">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setOptions">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#325-341" title="Go to source code">setOptions</a>( <span>array <var>$options</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the options.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the options.</p>
+
+<p>This method implements a fluent interface.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$options</var></dt>
+					<dd><code>array</code><br>$options The options</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code></code><br>The current Route instance<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addOptions" id="_addOptions">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addOptions">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#343-360" title="Go to source code">addOptions</a>( <span>array <var>$options</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds options.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds options.</p>
+
+<p>This method implements a fluent interface.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$options</var></dt>
+					<dd><code>array</code><br>$options The options</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code></code><br>The current Route instance<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setOption" id="_setOption">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setOption">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#362-380" title="Go to source code">setOption</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets an option value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets an option value.</p>
+
+<p>This method implements a fluent interface.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name An option name</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code><br>$value The option value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code></code><br>The current Route instance<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOption" id="_getOption">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOption">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#382-392" title="Go to source code">getOption</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get an option value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get an option value.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name An option name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>The option value or null when not given<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasOption" id="_hasOption">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasOption">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#394-404" title="Go to source code">hasOption</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Checks if an option has been set.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks if an option has been set.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name An option name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>true if the option is set, false otherwise<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDefaults" id="_getDefaults">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDefaults">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#406-414" title="Go to source code">getDefaults</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the defaults.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the defaults.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>The defaults<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDefaults" id="_setDefaults">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDefaults">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#416-430" title="Go to source code">setDefaults</a>( <span>array <var>$defaults</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the defaults.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the defaults.</p>
+
+<p>This method implements a fluent interface.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$defaults</var></dt>
+					<dd><code>array</code><br>$defaults The defaults</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code></code><br>The current Route instance<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addDefaults" id="_addDefaults">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addDefaults">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#432-449" title="Go to source code">addDefaults</a>( <span>array <var>$defaults</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds defaults.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds defaults.</p>
+
+<p>This method implements a fluent interface.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$defaults</var></dt>
+					<dd><code>array</code><br>$defaults The defaults</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code></code><br>The current Route instance<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDefault" id="_getDefault">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDefault">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#451-461" title="Go to source code">getDefault</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Gets a default value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets a default value.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name A variable name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>The default value or null when not given<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasDefault" id="_hasDefault">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasDefault">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#463-473" title="Go to source code">hasDefault</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Checks if a default value is set for the given variable.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks if a default value is set for the given variable.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name A variable name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>true if the default value is set, false otherwise<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDefault" id="_setDefault">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDefault">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#475-491" title="Go to source code">setDefault</a>( <span>string <var>$name</var></span>, <span>mixed <var>$default</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets a default value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets a default value.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name A variable name</dd>
+					<dt><var>$default</var></dt>
+					<dd><code>mixed</code><br>$default The default value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code></code><br>The current Route instance<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRequirements" id="_getRequirements">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRequirements">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#493-501" title="Go to source code">getRequirements</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the requirements.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the requirements.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>The requirements<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setRequirements" id="_setRequirements">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setRequirements">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#503-517" title="Go to source code">setRequirements</a>( <span>array <var>$requirements</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the requirements.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the requirements.</p>
+
+<p>This method implements a fluent interface.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$requirements</var></dt>
+					<dd><code>array</code><br>$requirements The requirements</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code></code><br>The current Route instance<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addRequirements" id="_addRequirements">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addRequirements">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#519-536" title="Go to source code">addRequirements</a>( <span>array <var>$requirements</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds requirements.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds requirements.</p>
+
+<p>This method implements a fluent interface.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$requirements</var></dt>
+					<dd><code>array</code><br>$requirements The requirements</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code></code><br>The current Route instance<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRequirement" id="_getRequirement">
+
+		<td class="attributes"><code>
+			 public 
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRequirement">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#538-548" title="Go to source code">getRequirement</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns the requirement for the given key.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the requirement for the given key.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key The key</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string|null</code><br>The regex or null when not given<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasRequirement" id="_hasRequirement">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasRequirement">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#550-560" title="Go to source code">hasRequirement</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Checks if a requirement is set for the given key.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks if a requirement is set for the given key.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key A variable name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>true if a requirement is specified, false otherwise<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setRequirement" id="_setRequirement">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setRequirement">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#562-578" title="Go to source code">setRequirement</a>( <span>string <var>$key</var></span>, <span>string <var>$regex</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets a requirement for the given key.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets a requirement for the given key.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key The key</dd>
+					<dt><var>$regex</var></dt>
+					<dd><code>string</code><br>$regex The regex</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code></code><br>The current Route instance<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCondition" id="_getCondition">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCondition">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#580-588" title="Go to source code">getCondition</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the condition.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the condition.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The condition<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCondition" id="_setCondition">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCondition">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#590-605" title="Go to source code">setCondition</a>( <span>string <var>$condition</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the condition.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the condition.</p>
+
+<p>This method implements a fluent interface.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$condition</var></dt>
+					<dd><code>string</code><br>$condition The condition</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.Routing.Route.html">Symfony\Component\Routing\Route</a></code></code><br>The current Route instance<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="compile" id="_compile">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.Routing.CompiledRoute.html">Symfony\Component\Routing\CompiledRoute</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_compile">#</a>
+		<code><a href="source-class-Symfony.Component.Routing.Route.html#607-626" title="Go to source code">compile</a>( )</code>
+
+		<div class="description short">
+			
+<p>Compiles the route.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compiles the route.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.Routing.CompiledRoute.html">Symfony\Component\Routing\CompiledRoute</a></code></code><br>A CompiledRoute instance<br>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-LogicException.html">LogicException</a></code></code><br>If the Route cannot be compiled because the path or host pattern is invalid<br>
+				</div>
+
+				<h4>See</h4>
+				<div class="list">
+						RouteCompiler which is responsible for the compilation process<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

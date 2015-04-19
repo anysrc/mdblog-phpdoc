@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Interface Symfony\Component\HttpKernel\KernelInterface | AnySrc Markdown Blog</title>
+
+	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
+	<script type="text/javascript" src="elementlist.js?1213552095"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+						</li>
+				<li><a href="namespace-AnySrc.Security.html">Security</a>
+						</li>
+				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PerryFlynn.html">PerryFlynn</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Pimple.html">Pimple<span></span></a>
+						<ul>
+				<li><a href="namespace-Pimple.Tests.html">Tests</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Psr.html">Psr<span></span></a>
+						<ul>
+				<li><a href="namespace-Psr.Log.html">Log<span></span></a>
+						<ul>
+				<li><a href="namespace-Psr.Log.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Silex.html">Silex<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Application.html">Application</a>
+						</li>
+				<li><a href="namespace-Silex.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Silex.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Silex.Provider.html">Provider</a>
+						</li>
+				<li><a href="namespace-Silex.Route.html">Route</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Application.html">Application</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Silex.Tests.Provider.html">Provider<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Provider.ValidatorServiceProviderTest.html">ValidatorServiceProviderTest<span></span></a>
+						<ul>
+				<li><a href="namespace-Silex.Tests.Provider.ValidatorServiceProviderTest.Constraint.html">Constraint</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Silex.Tests.Route.html">Route</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Silex.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Symfony.html">Symfony<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.html">Bridge<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.html">Twig<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Node.html">Node</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.NodeVisitor.html">NodeVisitor</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Extension.html">Extension<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Extension.Fixtures.html">Fixtures</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Node.html">Node</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.NodeVisitor.html">NodeVisitor</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.TokenParser.html">TokenParser</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Tests.Translation.html">Translation</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Bridge.Twig.TokenParser.html">TokenParser</a>
+						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.Translation.html">Translation</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.html">Component<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.FatalErrorHandler.html">FatalErrorHandler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.FatalErrorHandler.html">FatalErrorHandler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.html">File<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.File.MimeType.html">MimeType</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Attribute.html">Attribute</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Flash.html">Flash</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.html">Storage<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.Handler.html">Handler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Session.Storage.Proxy.html">Proxy</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.File.html">File<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.File.MimeType.html">MimeType</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Attribute.html">Attribute</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Flash.html">Flash</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.html">Storage<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.Handler.html">Handler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpFoundation.Tests.Session.Storage.Proxy.html">Proxy</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li>
+				<li class="active"><a href="namespace-Symfony.Component.HttpKernel.html">HttpKernel<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Bundle.html">Bundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.CacheClearer.html">CacheClearer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.CacheWarmer.html">CacheWarmer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Config.html">Config</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DataCollector.html">DataCollector<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DataCollector.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Fragment.html">Fragment</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.HttpCache.html">HttpCache</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Profiler.html">Profiler</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Bundle.html">Bundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.CacheClearer.html">CacheClearer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.CacheWarmer.html">CacheWarmer</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Config.html">Config</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DataCollector.html">DataCollector<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DataCollector.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.DependencyInjection.html">DependencyInjection</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.EventListener.html">EventListener</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.html">Fixtures<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionAbsentBundle.html">ExtensionAbsentBundle</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fragment.html">Fragment</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.HttpCache.html">HttpCache</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Profiler.html">Profiler<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Profiler.Mock.html">Mock</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.html">Routing<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Annotation.html">Annotation</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Generator.html">Generator<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Generator.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Loader.html">Loader</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Matcher.html">Matcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Matcher.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Annotation.html">Annotation</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.html">Fixtures<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.Dumper.html">Dumper</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Loader.html">Loader</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Matcher.html">Matcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Matcher.Dumper.html">Dumper</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Symfony.Component.Yaml.html">Yaml<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Yaml.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Yaml.Tests.html">Tests</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Symfony.Component.HttpKernel.Client.html">Client</a></li>
+				<li><a href="class-Symfony.Component.HttpKernel.HttpKernel.html">HttpKernel</a></li>
+				<li><a href="class-Symfony.Component.HttpKernel.Kernel.html">Kernel</a></li>
+				<li><a href="class-Symfony.Component.HttpKernel.KernelEvents.html">KernelEvents</a></li>
+				<li><a href="class-Symfony.Component.HttpKernel.UriSigner.html">UriSigner</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Symfony.Component.HttpKernel.HttpKernelInterface.html">HttpKernelInterface</a></li>
+				<li class="active"><a href="class-Symfony.Component.HttpKernel.KernelInterface.html">KernelInterface</a></li>
+				<li><a href="class-Symfony.Component.HttpKernel.TerminableInterface.html">TerminableInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Symfony.Component.HttpKernel.html" title="Summary of Symfony\Component\HttpKernel"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface KernelInterface</h1>
+
+
+	<div class="description">
+	
+<p>The Kernel is the heart of the Symfony system.</p>
+
+<p>It manages an environment made of bundles.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Symfony\Component\HttpKernel\KernelInterface</span></b>			
+			 implements 
+				<a href="class-Symfony.Component.HttpKernel.HttpKernelInterface.html"><span>Symfony\Component\HttpKernel\HttpKernelInterface</span></a>, 
+			
+				<a href="class-Serializable.html"><span>Serializable</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-Symfony.Component.HttpKernel.Kernel.html">Symfony\Component\HttpKernel\Kernel</a>
+	</div>
+
+	<div>
+		<h4>Indirect known implementers</h4>
+			<a href="class-Symfony.Component.HttpKernel.Tests.DataCollector.KernelForTest.html">Symfony\Component\HttpKernel\Tests\DataCollector\KernelForTest</a>, 
+			<a href="class-Symfony.Component.HttpKernel.Tests.Fixtures.KernelForOverrideName.html">Symfony\Component\HttpKernel\Tests\Fixtures\KernelForOverrideName</a>, 
+			<a href="class-Symfony.Component.HttpKernel.Tests.Fixtures.KernelForTest.html">Symfony\Component\HttpKernel\Tests\Fixtures\KernelForTest</a>
+	</div>
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.HttpKernel.html">HttpKernel</a><br>
+		
+
+				<b>Author:</b>
+				Fabien Potencier &lt;<a
+href="mailto:fabien&#64;symfony.com">fabien&#64;<!-- -->symfony.com</a>&gt;<br>
+				<b>Api</b>
+				<br>
+		<b>Located at</b> <a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#18-211" title="Go to source code">vendor/symfony/http-kernel/Symfony/Component/HttpKernel/KernelInterface.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="registerBundles" id="_registerBundles">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpKernel.Bundle.BundleInterface.html">Symfony\Component\HttpKernel\Bundle\BundleInterface</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_registerBundles">#</a>
+		<code><a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#29-36" title="Go to source code">registerBundles</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns an array of bundles to register.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns an array of bundles to register.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpKernel.Bundle.BundleInterface.html">Symfony\Component\HttpKernel\Bundle\BundleInterface</a>[]</code></code><br>An array of bundle instances.<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="registerContainerConfiguration" id="_registerContainerConfiguration">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_registerContainerConfiguration">#</a>
+		<code><a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#38-45" title="Go to source code">registerContainerConfiguration</a>( <span>Symfony\Component\Config\Loader\LoaderInterface <var>$loader</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Loads the container configuration.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Loads the container configuration.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$loader</var></dt>
+					<dd><code>Symfony\Component\Config\Loader\LoaderInterface</code><br>$loader A LoaderInterface instance</dd>
+				</dl></div>
+
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="boot" id="_boot">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_boot">#</a>
+		<code><a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#47-52" title="Go to source code">boot</a>( )</code>
+
+		<div class="description short">
+			
+<p>Boots the current kernel.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Boots the current kernel.</p>
+
+
+
+
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="shutdown" id="_shutdown">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_shutdown">#</a>
+		<code><a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#54-61" title="Go to source code">shutdown</a>( )</code>
+
+		<div class="description short">
+			
+<p>Shutdowns the kernel.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Shutdowns the kernel.</p>
+
+<p>This method is mainly useful when doing functional testing.</p>
+
+
+
+
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBundles" id="_getBundles">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpKernel.Bundle.BundleInterface.html">Symfony\Component\HttpKernel\Bundle\BundleInterface</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBundles">#</a>
+		<code><a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#63-70" title="Go to source code">getBundles</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the registered bundle instances.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the registered bundle instances.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpKernel.Bundle.BundleInterface.html">Symfony\Component\HttpKernel\Bundle\BundleInterface</a>[]</code></code><br>An array of registered bundle instances<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBundle" id="_getBundle">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Symfony.Component.HttpKernel.Bundle.BundleInterface.html">Symfony\Component\HttpKernel\Bundle\BundleInterface</a></code>|<code><a href="class-Symfony.Component.HttpKernel.Bundle.BundleInterface.html">Symfony\Component\HttpKernel\Bundle\BundleInterface</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBundle">#</a>
+		<code><a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#85-97" title="Go to source code">getBundle</a>( <span>string <var>$name</var></span>, <span>boolean <var>$first</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns a bundle and optionally its descendants by its name.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns a bundle and optionally its descendants by its name.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name Bundle name</dd>
+					<dt><var>$first</var></dt>
+					<dd><code>boolean</code><br>$first Whether to return the first bundle only or together with its descendants</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Symfony.Component.HttpKernel.Bundle.BundleInterface.html">Symfony\Component\HttpKernel\Bundle\BundleInterface</a></code>|<code><a href="class-Symfony.Component.HttpKernel.Bundle.BundleInterface.html">Symfony\Component\HttpKernel\Bundle\BundleInterface</a>[]</code></code><br>A BundleInterface instance or an array of BundleInterface instances if $first is
+false<br>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code></code><br>when the bundle is not enabled<br>
+				</div>
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="locateResource" id="_locateResource">
+
+		<td class="attributes"><code>
+			 public 
+			string|array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_locateResource">#</a>
+		<code><a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#99-129" title="Go to source code">locateResource</a>( <span>string <var>$name</var></span>, <span>string <var>$dir</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$first</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns the file path for a given resource.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the file path for a given resource.</p>
+
+<p>A Resource can be a file or a directory.</p>
+
+<p>The resource name must follow the following pattern:<br />
+"@BundleName/path/to/a/file.something"</p>
+
+<p>where BundleName is the name of the bundle and the remaining part is the
+relative path in the bundle.</p>
+
+<p>If $dir is passed, and the first segment of the path is "Resources", this
+method will look for a file named:<br />
+$dir/&lt;BundleName&gt;/path/without/Resources</p>
+
+<p>before looking in the bundle resource folder.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name A resource name to locate</dd>
+					<dt><var>$dir</var></dt>
+					<dd><code>string</code><br>$dir A directory where to look for the resource first</dd>
+					<dt><var>$first</var></dt>
+					<dd><code>boolean</code><br>$first Whether to return the first path or paths for all matching bundles</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string|array</code><br>The absolute path of the resource or an array if $first is false<br>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code></code><br>if the file cannot be found or the name is not valid<br>
+					<code><code><a href="class-RuntimeException.html">RuntimeException</a></code></code><br>if the name contains invalid/unsafe characters<br>
+				</div>
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getName" id="_getName">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getName">#</a>
+		<code><a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#131-138" title="Go to source code">getName</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the name of the kernel.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the name of the kernel.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The kernel name<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEnvironment" id="_getEnvironment">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEnvironment">#</a>
+		<code><a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#140-147" title="Go to source code">getEnvironment</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the environment.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the environment.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The current environment<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isDebug" id="_isDebug">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isDebug">#</a>
+		<code><a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#149-156" title="Go to source code">isDebug</a>( )</code>
+
+		<div class="description short">
+			
+<p>Checks if debug mode is enabled.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks if debug mode is enabled.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>true if debug mode is enabled, false otherwise<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRootDir" id="_getRootDir">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRootDir">#</a>
+		<code><a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#158-165" title="Go to source code">getRootDir</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the application root dir.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the application root dir.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The application root dir<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getContainer" id="_getContainer">
+
+		<td class="attributes"><code>
+			 public 
+			Symfony\Component\DependencyInjection\ContainerInterface
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getContainer">#</a>
+		<code><a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#167-174" title="Go to source code">getContainer</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the current container.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the current container.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Symfony\Component\DependencyInjection\ContainerInterface</code><br>A ContainerInterface instance<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStartTime" id="_getStartTime">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getStartTime">#</a>
+		<code><a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#176-183" title="Go to source code">getStartTime</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the request start time (not available if debug is disabled).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the request start time (not available if debug is disabled).</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The request start timestamp<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCacheDir" id="_getCacheDir">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCacheDir">#</a>
+		<code><a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#185-192" title="Go to source code">getCacheDir</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the cache directory.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the cache directory.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The cache directory<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLogDir" id="_getLogDir">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLogDir">#</a>
+		<code><a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#194-201" title="Go to source code">getLogDir</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the log directory.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the log directory.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The log directory<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCharset" id="_getCharset">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCharset">#</a>
+		<code><a href="source-class-Symfony.Component.HttpKernel.KernelInterface.html#203-210" title="Go to source code">getCharset</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the charset of the application.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the charset of the application.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The charset<br>
+				</div>
+
+
+				<h4>Api</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Symfony.Component.HttpKernel.HttpKernelInterface.html#methods">Symfony\Component\HttpKernel\HttpKernelInterface</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Symfony.Component.HttpKernel.HttpKernelInterface.html#_handle">handle()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Serializable.html#methods">Serializable</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Serializable.html#_serialize">serialize()</a>, 
+			<a href="class-Serializable.html#_unserialize">unserialize()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-Symfony.Component.HttpKernel.HttpKernelInterface.html#constants">Symfony\Component\HttpKernel\HttpKernelInterface</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Symfony.Component.HttpKernel.HttpKernelInterface.html#MASTER_REQUEST"><b>MASTER_REQUEST</b></a>, 
+			<a href="class-Symfony.Component.HttpKernel.HttpKernelInterface.html#SUB_REQUEST"><b>SUB_REQUEST</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
