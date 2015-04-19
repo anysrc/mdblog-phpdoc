@@ -394,7 +394,7 @@
 		<b>Namespace:</b> <a href="namespace-AnySrc.html">AnySrc</a>\<a href="namespace-AnySrc.Security.html">Security</a><br>
 		
 
-		<b>Located at</b> <a href="source-class-AnySrc.Security.Tan.html#6-198" title="Go to source code">lib/AnySrc/Security/Tan.php</a><br>
+		<b>Located at</b> <a href="source-class-AnySrc.Security.Tan.html#6-317" title="Go to source code">lib/AnySrc/Security/Tan.php</a><br>
 	</div>
 
 
@@ -434,24 +434,37 @@
 
 		<td class="attributes"><code>
 			 public static
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_newTan">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#17-24" title="Go to source code">newTan</a>( <span>mixed <var>$length</var> = <span class="php-num">18</span></span> )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#18-30" title="Go to source code">newTan</a>( <span>integer <var>$length</var> = <span class="php-num">18</span></span> )</code>
 
 		<div class="description short">
 			
+<p>Generate new tan</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Generate new tan</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$length</var></dt>
+					<dd><code>integer</code><br>$length</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>
+				</div>
 
 
 
@@ -463,24 +476,37 @@
 
 		<td class="attributes"><code>
 			 public static
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_calcHash">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#26-29" title="Go to source code">calcHash</a>( <span>mixed <var>$s</var></span> )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#33-41" title="Go to source code">calcHash</a>( <span>string <var>$s</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Hash a string</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Hash a string</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$s</var></dt>
+					<dd><code>string</code><br>$s</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>
+				</div>
 
 
 
@@ -492,24 +518,32 @@
 
 		<td class="attributes"><code>
 			 public static
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTimeout">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#31-34" title="Go to source code">getTimeout</a>( )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#44-51" title="Go to source code">getTimeout</a>( )</code>
 
 		<div class="description short">
 			
+<p>Get Timeout as date string</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Get Timeout as date string</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>
+				</div>
 
 
 
@@ -521,24 +555,32 @@
 
 		<td class="attributes"><code>
 			 public static
-			
+			type
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getSkeleton">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#36-42" title="Go to source code">getSkeleton</a>( )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#54-64" title="Go to source code">getSkeleton</a>( )</code>
 
 		<div class="description short">
 			
+<p>Skeleton for token YAML file</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Skeleton for token YAML file</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br>
+				</div>
 
 
 
@@ -550,24 +592,32 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_load">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#44-52" title="Go to source code">load</a>( )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#67-79" title="Go to source code">load</a>( )</code>
 
 		<div class="description short">
 			
+<p>Load YML config</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Load YML config</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>
+				</div>
 
 
 
@@ -586,16 +636,25 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_save">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#54-58" title="Go to source code">save</a>( <span>mixed <var>$data</var></span> )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#82-90" title="Go to source code">save</a>( <span>array <var>$data</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Save to YAML file</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Save to YAML file</p>
 
 
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><code>array</code><br>$data</dd>
+				</dl></div>
 
 
 
@@ -608,24 +667,32 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_newLoginTan">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#76-79" title="Go to source code">newLoginTan</a>( )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#115-122" title="Go to source code">newLoginTan</a>( )</code>
 
 		<div class="description short">
 			
+<p>Create new login tan</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Create new login tan</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>
+				</div>
 
 
 
@@ -637,24 +704,32 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_newSessionTan">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#81-84" title="Go to source code">newSessionTan</a>( )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#125-132" title="Go to source code">newSessionTan</a>( )</code>
 
 		<div class="description short">
 			
+<p>Create new session tan</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Create new session tan</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>
+				</div>
 
 
 
@@ -673,14 +748,18 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#86-89" title="Go to source code">clear</a>( )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#135-141" title="Go to source code">clear</a>( )</code>
 
 		<div class="description short">
 			
+<p>Clear all</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Clear all</p>
+
 
 
 
@@ -702,14 +781,18 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_cleanTimedout">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#91-106" title="Go to source code">cleanTimedout</a>( )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#144-162" title="Go to source code">cleanTimedout</a>( )</code>
 
 		<div class="description short">
 			
+<p>Clear all with expired timeout</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Clear all with expired timeout</p>
+
 
 
 
@@ -724,24 +807,37 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isTanExists">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#115-118" title="Go to source code">isTanExists</a>( <span>mixed <var>$tan</var></span> )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#179-187" title="Go to source code">isTanExists</a>( <span>string <var>$tan</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Is Tan exists</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Is Tan exists</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tan</var></dt>
+					<dd><code>string</code><br>$tan</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
 
 
 
@@ -753,24 +849,37 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isSessionExists">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#120-123" title="Go to source code">isSessionExists</a>( <span>mixed <var>$tan</var></span> )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#190-198" title="Go to source code">isSessionExists</a>( <span>string <var>$tan</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Is Session exists</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Is Session exists</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tan</var></dt>
+					<dd><code>string</code><br>$tan</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
 
 
 
@@ -782,24 +891,37 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getSession">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#125-134" title="Go to source code">getSession</a>( <span>mixed <var>$tan</var></span> )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#201-215" title="Go to source code">getSession</a>( <span>string <var>$tan</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Get session</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Get session</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tan</var></dt>
+					<dd><code>string</code><br>$tan</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>
+				</div>
 
 
 
@@ -818,16 +940,25 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_deleteTan">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#147-150" title="Go to source code">deleteTan</a>( <span>mixed <var>$tan</var></span> )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#235-242" title="Go to source code">deleteTan</a>( <span>string <var>$tan</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Delete tan</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Delete tan</p>
 
 
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tan</var></dt>
+					<dd><code>string</code><br>$tan</dd>
+				</dl></div>
 
 
 
@@ -847,16 +978,25 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_deleteSession">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#152-155" title="Go to source code">deleteSession</a>( <span>mixed <var>$tan</var></span> )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#245-252" title="Go to source code">deleteSession</a>( <span>string <var>$tan</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Delete session</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Delete session</p>
 
 
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tan</var></dt>
+					<dd><code>string</code><br>$tan</dd>
+				</dl></div>
 
 
 
@@ -869,24 +1009,37 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_login">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#157-175" title="Go to source code">login</a>( <span>mixed <var>$tan</var></span> )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#255-278" title="Go to source code">login</a>( <span>string <var>$tan</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Do login</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Do login</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tan</var></dt>
+					<dd><code>string</code><br>$tan</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>
+				</div>
 
 
 
@@ -898,24 +1051,37 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isLogin">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#177-180" title="Go to source code">isLogin</a>( <span>mixed <var>$tan</var></span> )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#281-289" title="Go to source code">isLogin</a>( <span>string <var>$tan</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Is logged in</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Is logged in</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tan</var></dt>
+					<dd><code>string</code><br>$tan</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
 
 
 
@@ -934,16 +1100,25 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_logout">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#182-185" title="Go to source code">logout</a>( <span>mixed <var>$tan</var></span> )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#292-299" title="Go to source code">logout</a>( <span>string <var>$tan</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Perform logout</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Perform logout</p>
 
 
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tan</var></dt>
+					<dd><code>string</code><br>$tan</dd>
+				</dl></div>
 
 
 
@@ -963,16 +1138,25 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_extendSessionTimeout">#</a>
-		<code><a href="source-class-AnySrc.Security.Tan.html#187-196" title="Go to source code">extendSessionTimeout</a>( <span>mixed <var>$tan</var></span> )</code>
+		<code><a href="source-class-AnySrc.Security.Tan.html#302-315" title="Go to source code">extendSessionTimeout</a>( <span>string <var>$tan</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Extend session timeout</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Extend session timeout</p>
 
 
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tan</var></dt>
+					<dd><code>string</code><br>$tan</dd>
+				</dl></div>
 
 
 
