@@ -8,7 +8,7 @@
 	<title>File vendor/twig/twig/lib/Twig/NodeVisitor/Optimizer.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1213552095"></script>
+	<script type="text/javascript" src="elementlist.js?1881850165"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -365,7 +365,6 @@
 				<li><a href="class-Twig_Loader_Array.html">Twig_Loader_Array</a></li>
 				<li><a href="class-Twig_Loader_Chain.html">Twig_Loader_Chain</a></li>
 				<li><a href="class-Twig_Loader_Filesystem.html">Twig_Loader_Filesystem</a></li>
-				<li><a href="class-Twig_Loader_String.html">Twig_Loader_String</a></li>
 				<li><a href="class-Twig_Markup.html">Twig_Markup</a></li>
 				<li><a href="class-Twig_Node.html">Twig_Node</a></li>
 				<li><a href="class-Twig_Node_AutoEscape.html">Twig_Node_AutoEscape</a></li>
@@ -740,7 +739,7 @@
 </span><span id="56" class="l"><a class="l" href="#56"> 56: </a>            <span class="php-var">$this</span>-&gt;enterOptimizeFor(<span class="php-var">$node</span>, <span class="php-var">$env</span>);
 </span><span id="57" class="l"><a class="l" href="#57"> 57: </a>        }
 </span><span id="58" class="l"><a class="l" href="#58"> 58: </a>
-</span><span id="59" class="l"><a class="l" href="#59"> 59: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword2">version_compare</span>(<span class="php-keyword2">phpversion</span>(), <span class="php-quote">'5.4.0RC1'</span>, <span class="php-quote">'&gt;='</span>) &amp;&amp; self::OPTIMIZE_VAR_ACCESS === (self::OPTIMIZE_VAR_ACCESS &amp; <span class="php-var">$this</span>-&gt;optimizers) &amp;&amp; !<span class="php-var">$env</span>-&gt;isStrictVariables() &amp;&amp; !<span class="php-var">$env</span>-&gt;hasExtension(<span class="php-quote">'sandbox'</span>)) {
+</span><span id="59" class="l"><a class="l" href="#59"> 59: </a>        <span class="php-keyword1">if</span> (PHP_VERSION_ID &lt; <span class="php-num">50400</span> &amp;&amp; self::OPTIMIZE_VAR_ACCESS === (self::OPTIMIZE_VAR_ACCESS &amp; <span class="php-var">$this</span>-&gt;optimizers) &amp;&amp; !<span class="php-var">$env</span>-&gt;isStrictVariables() &amp;&amp; !<span class="php-var">$env</span>-&gt;hasExtension(<span class="php-quote">'sandbox'</span>)) {
 </span><span id="60" class="l"><a class="l" href="#60"> 60: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;inABody) {
 </span><span id="61" class="l"><a class="l" href="#61"> 61: </a>                <span class="php-keyword1">if</span> (!<span class="php-var">$node</span> <span class="php-keyword1">instanceof</span> Twig_Node_Expression) {
 </span><span id="62" class="l"><a class="l" href="#62"> 62: </a>                    <span class="php-keyword1">if</span> (<span class="php-keyword2">get_class</span>(<span class="php-var">$node</span>) !== <span class="php-quote">'Twig_Node'</span>) {

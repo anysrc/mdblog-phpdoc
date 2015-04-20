@@ -8,7 +8,7 @@
 	<title>File vendor/twig/twig/test/Twig/Tests/Loader/FilesystemTest.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1213552095"></script>
+	<script type="text/javascript" src="elementlist.js?1881850165"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -365,7 +365,6 @@
 				<li><a href="class-Twig_Loader_Array.html">Twig_Loader_Array</a></li>
 				<li><a href="class-Twig_Loader_Chain.html">Twig_Loader_Chain</a></li>
 				<li><a href="class-Twig_Loader_Filesystem.html">Twig_Loader_Filesystem</a></li>
-				<li><a href="class-Twig_Loader_String.html">Twig_Loader_String</a></li>
 				<li><a href="class-Twig_Markup.html">Twig_Markup</a></li>
 				<li><a href="class-Twig_Node.html">Twig_Node</a></li>
 				<li><a href="class-Twig_Node_AutoEscape.html">Twig_Node_AutoEscape</a></li>
@@ -830,8 +829,34 @@
 </span><span id="146" class="l"><a class="l" href="#146">146: </a>        <span class="php-var">$template</span> = <span class="php-var">$twig</span>-&gt;loadTemplate(<span class="php-quote">'blocks.html.twig'</span>);
 </span><span id="147" class="l"><a class="l" href="#147">147: </a>        <span class="php-var">$this</span>-&gt;assertSame(<span class="php-quote">'block from theme 2'</span>, <span class="php-var">$template</span>-&gt;renderBlock(<span class="php-quote">'b2'</span>, <span class="php-keyword1">array</span>()));
 </span><span id="148" class="l"><a class="l" href="#148">148: </a>    }
-</span><span id="149" class="l"><a class="l" href="#149">149: </a>}
-</span><span id="150" class="l"><a class="l" href="#150">150: </a></span></code></pre>
+</span><span id="149" class="l"><a class="l" href="#149">149: </a>
+</span><span id="150" class="l"><a class="l" href="#150">150: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getArrayInheritanceTests" href="#_getArrayInheritanceTests">getArrayInheritanceTests</a>()
+</span><span id="151" class="l"><a class="l" href="#151">151: </a>    {
+</span><span id="152" class="l"><a class="l" href="#152">152: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">array</span>(
+</span><span id="153" class="l"><a class="l" href="#153">153: </a>            <span class="php-quote">'valid array inheritance'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'array_inheritance_valid_parent.html.twig'</span>),
+</span><span id="154" class="l"><a class="l" href="#154">154: </a>            <span class="php-quote">'array inheritance with null first template'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'array_inheritance_null_parent.html.twig'</span>),
+</span><span id="155" class="l"><a class="l" href="#155">155: </a>            <span class="php-quote">'array inheritance with empty first template'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'array_inheritance_empty_parent.html.twig'</span>),
+</span><span id="156" class="l"><a class="l" href="#156">156: </a>            <span class="php-quote">'array inheritance with non-existent first template'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'array_inheritance_nonexistent_parent.html.twig'</span>),
+</span><span id="157" class="l"><a class="l" href="#157">157: </a>        );
+</span><span id="158" class="l"><a class="l" href="#158">158: </a>    }
+</span><span id="159" class="l"><a class="l" href="#159">159: </a>
+</span><span id="160" class="l"><a class="l" href="#160">160: </a>    <span class="php-comment">/**
+</span></span><span id="161" class="l"><a class="l" href="#161">161: </a><span class="php-comment">     * @dataProvider getArrayInheritanceTests
+</span></span><span id="162" class="l"><a class="l" href="#162">162: </a><span class="php-comment">     *
+</span></span><span id="163" class="l"><a class="l" href="#163">163: </a><span class="php-comment">     * @param $templateName string Template name with array inheritance
+</span></span><span id="164" class="l"><a class="l" href="#164">164: </a><span class="php-comment">     */</span>
+</span><span id="165" class="l"><a class="l" href="#165">165: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testArrayInheritance" href="#_testArrayInheritance">testArrayInheritance</a>(<span class="php-var">$templateName</span>)
+</span><span id="166" class="l"><a class="l" href="#166">166: </a>    {
+</span><span id="167" class="l"><a class="l" href="#167">167: </a>        <span class="php-var">$loader</span> = <span class="php-keyword1">new</span> Twig_Loader_Filesystem(<span class="php-keyword1">array</span>());
+</span><span id="168" class="l"><a class="l" href="#168">168: </a>        <span class="php-var">$loader</span>-&gt;addPath(<span class="php-keyword2">dirname</span>(__FILE__).<span class="php-quote">'/Fixtures/inheritance'</span>);
+</span><span id="169" class="l"><a class="l" href="#169">169: </a>
+</span><span id="170" class="l"><a class="l" href="#170">170: </a>        <span class="php-var">$twig</span> = <span class="php-keyword1">new</span> Twig_Environment(<span class="php-var">$loader</span>);
+</span><span id="171" class="l"><a class="l" href="#171">171: </a>
+</span><span id="172" class="l"><a class="l" href="#172">172: </a>        <span class="php-var">$template</span> = <span class="php-var">$twig</span>-&gt;loadTemplate(<span class="php-var">$templateName</span>);
+</span><span id="173" class="l"><a class="l" href="#173">173: </a>        <span class="php-var">$this</span>-&gt;assertSame(<span class="php-quote">'VALID Child'</span>, <span class="php-var">$template</span>-&gt;renderBlock(<span class="php-quote">'body'</span>, <span class="php-keyword1">array</span>()));
+</span><span id="174" class="l"><a class="l" href="#174">174: </a>    }
+</span><span id="175" class="l"><a class="l" href="#175">175: </a>}
+</span><span id="176" class="l"><a class="l" href="#176">176: </a></span></code></pre>
 
 	<div id="footer">
 		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

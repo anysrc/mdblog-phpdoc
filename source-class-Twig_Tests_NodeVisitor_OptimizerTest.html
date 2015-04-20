@@ -8,7 +8,7 @@
 	<title>File vendor/twig/twig/test/Twig/Tests/NodeVisitor/OptimizerTest.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1213552095"></script>
+	<script type="text/javascript" src="elementlist.js?1881850165"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -365,7 +365,6 @@
 				<li><a href="class-Twig_Loader_Array.html">Twig_Loader_Array</a></li>
 				<li><a href="class-Twig_Loader_Chain.html">Twig_Loader_Chain</a></li>
 				<li><a href="class-Twig_Loader_Filesystem.html">Twig_Loader_Filesystem</a></li>
-				<li><a href="class-Twig_Loader_String.html">Twig_Loader_String</a></li>
 				<li><a href="class-Twig_Markup.html">Twig_Markup</a></li>
 				<li><a href="class-Twig_Node.html">Twig_Node</a></li>
 				<li><a href="class-Twig_Node_AutoEscape.html">Twig_Node_AutoEscape</a></li>
@@ -696,7 +695,7 @@
 </span><span id="12" class="l"><a class="l" href="#12"> 12: </a>{
 </span><span id="13" class="l"><a class="l" href="#13"> 13: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testRenderBlockOptimizer" href="#_testRenderBlockOptimizer">testRenderBlockOptimizer</a>()
 </span><span id="14" class="l"><a class="l" href="#14"> 14: </a>    {
-</span><span id="15" class="l"><a class="l" href="#15"> 15: </a>        <span class="php-var">$env</span> = <span class="php-keyword1">new</span> Twig_Environment(<span class="php-keyword1">new</span> Twig_Loader_String(), <span class="php-keyword1">array</span>(<span class="php-quote">'cache'</span> =&gt; <span class="php-keyword1">false</span>, <span class="php-quote">'autoescape'</span> =&gt; <span class="php-keyword1">false</span>));
+</span><span id="15" class="l"><a class="l" href="#15"> 15: </a>        <span class="php-var">$env</span> = <span class="php-keyword1">new</span> Twig_Environment(<span class="php-var">$this</span>-&gt;getMock(<span class="php-quote">'Twig_LoaderInterface'</span>), <span class="php-keyword1">array</span>(<span class="php-quote">'cache'</span> =&gt; <span class="php-keyword1">false</span>, <span class="php-quote">'autoescape'</span> =&gt; <span class="php-keyword1">false</span>));
 </span><span id="16" class="l"><a class="l" href="#16"> 16: </a>
 </span><span id="17" class="l"><a class="l" href="#17"> 17: </a>        <span class="php-var">$stream</span> = <span class="php-var">$env</span>-&gt;parse(<span class="php-var">$env</span>-&gt;tokenize(<span class="php-quote">'{{ block(&quot;foo&quot;) }}'</span>, <span class="php-quote">'index'</span>));
 </span><span id="18" class="l"><a class="l" href="#18"> 18: </a>
@@ -708,7 +707,7 @@
 </span><span id="24" class="l"><a class="l" href="#24"> 24: </a>
 </span><span id="25" class="l"><a class="l" href="#25"> 25: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testRenderParentBlockOptimizer" href="#_testRenderParentBlockOptimizer">testRenderParentBlockOptimizer</a>()
 </span><span id="26" class="l"><a class="l" href="#26"> 26: </a>    {
-</span><span id="27" class="l"><a class="l" href="#27"> 27: </a>        <span class="php-var">$env</span> = <span class="php-keyword1">new</span> Twig_Environment(<span class="php-keyword1">new</span> Twig_Loader_String(), <span class="php-keyword1">array</span>(<span class="php-quote">'cache'</span> =&gt; <span class="php-keyword1">false</span>, <span class="php-quote">'autoescape'</span> =&gt; <span class="php-keyword1">false</span>));
+</span><span id="27" class="l"><a class="l" href="#27"> 27: </a>        <span class="php-var">$env</span> = <span class="php-keyword1">new</span> Twig_Environment(<span class="php-var">$this</span>-&gt;getMock(<span class="php-quote">'Twig_LoaderInterface'</span>), <span class="php-keyword1">array</span>(<span class="php-quote">'cache'</span> =&gt; <span class="php-keyword1">false</span>, <span class="php-quote">'autoescape'</span> =&gt; <span class="php-keyword1">false</span>));
 </span><span id="28" class="l"><a class="l" href="#28"> 28: </a>
 </span><span id="29" class="l"><a class="l" href="#29"> 29: </a>        <span class="php-var">$stream</span> = <span class="php-var">$env</span>-&gt;parse(<span class="php-var">$env</span>-&gt;tokenize(<span class="php-quote">'{% extends &quot;foo&quot; %}{% block content %}{{ parent() }}{% endblock %}'</span>, <span class="php-quote">'index'</span>));
 </span><span id="30" class="l"><a class="l" href="#30"> 30: </a>
@@ -720,11 +719,11 @@
 </span><span id="36" class="l"><a class="l" href="#36"> 36: </a>
 </span><span id="37" class="l"><a class="l" href="#37"> 37: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testRenderVariableBlockOptimizer" href="#_testRenderVariableBlockOptimizer">testRenderVariableBlockOptimizer</a>()
 </span><span id="38" class="l"><a class="l" href="#38"> 38: </a>    {
-</span><span id="39" class="l"><a class="l" href="#39"> 39: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">version_compare</span>(<span class="php-keyword2">phpversion</span>(), <span class="php-quote">'5.4.0RC1'</span>, <span class="php-quote">'&gt;='</span>)) {
+</span><span id="39" class="l"><a class="l" href="#39"> 39: </a>        <span class="php-keyword1">if</span> (PHP_VERSION_ID &gt;= <span class="php-num">50400</span>) {
 </span><span id="40" class="l"><a class="l" href="#40"> 40: </a>            <span class="php-keyword1">return</span>;
 </span><span id="41" class="l"><a class="l" href="#41"> 41: </a>        }
 </span><span id="42" class="l"><a class="l" href="#42"> 42: </a>
-</span><span id="43" class="l"><a class="l" href="#43"> 43: </a>        <span class="php-var">$env</span> = <span class="php-keyword1">new</span> Twig_Environment(<span class="php-keyword1">new</span> Twig_Loader_String(), <span class="php-keyword1">array</span>(<span class="php-quote">'cache'</span> =&gt; <span class="php-keyword1">false</span>, <span class="php-quote">'autoescape'</span> =&gt; <span class="php-keyword1">false</span>));
+</span><span id="43" class="l"><a class="l" href="#43"> 43: </a>        <span class="php-var">$env</span> = <span class="php-keyword1">new</span> Twig_Environment(<span class="php-var">$this</span>-&gt;getMock(<span class="php-quote">'Twig_LoaderInterface'</span>), <span class="php-keyword1">array</span>(<span class="php-quote">'cache'</span> =&gt; <span class="php-keyword1">false</span>, <span class="php-quote">'autoescape'</span> =&gt; <span class="php-keyword1">false</span>));
 </span><span id="44" class="l"><a class="l" href="#44"> 44: </a>        <span class="php-var">$stream</span> = <span class="php-var">$env</span>-&gt;parse(<span class="php-var">$env</span>-&gt;tokenize(<span class="php-quote">'{{ block(name|lower) }}'</span>, <span class="php-quote">'index'</span>));
 </span><span id="45" class="l"><a class="l" href="#45"> 45: </a>
 </span><span id="46" class="l"><a class="l" href="#46"> 46: </a>        <span class="php-var">$node</span> = <span class="php-var">$stream</span>-&gt;getNode(<span class="php-quote">'body'</span>)-&gt;getNode(<span class="php-num">0</span>)-&gt;getNode(<span class="php-num">1</span>);
@@ -738,7 +737,7 @@
 </span></span><span id="54" class="l"><a class="l" href="#54"> 54: </a><span class="php-comment">     */</span>
 </span><span id="55" class="l"><a class="l" href="#55"> 55: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testForOptimizer" href="#_testForOptimizer">testForOptimizer</a>(<span class="php-var">$template</span>, <span class="php-var">$expected</span>)
 </span><span id="56" class="l"><a class="l" href="#56"> 56: </a>    {
-</span><span id="57" class="l"><a class="l" href="#57"> 57: </a>        <span class="php-var">$env</span> = <span class="php-keyword1">new</span> Twig_Environment(<span class="php-keyword1">new</span> Twig_Loader_String(), <span class="php-keyword1">array</span>(<span class="php-quote">'cache'</span> =&gt; <span class="php-keyword1">false</span>));
+</span><span id="57" class="l"><a class="l" href="#57"> 57: </a>        <span class="php-var">$env</span> = <span class="php-keyword1">new</span> Twig_Environment(<span class="php-var">$this</span>-&gt;getMock(<span class="php-quote">'Twig_LoaderInterface'</span>), <span class="php-keyword1">array</span>(<span class="php-quote">'cache'</span> =&gt; <span class="php-keyword1">false</span>));
 </span><span id="58" class="l"><a class="l" href="#58"> 58: </a>
 </span><span id="59" class="l"><a class="l" href="#59"> 59: </a>        <span class="php-var">$stream</span> = <span class="php-var">$env</span>-&gt;parse(<span class="php-var">$env</span>-&gt;tokenize(<span class="php-var">$template</span>, <span class="php-quote">'index'</span>));
 </span><span id="60" class="l"><a class="l" href="#60"> 60: </a>

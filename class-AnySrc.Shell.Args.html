@@ -7,7 +7,7 @@
 	<title>Class AnySrc\Shell\Args | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1213552095"></script>
+	<script type="text/javascript" src="elementlist.js?1881850165"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -397,25 +397,54 @@
 		<b>Namespace:</b> <a href="namespace-AnySrc.html">AnySrc</a>\<a href="namespace-AnySrc.Shell.html">Shell</a><br>
 		
 
-		<b>Located at</b> <a href="source-class-AnySrc.Shell.Args.html#4-104" title="Go to source code">lib/AnySrc/Shell/Args.php</a><br>
+		<b>Located at</b> <a href="source-class-AnySrc.Shell.Args.html#4-154" title="Go to source code">lib/AnySrc/Shell/Args.php</a><br>
 	</div>
 
 
 
 	<table class="summary" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="__construct" id="___construct">
+	<tr data-order="fromArgv" id="_fromArgv">
 
 		<td class="attributes"><code>
-			 public 
+			 public static
 			
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-AnySrc.Shell.Args.html#10-29" title="Go to source code">__construct</a>( <span>mixed <var>$argstring</var></span>, <span>mixed <var>$blacklist</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$encoding_check</var> = <span class="php-keyword1">false</span></span> )</code>
+		<a class="anchor" href="#_fromArgv">#</a>
+		<code><a href="source-class-AnySrc.Shell.Args.html#75-78" title="Go to source code">fromArgv</a>( <span>mixed <var>$argv</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fromString" id="_fromString">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fromString">#</a>
+		<code><a href="source-class-AnySrc.Shell.Args.html#81-98" title="Go to source code">fromString</a>( <span>mixed <var>$argstring</var></span>, <span>mixed <var>$blacklist</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$encoding_check</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
@@ -444,7 +473,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_arg_count">#</a>
-		<code><a href="source-class-AnySrc.Shell.Args.html#67-69" title="Go to source code">get_arg_count</a>( )</code>
+		<code><a href="source-class-AnySrc.Shell.Args.html#117-119" title="Go to source code">get_arg_count</a>( )</code>
 
 		<div class="description short">
 			
@@ -473,7 +502,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_arg_all">#</a>
-		<code><a href="source-class-AnySrc.Shell.Args.html#71-73" title="Go to source code">get_arg_all</a>( )</code>
+		<code><a href="source-class-AnySrc.Shell.Args.html#121-123" title="Go to source code">get_arg_all</a>( )</code>
 
 		<div class="description short">
 			
@@ -502,7 +531,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_arg_range">#</a>
-		<code><a href="source-class-AnySrc.Shell.Args.html#75-86" title="Go to source code">get_arg_range</a>( <span>mixed <var>$start</var></span>, <span>mixed <var>$end</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$implode</var> = <span class="php-keyword1">false</span></span>, <span>mixed <var>$glue</var> = <span class="php-quote">&quot; &quot;</span></span>, <span>mixed <var>$strtolower</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-AnySrc.Shell.Args.html#125-136" title="Go to source code">get_arg_range</a>( <span>mixed <var>$start</var></span>, <span>mixed <var>$end</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$implode</var> = <span class="php-keyword1">false</span></span>, <span>mixed <var>$glue</var> = <span class="php-quote">&quot; &quot;</span></span>, <span>mixed <var>$strtolower</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
@@ -531,7 +560,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_arg">#</a>
-		<code><a href="source-class-AnySrc.Shell.Args.html#88-94" title="Go to source code">get_arg</a>( <span>mixed <var>$i</var></span>, <span>mixed <var>$strtolower</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-AnySrc.Shell.Args.html#138-144" title="Go to source code">get_arg</a>( <span>mixed <var>$i</var></span>, <span>mixed <var>$strtolower</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
@@ -560,7 +589,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_check_arg">#</a>
-		<code><a href="source-class-AnySrc.Shell.Args.html#96-102" title="Go to source code">check_arg</a>( <span>mixed <var>$i</var></span>, <span>mixed <var>$regex</var></span> )</code>
+		<code><a href="source-class-AnySrc.Shell.Args.html#146-152" title="Go to source code">check_arg</a>( <span>mixed <var>$i</var></span>, <span>mixed <var>$regex</var></span> )</code>
 
 		<div class="description short">
 			

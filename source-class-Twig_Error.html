@@ -8,7 +8,7 @@
 	<title>File vendor/twig/twig/lib/Twig/Error.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1213552095"></script>
+	<script type="text/javascript" src="elementlist.js?1881850165"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -365,7 +365,6 @@
 				<li><a href="class-Twig_Loader_Array.html">Twig_Loader_Array</a></li>
 				<li><a href="class-Twig_Loader_Chain.html">Twig_Loader_Chain</a></li>
 				<li><a href="class-Twig_Loader_Filesystem.html">Twig_Loader_Filesystem</a></li>
-				<li><a href="class-Twig_Loader_String.html">Twig_Loader_String</a></li>
 				<li><a href="class-Twig_Markup.html">Twig_Markup</a></li>
 				<li><a href="class-Twig_Node.html">Twig_Node</a></li>
 				<li><a href="class-Twig_Node_AutoEscape.html">Twig_Node_AutoEscape</a></li>
@@ -741,7 +740,7 @@
 </span></span><span id="57" class="l"><a class="l" href="#57"> 57: </a><span class="php-comment">     */</span>
 </span><span id="58" class="l"><a class="l" href="#58"> 58: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="___construct" href="#___construct">__construct</a>(<span class="php-var">$message</span>, <span class="php-var">$lineno</span> = -<span class="php-num">1</span>, <span class="php-var">$filename</span> = <span class="php-keyword1">null</span>, Exception <span class="php-var">$previous</span> = <span class="php-keyword1">null</span>)
 </span><span id="59" class="l"><a class="l" href="#59"> 59: </a>    {
-</span><span id="60" class="l"><a class="l" href="#60"> 60: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">version_compare</span>(PHP_VERSION, <span class="php-quote">'5.3.0'</span>, <span class="php-quote">'&lt;'</span>)) {
+</span><span id="60" class="l"><a class="l" href="#60"> 60: </a>        <span class="php-keyword1">if</span> (PHP_VERSION_ID &lt; <span class="php-num">50300</span>) {
 </span><span id="61" class="l"><a class="l" href="#61"> 61: </a>            <span class="php-var">$this</span>-&gt;previous = <span class="php-var">$previous</span>;
 </span><span id="62" class="l"><a class="l" href="#62"> 62: </a>            parent::__construct(<span class="php-quote">''</span>);
 </span><span id="63" class="l"><a class="l" href="#63"> 63: </a>        } <span class="php-keyword1">else</span> {
@@ -872,7 +871,7 @@
 </span><span id="188" class="l"><a class="l" href="#188">188: </a>        <span class="php-var">$template</span> = <span class="php-keyword1">null</span>;
 </span><span id="189" class="l"><a class="l" href="#189">189: </a>        <span class="php-var">$templateClass</span> = <span class="php-keyword1">null</span>;
 </span><span id="190" class="l"><a class="l" href="#190">190: </a>
-</span><span id="191" class="l"><a class="l" href="#191">191: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">version_compare</span>(<span class="php-keyword2">phpversion</span>(), <span class="php-quote">'5.3.6'</span>, <span class="php-quote">'&gt;='</span>)) {
+</span><span id="191" class="l"><a class="l" href="#191">191: </a>        <span class="php-keyword1">if</span> (PHP_VERSION_ID &gt;= <span class="php-num">50306</span>) {
 </span><span id="192" class="l"><a class="l" href="#192">192: </a>            <span class="php-var">$backtrace</span> = <span class="php-keyword2">debug_backtrace</span>(DEBUG_BACKTRACE_IGNORE_ARGS | DEBUG_BACKTRACE_PROVIDE_OBJECT);
 </span><span id="193" class="l"><a class="l" href="#193">193: </a>        } <span class="php-keyword1">else</span> {
 </span><span id="194" class="l"><a class="l" href="#194">194: </a>            <span class="php-var">$backtrace</span> = <span class="php-keyword2">debug_backtrace</span>();

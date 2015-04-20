@@ -8,7 +8,7 @@
 	<title>File vendor/twig/twig/lib/Twig/Node/Expression/Name.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1213552095"></script>
+	<script type="text/javascript" src="elementlist.js?1881850165"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -365,7 +365,6 @@
 				<li><a href="class-Twig_Loader_Array.html">Twig_Loader_Array</a></li>
 				<li><a href="class-Twig_Loader_Chain.html">Twig_Loader_Chain</a></li>
 				<li><a href="class-Twig_Loader_Filesystem.html">Twig_Loader_Filesystem</a></li>
-				<li><a href="class-Twig_Loader_String.html">Twig_Loader_String</a></li>
 				<li><a href="class-Twig_Markup.html">Twig_Markup</a></li>
 				<li><a href="class-Twig_Node.html">Twig_Node</a></li>
 				<li><a href="class-Twig_Node_AutoEscape.html">Twig_Node_AutoEscape</a></li>
@@ -730,7 +729,7 @@
 </span><span id="46" class="l"><a class="l" href="#46">46: </a>            <span class="php-comment">// remove the non-PHP 5.4 version when PHP 5.3 support is dropped</span>
 </span><span id="47" class="l"><a class="l" href="#47">47: </a>            <span class="php-comment">// as the non-optimized version is just a workaround for slow ternary operator</span>
 </span><span id="48" class="l"><a class="l" href="#48">48: </a>            <span class="php-comment">// when the context has a lot of variables</span>
-</span><span id="49" class="l"><a class="l" href="#49">49: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">version_compare</span>(<span class="php-keyword2">phpversion</span>(), <span class="php-quote">'5.4.0RC1'</span>, <span class="php-quote">'&gt;='</span>)) {
+</span><span id="49" class="l"><a class="l" href="#49">49: </a>            <span class="php-keyword1">if</span> (PHP_VERSION_ID &gt;= <span class="php-num">50400</span>) {
 </span><span id="50" class="l"><a class="l" href="#50">50: </a>                <span class="php-comment">// PHP 5.4 ternary operator performance was optimized</span>
 </span><span id="51" class="l"><a class="l" href="#51">51: </a>                <span class="php-var">$compiler</span>
 </span><span id="52" class="l"><a class="l" href="#52">52: </a>                    -&gt;raw(<span class="php-quote">'(isset($context['</span>)
