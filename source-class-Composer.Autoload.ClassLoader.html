@@ -8,7 +8,7 @@
 	<title>File vendor/composer/ClassLoader.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?252184299"></script>
+	<script type="text/javascript" src="elementlist.js?1712082564"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -22,6 +22,8 @@
 		<div id="groups">
 			<h3>Namespaces</h3>
 			<ul>
+				<li><a href="namespace-abeautifulsite.html">abeautifulsite</a>
+						</li>
 				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
 						<ul>
 				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
@@ -734,7 +736,7 @@
 </span><span id="351" class="l"><a class="l" href="#351">351: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;prefixLengthsPsr4[<span class="php-var">$first</span>] <span class="php-keyword1">as</span> <span class="php-var">$prefix</span> =&gt; <span class="php-var">$length</span>) {
 </span><span id="352" class="l"><a class="l" href="#352">352: </a>                <span class="php-keyword1">if</span> (<span class="php-num">0</span> === <span class="php-keyword2">strpos</span>(<span class="php-var">$class</span>, <span class="php-var">$prefix</span>)) {
 </span><span id="353" class="l"><a class="l" href="#353">353: </a>                    <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;prefixDirsPsr4[<span class="php-var">$prefix</span>] <span class="php-keyword1">as</span> <span class="php-var">$dir</span>) {
-</span><span id="354" class="l"><a class="l" href="#354">354: </a>                        <span class="php-keyword1">if</span> (<span class="php-keyword2">file_exists</span>(<span class="php-var">$file</span> = <span class="php-var">$dir</span> . DIRECTORY_SEPARATOR . <span class="php-keyword2">substr</span>(<span class="php-var">$logicalPathPsr4</span>, <span class="php-var">$length</span>))) {
+</span><span id="354" class="l"><a class="l" href="#354">354: </a>                        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_file</span>(<span class="php-var">$file</span> = <span class="php-var">$dir</span> . DIRECTORY_SEPARATOR . <span class="php-keyword2">substr</span>(<span class="php-var">$logicalPathPsr4</span>, <span class="php-var">$length</span>))) {
 </span><span id="355" class="l"><a class="l" href="#355">355: </a>                            <span class="php-keyword1">return</span> <span class="php-var">$file</span>;
 </span><span id="356" class="l"><a class="l" href="#356">356: </a>                        }
 </span><span id="357" class="l"><a class="l" href="#357">357: </a>                    }
@@ -744,7 +746,7 @@
 </span><span id="361" class="l"><a class="l" href="#361">361: </a>
 </span><span id="362" class="l"><a class="l" href="#362">362: </a>        <span class="php-comment">// PSR-4 fallback dirs</span>
 </span><span id="363" class="l"><a class="l" href="#363">363: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;fallbackDirsPsr4 <span class="php-keyword1">as</span> <span class="php-var">$dir</span>) {
-</span><span id="364" class="l"><a class="l" href="#364">364: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">file_exists</span>(<span class="php-var">$file</span> = <span class="php-var">$dir</span> . DIRECTORY_SEPARATOR . <span class="php-var">$logicalPathPsr4</span>)) {
+</span><span id="364" class="l"><a class="l" href="#364">364: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">is_file</span>(<span class="php-var">$file</span> = <span class="php-var">$dir</span> . DIRECTORY_SEPARATOR . <span class="php-var">$logicalPathPsr4</span>)) {
 </span><span id="365" class="l"><a class="l" href="#365">365: </a>                <span class="php-keyword1">return</span> <span class="php-var">$file</span>;
 </span><span id="366" class="l"><a class="l" href="#366">366: </a>            }
 </span><span id="367" class="l"><a class="l" href="#367">367: </a>        }
@@ -763,7 +765,7 @@
 </span><span id="380" class="l"><a class="l" href="#380">380: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;prefixesPsr0[<span class="php-var">$first</span>] <span class="php-keyword1">as</span> <span class="php-var">$prefix</span> =&gt; <span class="php-var">$dirs</span>) {
 </span><span id="381" class="l"><a class="l" href="#381">381: </a>                <span class="php-keyword1">if</span> (<span class="php-num">0</span> === <span class="php-keyword2">strpos</span>(<span class="php-var">$class</span>, <span class="php-var">$prefix</span>)) {
 </span><span id="382" class="l"><a class="l" href="#382">382: </a>                    <span class="php-keyword1">foreach</span> (<span class="php-var">$dirs</span> <span class="php-keyword1">as</span> <span class="php-var">$dir</span>) {
-</span><span id="383" class="l"><a class="l" href="#383">383: </a>                        <span class="php-keyword1">if</span> (<span class="php-keyword2">file_exists</span>(<span class="php-var">$file</span> = <span class="php-var">$dir</span> . DIRECTORY_SEPARATOR . <span class="php-var">$logicalPathPsr0</span>)) {
+</span><span id="383" class="l"><a class="l" href="#383">383: </a>                        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_file</span>(<span class="php-var">$file</span> = <span class="php-var">$dir</span> . DIRECTORY_SEPARATOR . <span class="php-var">$logicalPathPsr0</span>)) {
 </span><span id="384" class="l"><a class="l" href="#384">384: </a>                            <span class="php-keyword1">return</span> <span class="php-var">$file</span>;
 </span><span id="385" class="l"><a class="l" href="#385">385: </a>                        }
 </span><span id="386" class="l"><a class="l" href="#386">386: </a>                    }
@@ -773,7 +775,7 @@
 </span><span id="390" class="l"><a class="l" href="#390">390: </a>
 </span><span id="391" class="l"><a class="l" href="#391">391: </a>        <span class="php-comment">// PSR-0 fallback dirs</span>
 </span><span id="392" class="l"><a class="l" href="#392">392: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;fallbackDirsPsr0 <span class="php-keyword1">as</span> <span class="php-var">$dir</span>) {
-</span><span id="393" class="l"><a class="l" href="#393">393: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">file_exists</span>(<span class="php-var">$file</span> = <span class="php-var">$dir</span> . DIRECTORY_SEPARATOR . <span class="php-var">$logicalPathPsr0</span>)) {
+</span><span id="393" class="l"><a class="l" href="#393">393: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">is_file</span>(<span class="php-var">$file</span> = <span class="php-var">$dir</span> . DIRECTORY_SEPARATOR . <span class="php-var">$logicalPathPsr0</span>)) {
 </span><span id="394" class="l"><a class="l" href="#394">394: </a>                <span class="php-keyword1">return</span> <span class="php-var">$file</span>;
 </span><span id="395" class="l"><a class="l" href="#395">395: </a>            }
 </span><span id="396" class="l"><a class="l" href="#396">396: </a>        }
