@@ -7,7 +7,7 @@
 	<title>Class Symfony\Component\EventDispatcher\Debug\TraceableEventDispatcher | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1712082564"></script>
+	<script type="text/javascript" src="elementlist.js?4263098139"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -141,6 +141,8 @@
 						</li>
 				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures2.html">Fixtures2</a>
+						</li>
 							</ul></li></ul></li>
 				<li class="active"><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
 						<ul>
@@ -262,6 +264,11 @@
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.html">ExtensionNotValidBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.DependencyInjection.html">DependencyInjection</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
@@ -424,7 +431,7 @@
 				<b>Author:</b>
 				Fabien Potencier &lt;<a
 href="mailto:fabien&#64;symfony.com">fabien&#64;<!-- -->symfony.com</a>&gt;<br>
-		<b>Located at</b> <a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#20-320" title="Go to source code">vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher/Debug/TraceableEventDispatcher.php</a><br>
+		<b>Located at</b> <a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#20-335" title="Go to source code">vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher/Debug/TraceableEventDispatcher.php</a><br>
 	</div>
 
 
@@ -442,7 +449,7 @@ href="mailto:fabien&#64;symfony.com">fabien&#64;<!-- -->symfony.com</a>&gt;<br>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#35-48" title="Go to source code">__construct</a>( <span><code><a href="class-Symfony.Component.EventDispatcher.EventDispatcherInterface.html">Symfony\Component\EventDispatcher\EventDispatcherInterface</a></code> <var>$dispatcher</var></span>, <span>Symfony\Component\Stopwatch\Stopwatch <var>$stopwatch</var></span>, <span><code><a href="class-Psr.Log.LoggerInterface.html">Psr\Log\LoggerInterface</a></code> <var>$logger</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#36-50" title="Go to source code">__construct</a>( <span><code><a href="class-Symfony.Component.EventDispatcher.EventDispatcherInterface.html">Symfony\Component\EventDispatcher\EventDispatcherInterface</a></code> <var>$dispatcher</var></span>, <span>Symfony\Component\Stopwatch\Stopwatch <var>$stopwatch</var></span>, <span><code><a href="class-Psr.Log.LoggerInterface.html">Psr\Log\LoggerInterface</a></code> <var>$logger</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
@@ -484,7 +491,7 @@ href="mailto:fabien&#64;symfony.com">fabien&#64;<!-- -->symfony.com</a>&gt;<br>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addListener">#</a>
-		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#50-56" title="Go to source code">addListener</a>( <span>string <var>$eventName</var></span>, <span>callable <var>$listener</var></span>, <span>integer <var>$priority</var> = <span class="php-num">0</span></span> )</code>
+		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#52-58" title="Go to source code">addListener</a>( <span>string <var>$eventName</var></span>, <span>callable <var>$listener</var></span>, <span>integer <var>$priority</var> = <span class="php-num">0</span></span> )</code>
 
 		<div class="description short">
 			
@@ -529,7 +536,7 @@ in the chain (defaults to 0)</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addSubscriber">#</a>
-		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#58-64" title="Go to source code">addSubscriber</a>( <span><code><a href="class-Symfony.Component.EventDispatcher.EventSubscriberInterface.html">Symfony\Component\EventDispatcher\EventSubscriberInterface</a></code> <var>$subscriber</var></span> )</code>
+		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#60-66" title="Go to source code">addSubscriber</a>( <span><code><a href="class-Symfony.Component.EventDispatcher.EventSubscriberInterface.html">Symfony\Component\EventDispatcher\EventSubscriberInterface</a></code> <var>$subscriber</var></span> )</code>
 
 		<div class="description short">
 			
@@ -569,7 +576,7 @@ in the chain (defaults to 0)</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeListener">#</a>
-		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#66-72" title="Go to source code">removeListener</a>( <span>string <var>$eventName</var></span>, <span>callable <var>$listener</var></span> )</code>
+		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#68-84" title="Go to source code">removeListener</a>( <span>string <var>$eventName</var></span>, <span>callable <var>$listener</var></span> )</code>
 
 		<div class="description short">
 			
@@ -611,7 +618,7 @@ in the chain (defaults to 0)</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeSubscriber">#</a>
-		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#74-80" title="Go to source code">removeSubscriber</a>( <span><code><a href="class-Symfony.Component.EventDispatcher.EventSubscriberInterface.html">Symfony\Component\EventDispatcher\EventSubscriberInterface</a></code> <var>$subscriber</var></span> )</code>
+		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#86-92" title="Go to source code">removeSubscriber</a>( <span><code><a href="class-Symfony.Component.EventDispatcher.EventSubscriberInterface.html">Symfony\Component\EventDispatcher\EventSubscriberInterface</a></code> <var>$subscriber</var></span> )</code>
 
 		<div class="description short">
 			
@@ -651,17 +658,19 @@ in the chain (defaults to 0)</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getListeners">#</a>
-		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#82-88" title="Go to source code">getListeners</a>( <span>string <var>$eventName</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#94-100" title="Go to source code">getListeners</a>( <span>string <var>$eventName</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
-<p>Gets the listeners of a specific event or all listeners.</p>
+<p>Gets the listeners of a specific event or all listeners sorted by descending
+priority.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Gets the listeners of a specific event or all listeners.</p>
+<p>Gets the listeners of a specific event or all listeners sorted by descending
+priority.</p>
 
 
 
@@ -696,7 +705,7 @@ name<br>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasListeners">#</a>
-		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#90-96" title="Go to source code">hasListeners</a>( <span>string <var>$eventName</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#102-108" title="Go to source code">hasListeners</a>( <span>string <var>$eventName</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
@@ -740,7 +749,7 @@ name<br>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_dispatch">#</a>
-		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#98-122" title="Go to source code">dispatch</a>( <span>string <var>$eventName</var></span>, <span><code><a href="class-Symfony.Component.EventDispatcher.Event.html">Symfony\Component\EventDispatcher\Event</a></code> <var>$event</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#110-134" title="Go to source code">dispatch</a>( <span>string <var>$eventName</var></span>, <span><code><a href="class-Symfony.Component.EventDispatcher.Event.html">Symfony\Component\EventDispatcher\Event</a></code> <var>$event</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
@@ -788,7 +797,7 @@ empty Event instance is created.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCalledListeners">#</a>
-		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#124-138" title="Go to source code">getCalledListeners</a>( )</code>
+		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#136-150" title="Go to source code">getCalledListeners</a>( )</code>
 
 		<div class="description short">
 			
@@ -827,7 +836,7 @@ empty Event instance is created.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getNotCalledListeners">#</a>
-		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#140-178" title="Go to source code">getNotCalledListeners</a>( )</code>
+		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#152-190" title="Go to source code">getNotCalledListeners</a>( )</code>
 
 		<div class="description short">
 			
@@ -866,7 +875,7 @@ empty Event instance is created.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___call">#</a>
-		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#180-191" title="Go to source code">__call</a>( <span>string <var>$method</var></span>, <span>array <var>$arguments</var></span> )</code>
+		<code><a href="source-class-Symfony.Component.EventDispatcher.Debug.TraceableEventDispatcher.html#192-203" title="Go to source code">__call</a>( <span>string <var>$method</var></span>, <span>array <var>$arguments</var></span> )</code>
 
 		<div class="description short">
 			

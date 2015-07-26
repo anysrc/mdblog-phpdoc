@@ -8,7 +8,7 @@
 	<title>File vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Tests/Profiler/AbstractProfilerStorageTest.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1712082564"></script>
+	<script type="text/javascript" src="elementlist.js?4263098139"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -142,6 +142,8 @@
 						</li>
 				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures2.html">Fixtures2</a>
+						</li>
 							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
 						<ul>
@@ -263,6 +265,11 @@
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.html">ExtensionNotValidBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.DependencyInjection.html">DependencyInjection</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
@@ -407,7 +414,7 @@
 </span><span id="17" class="l"><a class="l" href="#17"> 17: </a>{
 </span><span id="18" class="l"><a class="l" href="#18"> 18: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testStore" href="#_testStore">testStore</a>()
 </span><span id="19" class="l"><a class="l" href="#19"> 19: </a>    {
-</span><span id="20" class="l"><a class="l" href="#20"> 20: </a>        <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">0</span>; <span class="php-var">$i</span> &lt; <span class="php-num">10</span>; <span class="php-var">$i</span>++) {
+</span><span id="20" class="l"><a class="l" href="#20"> 20: </a>        <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">0</span>; <span class="php-var">$i</span> &lt; <span class="php-num">10</span>; ++<span class="php-var">$i</span>) {
 </span><span id="21" class="l"><a class="l" href="#21"> 21: </a>            <span class="php-var">$profile</span> = <span class="php-keyword1">new</span> Profile(<span class="php-quote">'token_'</span>.<span class="php-var">$i</span>);
 </span><span id="22" class="l"><a class="l" href="#22"> 22: </a>            <span class="php-var">$profile</span>-&gt;setIp(<span class="php-quote">'127.0.0.1'</span>);
 </span><span id="23" class="l"><a class="l" href="#23"> 23: </a>            <span class="php-var">$profile</span>-&gt;setUrl(<span class="php-quote">'http://foo.bar'</span>);
@@ -549,7 +556,7 @@
 </span><span id="159" class="l"><a class="l" href="#159">159: </a>        <span class="php-var">$dt</span> = <span class="php-keyword1">new</span> \DateTime(<span class="php-quote">'now'</span>);
 </span><span id="160" class="l"><a class="l" href="#160">160: </a>        <span class="php-var">$start</span> = <span class="php-var">$dt</span>-&gt;getTimestamp();
 </span><span id="161" class="l"><a class="l" href="#161">161: </a>
-</span><span id="162" class="l"><a class="l" href="#162">162: </a>        <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">0</span>; <span class="php-var">$i</span> &lt; <span class="php-num">3</span>; <span class="php-var">$i</span>++) {
+</span><span id="162" class="l"><a class="l" href="#162">162: </a>        <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">0</span>; <span class="php-var">$i</span> &lt; <span class="php-num">3</span>; ++<span class="php-var">$i</span>) {
 </span><span id="163" class="l"><a class="l" href="#163">163: </a>            <span class="php-var">$dt</span>-&gt;modify(<span class="php-quote">'+1 minute'</span>);
 </span><span id="164" class="l"><a class="l" href="#164">164: </a>            <span class="php-var">$profile</span> = <span class="php-keyword1">new</span> Profile(<span class="php-quote">'time_'</span>.<span class="php-var">$i</span>);
 </span><span id="165" class="l"><a class="l" href="#165">165: </a>            <span class="php-var">$profile</span>-&gt;setIp(<span class="php-quote">'127.0.0.1'</span>);
@@ -571,7 +578,7 @@
 </span><span id="181" class="l"><a class="l" href="#181">181: </a>
 </span><span id="182" class="l"><a class="l" href="#182">182: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testRetrieveByEmptyUrlAndIp" href="#_testRetrieveByEmptyUrlAndIp">testRetrieveByEmptyUrlAndIp</a>()
 </span><span id="183" class="l"><a class="l" href="#183">183: </a>    {
-</span><span id="184" class="l"><a class="l" href="#184">184: </a>        <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">0</span>; <span class="php-var">$i</span> &lt; <span class="php-num">5</span>; <span class="php-var">$i</span>++) {
+</span><span id="184" class="l"><a class="l" href="#184">184: </a>        <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">0</span>; <span class="php-var">$i</span> &lt; <span class="php-num">5</span>; ++<span class="php-var">$i</span>) {
 </span><span id="185" class="l"><a class="l" href="#185">185: </a>            <span class="php-var">$profile</span> = <span class="php-keyword1">new</span> Profile(<span class="php-quote">'token_'</span>.<span class="php-var">$i</span>);
 </span><span id="186" class="l"><a class="l" href="#186">186: </a>            <span class="php-var">$profile</span>-&gt;setMethod(<span class="php-quote">'GET'</span>);
 </span><span id="187" class="l"><a class="l" href="#187">187: </a>            <span class="php-var">$this</span>-&gt;getStorage()-&gt;write(<span class="php-var">$profile</span>);
@@ -583,7 +590,7 @@
 </span><span id="193" class="l"><a class="l" href="#193">193: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testRetrieveByMethodAndLimit" href="#_testRetrieveByMethodAndLimit">testRetrieveByMethodAndLimit</a>()
 </span><span id="194" class="l"><a class="l" href="#194">194: </a>    {
 </span><span id="195" class="l"><a class="l" href="#195">195: </a>        <span class="php-keyword1">foreach</span> (<span class="php-keyword1">array</span>(<span class="php-quote">'POST'</span>, <span class="php-quote">'GET'</span>) <span class="php-keyword1">as</span> <span class="php-var">$method</span>) {
-</span><span id="196" class="l"><a class="l" href="#196">196: </a>            <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">0</span>; <span class="php-var">$i</span> &lt; <span class="php-num">5</span>; <span class="php-var">$i</span>++) {
+</span><span id="196" class="l"><a class="l" href="#196">196: </a>            <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">0</span>; <span class="php-var">$i</span> &lt; <span class="php-num">5</span>; ++<span class="php-var">$i</span>) {
 </span><span id="197" class="l"><a class="l" href="#197">197: </a>                <span class="php-var">$profile</span> = <span class="php-keyword1">new</span> Profile(<span class="php-quote">'token_'</span>.<span class="php-var">$i</span>.<span class="php-var">$method</span>);
 </span><span id="198" class="l"><a class="l" href="#198">198: </a>                <span class="php-var">$profile</span>-&gt;setMethod(<span class="php-var">$method</span>);
 </span><span id="199" class="l"><a class="l" href="#199">199: </a>                <span class="php-var">$this</span>-&gt;getStorage()-&gt;write(<span class="php-var">$profile</span>);
@@ -623,7 +630,7 @@
 </span><span id="233" class="l"><a class="l" href="#233">233: </a>
 </span><span id="234" class="l"><a class="l" href="#234">234: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testDuplicates" href="#_testDuplicates">testDuplicates</a>()
 </span><span id="235" class="l"><a class="l" href="#235">235: </a>    {
-</span><span id="236" class="l"><a class="l" href="#236">236: </a>        <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">1</span>; <span class="php-var">$i</span> &lt;= <span class="php-num">5</span>; <span class="php-var">$i</span>++) {
+</span><span id="236" class="l"><a class="l" href="#236">236: </a>        <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">1</span>; <span class="php-var">$i</span> &lt;= <span class="php-num">5</span>; ++<span class="php-var">$i</span>) {
 </span><span id="237" class="l"><a class="l" href="#237">237: </a>            <span class="php-var">$profile</span> = <span class="php-keyword1">new</span> Profile(<span class="php-quote">'foo'</span>.<span class="php-var">$i</span>);
 </span><span id="238" class="l"><a class="l" href="#238">238: </a>            <span class="php-var">$profile</span>-&gt;setIp(<span class="php-quote">'127.0.0.1'</span>);
 </span><span id="239" class="l"><a class="l" href="#239">239: </a>            <span class="php-var">$profile</span>-&gt;setUrl(<span class="php-quote">'http://example.net/'</span>);

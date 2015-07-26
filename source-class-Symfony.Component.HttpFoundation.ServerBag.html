@@ -8,7 +8,7 @@
 	<title>File vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/ServerBag.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1712082564"></script>
+	<script type="text/javascript" src="elementlist.js?4263098139"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -142,6 +142,8 @@
 						</li>
 				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures2.html">Fixtures2</a>
+						</li>
 							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
 						<ul>
@@ -263,6 +265,11 @@
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.html">ExtensionNotValidBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.DependencyInjection.html">DependencyInjection</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
@@ -478,21 +485,28 @@
 </span><span id="75" class="l"><a class="l" href="#75">75: </a>                    <span class="php-comment">// In some circumstances PHP_AUTH_DIGEST needs to be set</span>
 </span><span id="76" class="l"><a class="l" href="#76">76: </a>                    <span class="php-var">$headers</span>[<span class="php-quote">'PHP_AUTH_DIGEST'</span>] = <span class="php-var">$authorizationHeader</span>;
 </span><span id="77" class="l"><a class="l" href="#77">77: </a>                    <span class="php-var">$this</span>-&gt;parameters[<span class="php-quote">'PHP_AUTH_DIGEST'</span>] = <span class="php-var">$authorizationHeader</span>;
-</span><span id="78" class="l"><a class="l" href="#78">78: </a>                }
-</span><span id="79" class="l"><a class="l" href="#79">79: </a>            }
-</span><span id="80" class="l"><a class="l" href="#80">80: </a>        }
-</span><span id="81" class="l"><a class="l" href="#81">81: </a>
-</span><span id="82" class="l"><a class="l" href="#82">82: </a>        <span class="php-comment">// PHP_AUTH_USER/PHP_AUTH_PW</span>
-</span><span id="83" class="l"><a class="l" href="#83">83: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$headers</span>[<span class="php-quote">'PHP_AUTH_USER'</span>])) {
-</span><span id="84" class="l"><a class="l" href="#84">84: </a>            <span class="php-var">$headers</span>[<span class="php-quote">'AUTHORIZATION'</span>] = <span class="php-quote">'Basic '</span>.<span class="php-keyword2">base64_encode</span>(<span class="php-var">$headers</span>[<span class="php-quote">'PHP_AUTH_USER'</span>].<span class="php-quote">':'</span>.<span class="php-var">$headers</span>[<span class="php-quote">'PHP_AUTH_PW'</span>]);
-</span><span id="85" class="l"><a class="l" href="#85">85: </a>        } <span class="php-keyword1">elseif</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$headers</span>[<span class="php-quote">'PHP_AUTH_DIGEST'</span>])) {
-</span><span id="86" class="l"><a class="l" href="#86">86: </a>            <span class="php-var">$headers</span>[<span class="php-quote">'AUTHORIZATION'</span>] = <span class="php-var">$headers</span>[<span class="php-quote">'PHP_AUTH_DIGEST'</span>];
+</span><span id="78" class="l"><a class="l" href="#78">78: </a>                } <span class="php-keyword1">elseif</span> (<span class="php-num">0</span> === <span class="php-keyword2">stripos</span>(<span class="php-var">$authorizationHeader</span>, <span class="php-quote">'bearer '</span>)) {
+</span><span id="79" class="l"><a class="l" href="#79">79: </a>                    <span class="php-comment">/*
+</span></span><span id="80" class="l"><a class="l" href="#80">80: </a><span class="php-comment">                     * XXX: Since there is no PHP_AUTH_BEARER in PHP predefined variables,
+</span></span><span id="81" class="l"><a class="l" href="#81">81: </a><span class="php-comment">                     *      I'll just set $headers['AUTHORIZATION'] here.
+</span></span><span id="82" class="l"><a class="l" href="#82">82: </a><span class="php-comment">                     *      http://php.net/manual/en/reserved.variables.server.php
+</span></span><span id="83" class="l"><a class="l" href="#83">83: </a><span class="php-comment">                     */</span>
+</span><span id="84" class="l"><a class="l" href="#84">84: </a>                    <span class="php-var">$headers</span>[<span class="php-quote">'AUTHORIZATION'</span>] = <span class="php-var">$authorizationHeader</span>;
+</span><span id="85" class="l"><a class="l" href="#85">85: </a>                }
+</span><span id="86" class="l"><a class="l" href="#86">86: </a>            }
 </span><span id="87" class="l"><a class="l" href="#87">87: </a>        }
 </span><span id="88" class="l"><a class="l" href="#88">88: </a>
-</span><span id="89" class="l"><a class="l" href="#89">89: </a>        <span class="php-keyword1">return</span> <span class="php-var">$headers</span>;
-</span><span id="90" class="l"><a class="l" href="#90">90: </a>    }
-</span><span id="91" class="l"><a class="l" href="#91">91: </a>}
-</span><span id="92" class="l"><a class="l" href="#92">92: </a></span></code></pre>
+</span><span id="89" class="l"><a class="l" href="#89">89: </a>        <span class="php-comment">// PHP_AUTH_USER/PHP_AUTH_PW</span>
+</span><span id="90" class="l"><a class="l" href="#90">90: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$headers</span>[<span class="php-quote">'PHP_AUTH_USER'</span>])) {
+</span><span id="91" class="l"><a class="l" href="#91">91: </a>            <span class="php-var">$headers</span>[<span class="php-quote">'AUTHORIZATION'</span>] = <span class="php-quote">'Basic '</span>.<span class="php-keyword2">base64_encode</span>(<span class="php-var">$headers</span>[<span class="php-quote">'PHP_AUTH_USER'</span>].<span class="php-quote">':'</span>.<span class="php-var">$headers</span>[<span class="php-quote">'PHP_AUTH_PW'</span>]);
+</span><span id="92" class="l"><a class="l" href="#92">92: </a>        } <span class="php-keyword1">elseif</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$headers</span>[<span class="php-quote">'PHP_AUTH_DIGEST'</span>])) {
+</span><span id="93" class="l"><a class="l" href="#93">93: </a>            <span class="php-var">$headers</span>[<span class="php-quote">'AUTHORIZATION'</span>] = <span class="php-var">$headers</span>[<span class="php-quote">'PHP_AUTH_DIGEST'</span>];
+</span><span id="94" class="l"><a class="l" href="#94">94: </a>        }
+</span><span id="95" class="l"><a class="l" href="#95">95: </a>
+</span><span id="96" class="l"><a class="l" href="#96">96: </a>        <span class="php-keyword1">return</span> <span class="php-var">$headers</span>;
+</span><span id="97" class="l"><a class="l" href="#97">97: </a>    }
+</span><span id="98" class="l"><a class="l" href="#98">98: </a>}
+</span><span id="99" class="l"><a class="l" href="#99">99: </a></span></code></pre>
 
 	<div id="footer">
 		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

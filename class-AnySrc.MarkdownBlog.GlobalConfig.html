@@ -7,7 +7,7 @@
 	<title>Class AnySrc\MarkdownBlog\GlobalConfig | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1712082564"></script>
+	<script type="text/javascript" src="elementlist.js?4263098139"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -141,6 +141,8 @@
 						</li>
 				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures2.html">Fixtures2</a>
+						</li>
 							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
 						<ul>
@@ -264,6 +266,11 @@
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
 						</li>
 							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.html">ExtensionNotValidBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.Command.html">Command</a>
@@ -339,6 +346,7 @@
 				<li><a href="class-AnySrc.MarkdownBlog.Page.html">Page</a></li>
 				<li><a href="class-AnySrc.MarkdownBlog.PageCollection.html">PageCollection</a></li>
 				<li><a href="class-AnySrc.MarkdownBlog.Pager.html">Pager</a></li>
+				<li><a href="class-AnySrc.MarkdownBlog.Version.html">Version</a></li>
 			</ul>
 
 
@@ -399,7 +407,7 @@
 		<b>Namespace:</b> <a href="namespace-AnySrc.html">AnySrc</a>\<a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a><br>
 		
 
-		<b>Located at</b> <a href="source-class-AnySrc.MarkdownBlog.GlobalConfig.html#6-73" title="Go to source code">lib/AnySrc/MarkdownBlog/GlobalConfig.php</a><br>
+		<b>Located at</b> <a href="source-class-AnySrc.MarkdownBlog.GlobalConfig.html#6-194" title="Go to source code">lib/AnySrc/MarkdownBlog/GlobalConfig.php</a><br>
 	</div>
 
 
@@ -417,7 +425,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-AnySrc.MarkdownBlog.GlobalConfig.html#12-20" title="Go to source code">__construct</a>( <span>string <var>$file</var></span> )</code>
+		<code><a href="source-class-AnySrc.MarkdownBlog.GlobalConfig.html#13-29" title="Go to source code">__construct</a>( <span>string <var>$mergrecursive</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			
@@ -433,7 +441,7 @@
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$file</var></dt>
+					<dt><var>$mergrecursive</var></dt>
 					<dd><code>string</code><br>$file</dd>
 				</dl></div>
 
@@ -455,7 +463,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_loadFile">#</a>
-		<code><a href="source-class-AnySrc.MarkdownBlog.GlobalConfig.html#23-33" title="Go to source code">loadFile</a>( <span>string <var>$file</var></span> )</code>
+		<code><a href="source-class-AnySrc.MarkdownBlog.GlobalConfig.html#32-47" title="Go to source code">loadFile</a>( <span>string <var>$file</var></span>, <span>string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			
@@ -472,13 +480,90 @@
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$file</var></dt>
-					<dd><code>string</code><br>$file</dd>
+					<dd><code>string</code><br>$file YAML File</dd>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key File Key</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
 					<code><code><a href="class-AnySrc.MarkdownBlog.GlobalConfig.html">AnySrc\MarkdownBlog\GlobalConfig</a></code></code><br>
 				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="saveFile" id="_saveFile">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_saveFile">#</a>
+		<code><a href="source-class-AnySrc.MarkdownBlog.GlobalConfig.html#50-63" title="Go to source code">saveFile</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Save data to yml</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Save data to yml</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Exception.html">Exception</a></code></code><br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="saveChanges" id="_saveChanges">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_saveChanges">#</a>
+		<code><a href="source-class-AnySrc.MarkdownBlog.GlobalConfig.html#66-79" title="Go to source code">saveChanges</a>( )</code>
+
+		<div class="description short">
+			
+<p>Save all files where changed=true</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Save all files where changed=true</p>
+
+
+
+
 
 
 
@@ -497,7 +582,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_toArray">#</a>
-		<code><a href="source-class-AnySrc.MarkdownBlog.GlobalConfig.html#36-43" title="Go to source code">toArray</a>( )</code>
+		<code><a href="source-class-AnySrc.MarkdownBlog.GlobalConfig.html#82-89" title="Go to source code">toArray</a>( )</code>
 
 		<div class="description short">
 			
@@ -508,6 +593,89 @@
 		<div class="description detailed hidden">
 			
 <p>Get complete config array</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFileData" id="_getFileData">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFileData">#</a>
+		<code><a href="source-class-AnySrc.MarkdownBlog.GlobalConfig.html#92-105" title="Go to source code">getFileData</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get data of given file key</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get data of given file key</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Exception.html">Exception</a></code></code><br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="toMergedArray" id="_toMergedArray">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_toMergedArray">#</a>
+		<code><a href="source-class-AnySrc.MarkdownBlog.GlobalConfig.html#108-121" title="Go to source code">toMergedArray</a>( )</code>
+
+		<div class="description short">
+			
+<p>Merge all config files</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Merge all config files</p>
 
 
 
@@ -534,7 +702,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPath">#</a>
-		<code><a href="source-class-AnySrc.MarkdownBlog.GlobalConfig.html#46-70" title="Go to source code">getPath</a>( <span>string <var>$path</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-AnySrc.MarkdownBlog.GlobalConfig.html#124-144" title="Go to source code">getPath</a>( <span>string <var>$path</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$key</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
@@ -554,12 +722,104 @@
 					<dd><code>string</code><br>$path</dd>
 					<dt><var>$default</var></dt>
 					<dd><code>string</code><br>$default</dd>
+					<dt><var>$key</var></dt>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
 					<code>mixed</code><br>
 				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPath" id="_setPath">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPath">#</a>
+		<code><a href="source-class-AnySrc.MarkdownBlog.GlobalConfig.html#147-163" title="Go to source code">setPath</a>( <span>string <var>$key</var></span>, <span>string <var>$path</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set value in given path</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set value in given path</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key</dd>
+					<dt><var>$path</var></dt>
+					<dd><code>string</code><br>$path</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code><br>$value</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Exception.html">Exception</a></code></code><br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="appendArray" id="_appendArray">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_appendArray">#</a>
+		<code><a href="source-class-AnySrc.MarkdownBlog.GlobalConfig.html#166-191" title="Go to source code">appendArray</a>( <span>string <var>$key</var></span>, <span>string <var>$path</var></span>, <span>mixed <var>$item</var></span>, <span>mixed <var>$nodename</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add item to a array</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add item to a array</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key</dd>
+					<dt><var>$path</var></dt>
+					<dd><code>string</code><br>$path</dd>
+					<dt><var>$item</var></dt>
+					<dd><code>mixed</code><br>$item</dd>
+					<dt><var>$nodename</var></dt>
+					<dd><code>mixed</code><br>$nodename if not null, this is the array key</dd>
+				</dl></div>
+
 
 
 

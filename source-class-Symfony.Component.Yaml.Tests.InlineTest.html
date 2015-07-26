@@ -8,7 +8,7 @@
 	<title>File vendor/symfony/yaml/Symfony/Component/Yaml/Tests/InlineTest.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1712082564"></script>
+	<script type="text/javascript" src="elementlist.js?4263098139"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -142,6 +142,8 @@
 						</li>
 				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures2.html">Fixtures2</a>
+						</li>
 							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
 						<ul>
@@ -263,6 +265,11 @@
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.html">ExtensionNotValidBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.DependencyInjection.html">DependencyInjection</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
@@ -609,8 +616,8 @@
 </span><span id="222" class="l"><a class="l" href="#222">222: </a>            <span class="php-keyword1">array</span>(<span class="php-quote">'{ foo  : bar, bar : foo,  false  :   false,  null  :   null,  integer :  12  }'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'foo'</span> =&gt; <span class="php-quote">'bar'</span>, <span class="php-quote">'bar'</span> =&gt; <span class="php-quote">'foo'</span>, <span class="php-quote">'false'</span> =&gt; <span class="php-keyword1">false</span>, <span class="php-quote">'null'</span> =&gt; <span class="php-keyword1">null</span>, <span class="php-quote">'integer'</span> =&gt; <span class="php-num">12</span>)),
 </span><span id="223" class="l"><a class="l" href="#223">223: </a>            <span class="php-keyword1">array</span>(<span class="php-quote">'{foo: \'bar\', bar: \'foo: bar\'}'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'foo'</span> =&gt; <span class="php-quote">'bar'</span>, <span class="php-quote">'bar'</span> =&gt; <span class="php-quote">'foo: bar'</span>)),
 </span><span id="224" class="l"><a class="l" href="#224">224: </a>            <span class="php-keyword1">array</span>(<span class="php-quote">'{\'foo\': \'bar\', &quot;bar&quot;: \'foo: bar\'}'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'foo'</span> =&gt; <span class="php-quote">'bar'</span>, <span class="php-quote">'bar'</span> =&gt; <span class="php-quote">'foo: bar'</span>)),
-</span><span id="225" class="l"><a class="l" href="#225">225: </a>            <span class="php-keyword1">array</span>(<span class="php-quote">'{\'foo\'\'\': \'bar\', &quot;bar\&quot;&quot;: \'foo: bar\'}'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'foo\''</span> =&gt; <span class="php-quote">'bar'</span>, <span class="php-quote">&quot;bar\&quot;&quot;</span> =&gt; <span class="php-quote">'foo: bar'</span>)),
-</span><span id="226" class="l"><a class="l" href="#226">226: </a>            <span class="php-keyword1">array</span>(<span class="php-quote">'{\'foo: \': \'bar\', &quot;bar: &quot;: \'foo: bar\'}'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'foo: '</span> =&gt; <span class="php-quote">'bar'</span>, <span class="php-quote">&quot;bar: &quot;</span> =&gt; <span class="php-quote">'foo: bar'</span>)),
+</span><span id="225" class="l"><a class="l" href="#225">225: </a>            <span class="php-keyword1">array</span>(<span class="php-quote">'{\'foo\'\'\': \'bar\', &quot;bar\&quot;&quot;: \'foo: bar\'}'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'foo\''</span> =&gt; <span class="php-quote">'bar'</span>, <span class="php-quote">'bar&quot;'</span> =&gt; <span class="php-quote">'foo: bar'</span>)),
+</span><span id="226" class="l"><a class="l" href="#226">226: </a>            <span class="php-keyword1">array</span>(<span class="php-quote">'{\'foo: \': \'bar\', &quot;bar: &quot;: \'foo: bar\'}'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'foo: '</span> =&gt; <span class="php-quote">'bar'</span>, <span class="php-quote">'bar: '</span> =&gt; <span class="php-quote">'foo: bar'</span>)),
 </span><span id="227" class="l"><a class="l" href="#227">227: </a>
 </span><span id="228" class="l"><a class="l" href="#228">228: </a>            <span class="php-comment">// nested sequences and mappings</span>
 </span><span id="229" class="l"><a class="l" href="#229">229: </a>            <span class="php-keyword1">array</span>(<span class="php-quote">'[foo, [bar, foo]]'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'foo'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'bar'</span>, <span class="php-quote">'foo'</span>))),

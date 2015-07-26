@@ -8,7 +8,7 @@
 	<title>File vendor/symfony/http-kernel/Symfony/Component/HttpKernel/UriSigner.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1712082564"></script>
+	<script type="text/javascript" src="elementlist.js?4263098139"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -142,6 +142,8 @@
 						</li>
 				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures2.html">Fixtures2</a>
+						</li>
 							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
 						<ul>
@@ -263,6 +265,11 @@
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.html">ExtensionNotValidBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.DependencyInjection.html">DependencyInjection</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
@@ -485,14 +492,14 @@
 </span><span id="94" class="l"><a class="l" href="#94"> 94: </a>        <span class="php-keyword2">ksort</span>(<span class="php-var">$params</span>);
 </span><span id="95" class="l"><a class="l" href="#95"> 95: </a>        <span class="php-var">$url</span>[<span class="php-quote">'query'</span>] = <span class="php-keyword2">http_build_query</span>(<span class="php-var">$params</span>, <span class="php-quote">''</span>, <span class="php-quote">'&amp;'</span>);
 </span><span id="96" class="l"><a class="l" href="#96"> 96: </a>
-</span><span id="97" class="l"><a class="l" href="#97"> 97: </a>        <span class="php-var">$scheme</span>   = <span class="php-keyword1">isset</span>(<span class="php-var">$url</span>[<span class="php-quote">'scheme'</span>]) ? <span class="php-var">$url</span>[<span class="php-quote">'scheme'</span>].<span class="php-quote">'://'</span> : <span class="php-quote">''</span>;
-</span><span id="98" class="l"><a class="l" href="#98"> 98: </a>        <span class="php-var">$host</span>     = <span class="php-keyword1">isset</span>(<span class="php-var">$url</span>[<span class="php-quote">'host'</span>]) ? <span class="php-var">$url</span>[<span class="php-quote">'host'</span>] : <span class="php-quote">''</span>;
-</span><span id="99" class="l"><a class="l" href="#99"> 99: </a>        <span class="php-var">$port</span>     = <span class="php-keyword1">isset</span>(<span class="php-var">$url</span>[<span class="php-quote">'port'</span>]) ? <span class="php-quote">':'</span>.<span class="php-var">$url</span>[<span class="php-quote">'port'</span>] : <span class="php-quote">''</span>;
-</span><span id="100" class="l"><a class="l" href="#100">100: </a>        <span class="php-var">$user</span>     = <span class="php-keyword1">isset</span>(<span class="php-var">$url</span>[<span class="php-quote">'user'</span>]) ? <span class="php-var">$url</span>[<span class="php-quote">'user'</span>] : <span class="php-quote">''</span>;
-</span><span id="101" class="l"><a class="l" href="#101">101: </a>        <span class="php-var">$pass</span>     = <span class="php-keyword1">isset</span>(<span class="php-var">$url</span>[<span class="php-quote">'pass'</span>]) ? <span class="php-quote">':'</span>.<span class="php-var">$url</span>[<span class="php-quote">'pass'</span>]  : <span class="php-quote">''</span>;
-</span><span id="102" class="l"><a class="l" href="#102">102: </a>        <span class="php-var">$pass</span>     = (<span class="php-var">$user</span> || <span class="php-var">$pass</span>) ? <span class="php-quote">&quot;</span><span class="php-var">$pass</span><span class="php-quote">@&quot;</span> : <span class="php-quote">''</span>;
-</span><span id="103" class="l"><a class="l" href="#103">103: </a>        <span class="php-var">$path</span>     = <span class="php-keyword1">isset</span>(<span class="php-var">$url</span>[<span class="php-quote">'path'</span>]) ? <span class="php-var">$url</span>[<span class="php-quote">'path'</span>] : <span class="php-quote">''</span>;
-</span><span id="104" class="l"><a class="l" href="#104">104: </a>        <span class="php-var">$query</span>    = <span class="php-keyword1">isset</span>(<span class="php-var">$url</span>[<span class="php-quote">'query'</span>]) &amp;&amp; <span class="php-var">$url</span>[<span class="php-quote">'query'</span>] ? <span class="php-quote">'?'</span>.<span class="php-var">$url</span>[<span class="php-quote">'query'</span>] : <span class="php-quote">''</span>;
+</span><span id="97" class="l"><a class="l" href="#97"> 97: </a>        <span class="php-var">$scheme</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$url</span>[<span class="php-quote">'scheme'</span>]) ? <span class="php-var">$url</span>[<span class="php-quote">'scheme'</span>].<span class="php-quote">'://'</span> : <span class="php-quote">''</span>;
+</span><span id="98" class="l"><a class="l" href="#98"> 98: </a>        <span class="php-var">$host</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$url</span>[<span class="php-quote">'host'</span>]) ? <span class="php-var">$url</span>[<span class="php-quote">'host'</span>] : <span class="php-quote">''</span>;
+</span><span id="99" class="l"><a class="l" href="#99"> 99: </a>        <span class="php-var">$port</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$url</span>[<span class="php-quote">'port'</span>]) ? <span class="php-quote">':'</span>.<span class="php-var">$url</span>[<span class="php-quote">'port'</span>] : <span class="php-quote">''</span>;
+</span><span id="100" class="l"><a class="l" href="#100">100: </a>        <span class="php-var">$user</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$url</span>[<span class="php-quote">'user'</span>]) ? <span class="php-var">$url</span>[<span class="php-quote">'user'</span>] : <span class="php-quote">''</span>;
+</span><span id="101" class="l"><a class="l" href="#101">101: </a>        <span class="php-var">$pass</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$url</span>[<span class="php-quote">'pass'</span>]) ? <span class="php-quote">':'</span>.<span class="php-var">$url</span>[<span class="php-quote">'pass'</span>]  : <span class="php-quote">''</span>;
+</span><span id="102" class="l"><a class="l" href="#102">102: </a>        <span class="php-var">$pass</span> = (<span class="php-var">$user</span> || <span class="php-var">$pass</span>) ? <span class="php-quote">&quot;</span><span class="php-var">$pass</span><span class="php-quote">@&quot;</span> : <span class="php-quote">''</span>;
+</span><span id="103" class="l"><a class="l" href="#103">103: </a>        <span class="php-var">$path</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$url</span>[<span class="php-quote">'path'</span>]) ? <span class="php-var">$url</span>[<span class="php-quote">'path'</span>] : <span class="php-quote">''</span>;
+</span><span id="104" class="l"><a class="l" href="#104">104: </a>        <span class="php-var">$query</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$url</span>[<span class="php-quote">'query'</span>]) &amp;&amp; <span class="php-var">$url</span>[<span class="php-quote">'query'</span>] ? <span class="php-quote">'?'</span>.<span class="php-var">$url</span>[<span class="php-quote">'query'</span>] : <span class="php-quote">''</span>;
 </span><span id="105" class="l"><a class="l" href="#105">105: </a>        <span class="php-var">$fragment</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$url</span>[<span class="php-quote">'fragment'</span>]) ? <span class="php-quote">'#'</span>.<span class="php-var">$url</span>[<span class="php-quote">'fragment'</span>] : <span class="php-quote">''</span>;
 </span><span id="106" class="l"><a class="l" href="#106">106: </a>
 </span><span id="107" class="l"><a class="l" href="#107">107: </a>        <span class="php-keyword1">return</span> <span class="php-var">$scheme</span>.<span class="php-var">$user</span>.<span class="php-var">$pass</span>.<span class="php-var">$host</span>.<span class="php-var">$port</span>.<span class="php-var">$path</span>.<span class="php-var">$query</span>.<span class="php-var">$fragment</span>;

@@ -8,7 +8,7 @@
 	<title>File vendor/symfony/http-kernel/Symfony/Component/HttpKernel/HttpCache/Store.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1712082564"></script>
+	<script type="text/javascript" src="elementlist.js?4263098139"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -142,6 +142,8 @@
 						</li>
 				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures2.html">Fixtures2</a>
+						</li>
 							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
 						<ul>
@@ -263,6 +265,11 @@
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.html">ExtensionNotValidBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.DependencyInjection.html">DependencyInjection</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
@@ -518,7 +525,7 @@
 </span><span id="127" class="l"><a class="l" href="#127">127: </a>        <span class="php-comment">// find a cached entry that matches the request.</span>
 </span><span id="128" class="l"><a class="l" href="#128">128: </a>        <span class="php-var">$match</span> = <span class="php-keyword1">null</span>;
 </span><span id="129" class="l"><a class="l" href="#129">129: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$entries</span> <span class="php-keyword1">as</span> <span class="php-var">$entry</span>) {
-</span><span id="130" class="l"><a class="l" href="#130">130: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;requestsMatch(<span class="php-keyword1">isset</span>(<span class="php-var">$entry</span>[<span class="php-num">1</span>][<span class="php-quote">'vary'</span>][<span class="php-num">0</span>]) ? <span class="php-var">$entry</span>[<span class="php-num">1</span>][<span class="php-quote">'vary'</span>][<span class="php-num">0</span>] : <span class="php-quote">''</span>, <span class="php-var">$request</span>-&gt;headers-&gt;all(), <span class="php-var">$entry</span>[<span class="php-num">0</span>])) {
+</span><span id="130" class="l"><a class="l" href="#130">130: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;requestsMatch(<span class="php-keyword1">isset</span>(<span class="php-var">$entry</span>[<span class="php-num">1</span>][<span class="php-quote">'vary'</span>][<span class="php-num">0</span>]) ? <span class="php-keyword2">implode</span>(<span class="php-quote">', '</span>, <span class="php-var">$entry</span>[<span class="php-num">1</span>][<span class="php-quote">'vary'</span>]) : <span class="php-quote">''</span>, <span class="php-var">$request</span>-&gt;headers-&gt;all(), <span class="php-var">$entry</span>[<span class="php-num">0</span>])) {
 </span><span id="131" class="l"><a class="l" href="#131">131: </a>                <span class="php-var">$match</span> = <span class="php-var">$entry</span>;
 </span><span id="132" class="l"><a class="l" href="#132">132: </a>
 </span><span id="133" class="l"><a class="l" href="#133">133: </a>                <span class="php-keyword1">break</span>;

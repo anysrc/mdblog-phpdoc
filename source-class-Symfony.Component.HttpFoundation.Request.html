@@ -8,7 +8,7 @@
 	<title>File vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Request.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1712082564"></script>
+	<script type="text/javascript" src="elementlist.js?4263098139"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -142,6 +142,8 @@
 						</li>
 				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures2.html">Fixtures2</a>
+						</li>
 							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
 						<ul>
@@ -263,6 +265,11 @@
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.html">ExtensionNotValidBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.DependencyInjection.html">DependencyInjection</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
@@ -990,7 +997,7 @@
 </span><span id="587" class="l"><a class="l" href="#587"> 587: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> <a id="_setTrustedHosts" href="#_setTrustedHosts">setTrustedHosts</a>(<span class="php-keyword1">array</span> <span class="php-var">$hostPatterns</span>)
 </span><span id="588" class="l"><a class="l" href="#588"> 588: </a>    {
 </span><span id="589" class="l"><a class="l" href="#589"> 589: </a>        self::<span class="php-var">$trustedHostPatterns</span> = <span class="php-keyword2">array_map</span>(<span class="php-keyword1">function</span> (<span class="php-var">$hostPattern</span>) {
-</span><span id="590" class="l"><a class="l" href="#590"> 590: </a>            <span class="php-keyword1">return</span> <span class="php-keyword2">sprintf</span>(<span class="php-quote">'{%s}i'</span>, <span class="php-keyword2">str_replace</span>(<span class="php-quote">'}'</span>, <span class="php-quote">'\\}'</span>, <span class="php-var">$hostPattern</span>));
+</span><span id="590" class="l"><a class="l" href="#590"> 590: </a>            <span class="php-keyword1">return</span> <span class="php-keyword2">sprintf</span>(<span class="php-quote">'#%s#i'</span>, <span class="php-var">$hostPattern</span>);
 </span><span id="591" class="l"><a class="l" href="#591"> 591: </a>        }, <span class="php-var">$hostPatterns</span>);
 </span><span id="592" class="l"><a class="l" href="#592"> 592: </a>        <span class="php-comment">// we need to reset trusted hosts on trusted host patterns change</span>
 </span><span id="593" class="l"><a class="l" href="#593"> 593: </a>        self::<span class="php-var">$trustedHosts</span> = <span class="php-keyword1">array</span>();
@@ -1983,8 +1990,8 @@
 </span><span id="1580" class="l"><a class="l" href="#1580">1580: </a>
 </span><span id="1581" class="l"><a class="l" href="#1581">1581: </a>        <span class="php-var">$languages</span> = AcceptHeader::fromString(<span class="php-var">$this</span>-&gt;headers-&gt;get(<span class="php-quote">'Accept-Language'</span>))-&gt;all();
 </span><span id="1582" class="l"><a class="l" href="#1582">1582: </a>        <span class="php-var">$this</span>-&gt;languages = <span class="php-keyword1">array</span>();
-</span><span id="1583" class="l"><a class="l" href="#1583">1583: </a>        <span class="php-keyword1">foreach</span> (<span class="php-keyword2">array_keys</span>(<span class="php-var">$languages</span>) <span class="php-keyword1">as</span> <span class="php-var">$lang</span>) {
-</span><span id="1584" class="l"><a class="l" href="#1584">1584: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">strstr</span>(<span class="php-var">$lang</span>, <span class="php-quote">'-'</span>)) {
+</span><span id="1583" class="l"><a class="l" href="#1583">1583: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$languages</span> <span class="php-keyword1">as</span> <span class="php-var">$lang</span> =&gt; <span class="php-var">$acceptHeaderItem</span>) {
+</span><span id="1584" class="l"><a class="l" href="#1584">1584: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword1">false</span> !== <span class="php-keyword2">strpos</span>(<span class="php-var">$lang</span>, <span class="php-quote">'-'</span>)) {
 </span><span id="1585" class="l"><a class="l" href="#1585">1585: </a>                <span class="php-var">$codes</span> = <span class="php-keyword2">explode</span>(<span class="php-quote">'-'</span>, <span class="php-var">$lang</span>);
 </span><span id="1586" class="l"><a class="l" href="#1586">1586: </a>                <span class="php-keyword1">if</span> (<span class="php-quote">'i'</span> === <span class="php-var">$codes</span>[<span class="php-num">0</span>]) {
 </span><span id="1587" class="l"><a class="l" href="#1587">1587: </a>                    <span class="php-comment">// Language not listed in ISO 639 that are not variants</span>
@@ -1994,7 +2001,7 @@
 </span><span id="1591" class="l"><a class="l" href="#1591">1591: </a>                        <span class="php-var">$lang</span> = <span class="php-var">$codes</span>[<span class="php-num">1</span>];
 </span><span id="1592" class="l"><a class="l" href="#1592">1592: </a>                    }
 </span><span id="1593" class="l"><a class="l" href="#1593">1593: </a>                } <span class="php-keyword1">else</span> {
-</span><span id="1594" class="l"><a class="l" href="#1594">1594: </a>                    <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">0</span>, <span class="php-var">$max</span> = <span class="php-keyword2">count</span>(<span class="php-var">$codes</span>); <span class="php-var">$i</span> &lt; <span class="php-var">$max</span>; <span class="php-var">$i</span>++) {
+</span><span id="1594" class="l"><a class="l" href="#1594">1594: </a>                    <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">0</span>, <span class="php-var">$max</span> = <span class="php-keyword2">count</span>(<span class="php-var">$codes</span>); <span class="php-var">$i</span> &lt; <span class="php-var">$max</span>; ++<span class="php-var">$i</span>) {
 </span><span id="1595" class="l"><a class="l" href="#1595">1595: </a>                        <span class="php-keyword1">if</span> (<span class="php-var">$i</span> === <span class="php-num">0</span>) {
 </span><span id="1596" class="l"><a class="l" href="#1596">1596: </a>                            <span class="php-var">$lang</span> = <span class="php-keyword2">strtolower</span>(<span class="php-var">$codes</span>[<span class="php-num">0</span>]);
 </span><span id="1597" class="l"><a class="l" href="#1597">1597: </a>                        } <span class="php-keyword1">else</span> {
@@ -2163,7 +2170,7 @@
 </span><span id="1760" class="l"><a class="l" href="#1760">1760: </a>            <span class="php-keyword1">return</span> <span class="php-var">$prefix</span>;
 </span><span id="1761" class="l"><a class="l" href="#1761">1761: </a>        }
 </span><span id="1762" class="l"><a class="l" href="#1762">1762: </a>
-</span><span id="1763" class="l"><a class="l" href="#1763">1763: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$baseUrl</span> &amp;&amp; <span class="php-keyword1">false</span> !== <span class="php-var">$prefix</span> = <span class="php-var">$this</span>-&gt;getUrlencodedPrefix(<span class="php-var">$requestUri</span>, <span class="php-keyword2">dirname</span>(<span class="php-var">$baseUrl</span>).<span class="php-quote">'/'</span>)) {
+</span><span id="1763" class="l"><a class="l" href="#1763">1763: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$baseUrl</span> &amp;&amp; <span class="php-keyword1">false</span> !== <span class="php-var">$prefix</span> = <span class="php-var">$this</span>-&gt;getUrlencodedPrefix(<span class="php-var">$requestUri</span>, <span class="php-keyword2">rtrim</span>(<span class="php-keyword2">dirname</span>(<span class="php-var">$baseUrl</span>), <span class="php-quote">'/'</span>).<span class="php-quote">'/'</span>)) {
 </span><span id="1764" class="l"><a class="l" href="#1764">1764: </a>            <span class="php-comment">// directory portion of $baseUrl matches</span>
 </span><span id="1765" class="l"><a class="l" href="#1765">1765: </a>            <span class="php-keyword1">return</span> <span class="php-keyword2">rtrim</span>(<span class="php-var">$prefix</span>, <span class="php-quote">'/'</span>);
 </span><span id="1766" class="l"><a class="l" href="#1766">1766: </a>        }

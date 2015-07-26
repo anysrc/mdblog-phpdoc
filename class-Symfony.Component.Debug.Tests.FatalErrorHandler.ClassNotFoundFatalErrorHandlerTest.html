@@ -7,7 +7,7 @@
 	<title>Class Symfony\Component\Debug\Tests\FatalErrorHandler\ClassNotFoundFatalErrorHandlerTest | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1712082564"></script>
+	<script type="text/javascript" src="elementlist.js?4263098139"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -141,6 +141,8 @@
 						</li>
 				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures2.html">Fixtures2</a>
+						</li>
 							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
 						<ul>
@@ -262,6 +264,11 @@
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.html">ExtensionNotValidBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.DependencyInjection.html">DependencyInjection</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
@@ -415,13 +422,42 @@ PHPUnit_Framework_TestCase
 		<b>Namespace:</b> <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.Debug.html">Debug</a>\<a href="namespace-Symfony.Component.Debug.Tests.html">Tests</a>\<a href="namespace-Symfony.Component.Debug.Tests.FatalErrorHandler.html">FatalErrorHandler</a><br>
 		
 
-		<b>Located at</b> <a href="source-class-Symfony.Component.Debug.Tests.FatalErrorHandler.ClassNotFoundFatalErrorHandlerTest.html#19-180" title="Go to source code">vendor/symfony/debug/Symfony/Component/Debug/Tests/FatalErrorHandler/ClassNotFoundFatalErrorHandlerTest.php</a><br>
+		<b>Located at</b> <a href="source-class-Symfony.Component.Debug.Tests.FatalErrorHandler.ClassNotFoundFatalErrorHandlerTest.html#21-202" title="Go to source code">vendor/symfony/debug/Symfony/Component/Debug/Tests/FatalErrorHandler/ClassNotFoundFatalErrorHandlerTest.php</a><br>
 	</div>
 
 
 
 	<table class="summary" id="methods">
 	<caption>Methods summary</caption>
+	<tr data-order="setUpBeforeClass" id="_setUpBeforeClass">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setUpBeforeClass">#</a>
+		<code><a href="source-class-Symfony.Component.Debug.Tests.FatalErrorHandler.ClassNotFoundFatalErrorHandlerTest.html#23-40" title="Go to source code">setUpBeforeClass</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="testHandleClassNotFound" id="_testHandleClassNotFound">
 
 		<td class="attributes"><code>
@@ -433,7 +469,7 @@ PHPUnit_Framework_TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testHandleClassNotFound">#</a>
-		<code><a href="source-class-Symfony.Component.Debug.Tests.FatalErrorHandler.ClassNotFoundFatalErrorHandlerTest.html#21-35" title="Go to source code">testHandleClassNotFound</a>( <span>mixed <var>$error</var></span>, <span>mixed <var>$translatedMessage</var></span> )</code>
+		<code><a href="source-class-Symfony.Component.Debug.Tests.FatalErrorHandler.ClassNotFoundFatalErrorHandlerTest.html#42-69" title="Go to source code">testHandleClassNotFound</a>( <span>mixed <var>$error</var></span>, <span>mixed <var>$translatedMessage</var></span>, <span>mixed <var>$autoloader</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
@@ -466,7 +502,7 @@ PHPUnit_Framework_TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testLegacyHandleClassNotFound">#</a>
-		<code><a href="source-class-Symfony.Component.Debug.Tests.FatalErrorHandler.ClassNotFoundFatalErrorHandlerTest.html#37-63" title="Go to source code">testLegacyHandleClassNotFound</a>( <span>mixed <var>$error</var></span>, <span>mixed <var>$translatedMessage</var></span>, <span>mixed <var>$autoloader</var></span> )</code>
+		<code><a href="source-class-Symfony.Component.Debug.Tests.FatalErrorHandler.ClassNotFoundFatalErrorHandlerTest.html#71-92" title="Go to source code">testLegacyHandleClassNotFound</a>( )</code>
 
 		<div class="description short">
 			
@@ -479,10 +515,6 @@ PHPUnit_Framework_TestCase
 
 
 
-				<h4>DataProvider</h4>
-				<div class="list">
-						provideLegacyClassNotFoundData<br>
-				</div>
 				<h4>Group</h4>
 				<div class="list">
 						legacy<br>
@@ -503,36 +535,7 @@ PHPUnit_Framework_TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_provideClassNotFoundData">#</a>
-		<code><a href="source-class-Symfony.Component.Debug.Tests.FatalErrorHandler.ClassNotFoundFatalErrorHandlerTest.html#65-114" title="Go to source code">provideClassNotFoundData</a>( )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="provideLegacyClassNotFoundData" id="_provideLegacyClassNotFoundData">
-
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_provideLegacyClassNotFoundData">#</a>
-		<code><a href="source-class-Symfony.Component.Debug.Tests.FatalErrorHandler.ClassNotFoundFatalErrorHandlerTest.html#116-158" title="Go to source code">provideLegacyClassNotFoundData</a>( )</code>
+		<code><a href="source-class-Symfony.Component.Debug.Tests.FatalErrorHandler.ClassNotFoundFatalErrorHandlerTest.html#94-180" title="Go to source code">provideClassNotFoundData</a>( )</code>
 
 		<div class="description short">
 			
@@ -561,7 +564,7 @@ PHPUnit_Framework_TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testCannotRedeclareClass">#</a>
-		<code><a href="source-class-Symfony.Component.Debug.Tests.FatalErrorHandler.ClassNotFoundFatalErrorHandlerTest.html#160-179" title="Go to source code">testCannotRedeclareClass</a>( )</code>
+		<code><a href="source-class-Symfony.Component.Debug.Tests.FatalErrorHandler.ClassNotFoundFatalErrorHandlerTest.html#182-201" title="Go to source code">testCannotRedeclareClass</a>( )</code>
 
 		<div class="description short">
 			

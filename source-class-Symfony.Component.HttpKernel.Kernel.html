@@ -8,7 +8,7 @@
 	<title>File vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Kernel.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1712082564"></script>
+	<script type="text/javascript" src="elementlist.js?4263098139"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -142,6 +142,8 @@
 						</li>
 				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures2.html">Fixtures2</a>
+						</li>
 							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
 						<ul>
@@ -263,6 +265,11 @@
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.html">ExtensionNotValidBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.DependencyInjection.html">DependencyInjection</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
@@ -451,11 +458,11 @@
 </span><span id="60" class="l"><a class="l" href="#60"> 60: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$startTime" href="#$startTime">$startTime</a></span>;
 </span><span id="61" class="l"><a class="l" href="#61"> 61: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$loadClassCache" href="#$loadClassCache">$loadClassCache</a></span>;
 </span><span id="62" class="l"><a class="l" href="#62"> 62: </a>
-</span><span id="63" class="l"><a class="l" href="#63"> 63: </a>    <span class="php-keyword1">const</span> <a id="VERSION" href="#VERSION">VERSION</a> = <span class="php-quote">'2.6.6'</span>;
-</span><span id="64" class="l"><a class="l" href="#64"> 64: </a>    <span class="php-keyword1">const</span> <a id="VERSION_ID" href="#VERSION_ID">VERSION_ID</a> = <span class="php-quote">'20606'</span>;
+</span><span id="63" class="l"><a class="l" href="#63"> 63: </a>    <span class="php-keyword1">const</span> <a id="VERSION" href="#VERSION">VERSION</a> = <span class="php-quote">'2.6.8'</span>;
+</span><span id="64" class="l"><a class="l" href="#64"> 64: </a>    <span class="php-keyword1">const</span> <a id="VERSION_ID" href="#VERSION_ID">VERSION_ID</a> = <span class="php-quote">'20608'</span>;
 </span><span id="65" class="l"><a class="l" href="#65"> 65: </a>    <span class="php-keyword1">const</span> <a id="MAJOR_VERSION" href="#MAJOR_VERSION">MAJOR_VERSION</a> = <span class="php-quote">'2'</span>;
 </span><span id="66" class="l"><a class="l" href="#66"> 66: </a>    <span class="php-keyword1">const</span> <a id="MINOR_VERSION" href="#MINOR_VERSION">MINOR_VERSION</a> = <span class="php-quote">'6'</span>;
-</span><span id="67" class="l"><a class="l" href="#67"> 67: </a>    <span class="php-keyword1">const</span> <a id="RELEASE_VERSION" href="#RELEASE_VERSION">RELEASE_VERSION</a> = <span class="php-quote">'6'</span>;
+</span><span id="67" class="l"><a class="l" href="#67"> 67: </a>    <span class="php-keyword1">const</span> <a id="RELEASE_VERSION" href="#RELEASE_VERSION">RELEASE_VERSION</a> = <span class="php-quote">'8'</span>;
 </span><span id="68" class="l"><a class="l" href="#68"> 68: </a>    <span class="php-keyword1">const</span> <a id="EXTRA_VERSION" href="#EXTRA_VERSION">EXTRA_VERSION</a> = <span class="php-quote">''</span>;
 </span><span id="69" class="l"><a class="l" href="#69"> 69: </a>
 </span><span id="70" class="l"><a class="l" href="#70"> 70: </a>    <span class="php-comment">/**
@@ -634,7 +641,7 @@
 </span><span id="243" class="l"><a class="l" href="#243">243: </a>    }
 </span><span id="244" class="l"><a class="l" href="#244">244: </a>
 </span><span id="245" class="l"><a class="l" href="#245">245: </a>    <span class="php-comment">/**
-</span></span><span id="246" class="l"><a class="l" href="#246">246: </a><span class="php-comment">     * {@inheritDoc}
+</span></span><span id="246" class="l"><a class="l" href="#246">246: </a><span class="php-comment">     * {@inheritdoc}
 </span></span><span id="247" class="l"><a class="l" href="#247">247: </a><span class="php-comment">     *
 </span></span><span id="248" class="l"><a class="l" href="#248">248: </a><span class="php-comment">     * @throws \RuntimeException if a custom resource is hidden by a resource in a derived bundle
 </span></span><span id="249" class="l"><a class="l" href="#249">249: </a><span class="php-comment">     */</span>
@@ -1053,7 +1060,7 @@
 </span><span id="662" class="l"><a class="l" href="#662">662: </a>    {
 </span><span id="663" class="l"><a class="l" href="#663">663: </a>        <span class="php-var">$container</span> = <span class="php-keyword1">new</span> ContainerBuilder(<span class="php-keyword1">new</span> ParameterBag(<span class="php-var">$this</span>-&gt;getKernelParameters()));
 </span><span id="664" class="l"><a class="l" href="#664">664: </a>
-</span><span id="665" class="l"><a class="l" href="#665">665: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">class_exists</span>(<span class="php-quote">'ProxyManager\Configuration'</span>)) {
+</span><span id="665" class="l"><a class="l" href="#665">665: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">class_exists</span>(<span class="php-quote">'ProxyManager\Configuration'</span>) &amp;&amp; <span class="php-keyword2">class_exists</span>(<span class="php-quote">'Symfony\Bridge\ProxyManager\LazyProxy\Instantiator\RuntimeInstantiator'</span>)) {
 </span><span id="666" class="l"><a class="l" href="#666">666: </a>            <span class="php-var">$container</span>-&gt;setProxyInstantiator(<span class="php-keyword1">new</span> RuntimeInstantiator());
 </span><span id="667" class="l"><a class="l" href="#667">667: </a>        }
 </span><span id="668" class="l"><a class="l" href="#668">668: </a>
@@ -1073,8 +1080,8 @@
 </span><span id="682" class="l"><a class="l" href="#682">682: </a>        <span class="php-comment">// cache the container</span>
 </span><span id="683" class="l"><a class="l" href="#683">683: </a>        <span class="php-var">$dumper</span> = <span class="php-keyword1">new</span> PhpDumper(<span class="php-var">$container</span>);
 </span><span id="684" class="l"><a class="l" href="#684">684: </a>
-</span><span id="685" class="l"><a class="l" href="#685">685: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">class_exists</span>(<span class="php-quote">'ProxyManager\Configuration'</span>)) {
-</span><span id="686" class="l"><a class="l" href="#686">686: </a>            <span class="php-var">$dumper</span>-&gt;setProxyDumper(<span class="php-keyword1">new</span> ProxyDumper());
+</span><span id="685" class="l"><a class="l" href="#685">685: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">class_exists</span>(<span class="php-quote">'ProxyManager\Configuration'</span>) &amp;&amp; <span class="php-keyword2">class_exists</span>(<span class="php-quote">'Symfony\Bridge\ProxyManager\LazyProxy\PhpDumper\ProxyDumper'</span>)) {
+</span><span id="686" class="l"><a class="l" href="#686">686: </a>            <span class="php-var">$dumper</span>-&gt;setProxyDumper(<span class="php-keyword1">new</span> ProxyDumper(<span class="php-keyword2">md5</span>((string) <span class="php-var">$cache</span>)));
 </span><span id="687" class="l"><a class="l" href="#687">687: </a>        }
 </span><span id="688" class="l"><a class="l" href="#688">688: </a>
 </span><span id="689" class="l"><a class="l" href="#689">689: </a>        <span class="php-var">$content</span> = <span class="php-var">$dumper</span>-&gt;dump(<span class="php-keyword1">array</span>(<span class="php-quote">'class'</span> =&gt; <span class="php-var">$class</span>, <span class="php-quote">'base_class'</span> =&gt; <span class="php-var">$baseClass</span>, <span class="php-quote">'file'</span> =&gt; (string) <span class="php-var">$cache</span>));

@@ -8,7 +8,7 @@
 	<title>File vendor/symfony/routing/Symfony/Component/Routing/RouteCompiler.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1712082564"></script>
+	<script type="text/javascript" src="elementlist.js?4263098139"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -142,6 +142,8 @@
 						</li>
 				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures2.html">Fixtures2</a>
+						</li>
 							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
 						<ul>
@@ -263,6 +265,11 @@
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.html">ExtensionNotValidBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.DependencyInjection.html">DependencyInjection</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
@@ -537,7 +544,7 @@
 </span><span id="145" class="l"><a class="l" href="#145">145: </a>        <span class="php-comment">// find the first optional token</span>
 </span><span id="146" class="l"><a class="l" href="#146">146: </a>        <span class="php-var">$firstOptional</span> = PHP_INT_MAX;
 </span><span id="147" class="l"><a class="l" href="#147">147: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$isHost</span>) {
-</span><span id="148" class="l"><a class="l" href="#148">148: </a>            <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-keyword2">count</span>(<span class="php-var">$tokens</span>) - <span class="php-num">1</span>; <span class="php-var">$i</span> &gt;= <span class="php-num">0</span>; <span class="php-var">$i</span>--) {
+</span><span id="148" class="l"><a class="l" href="#148">148: </a>            <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-keyword2">count</span>(<span class="php-var">$tokens</span>) - <span class="php-num">1</span>; <span class="php-var">$i</span> &gt;= <span class="php-num">0</span>; --<span class="php-var">$i</span>) {
 </span><span id="149" class="l"><a class="l" href="#149">149: </a>                <span class="php-var">$token</span> = <span class="php-var">$tokens</span>[<span class="php-var">$i</span>];
 </span><span id="150" class="l"><a class="l" href="#150">150: </a>                <span class="php-keyword1">if</span> (<span class="php-quote">'variable'</span> === <span class="php-var">$token</span>[<span class="php-num">0</span>] &amp;&amp; <span class="php-var">$route</span>-&gt;hasDefault(<span class="php-var">$token</span>[<span class="php-num">3</span>])) {
 </span><span id="151" class="l"><a class="l" href="#151">151: </a>                    <span class="php-var">$firstOptional</span> = <span class="php-var">$i</span>;
@@ -549,7 +556,7 @@
 </span><span id="157" class="l"><a class="l" href="#157">157: </a>
 </span><span id="158" class="l"><a class="l" href="#158">158: </a>        <span class="php-comment">// compute the matching regexp</span>
 </span><span id="159" class="l"><a class="l" href="#159">159: </a>        <span class="php-var">$regexp</span> = <span class="php-quote">''</span>;
-</span><span id="160" class="l"><a class="l" href="#160">160: </a>        <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">0</span>, <span class="php-var">$nbToken</span> = <span class="php-keyword2">count</span>(<span class="php-var">$tokens</span>); <span class="php-var">$i</span> &lt; <span class="php-var">$nbToken</span>; <span class="php-var">$i</span>++) {
+</span><span id="160" class="l"><a class="l" href="#160">160: </a>        <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">0</span>, <span class="php-var">$nbToken</span> = <span class="php-keyword2">count</span>(<span class="php-var">$tokens</span>); <span class="php-var">$i</span> &lt; <span class="php-var">$nbToken</span>; ++<span class="php-var">$i</span>) {
 </span><span id="161" class="l"><a class="l" href="#161">161: </a>            <span class="php-var">$regexp</span> .= self::computeRegexp(<span class="php-var">$tokens</span>, <span class="php-var">$i</span>, <span class="php-var">$firstOptional</span>);
 </span><span id="162" class="l"><a class="l" href="#162">162: </a>        }
 </span><span id="163" class="l"><a class="l" href="#163">163: </a>

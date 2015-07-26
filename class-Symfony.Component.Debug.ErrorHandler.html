@@ -7,7 +7,7 @@
 	<title>Class Symfony\Component\Debug\ErrorHandler | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?1712082564"></script>
+	<script type="text/javascript" src="elementlist.js?4263098139"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -141,6 +141,8 @@
 						</li>
 				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures.html">Fixtures</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Debug.Tests.Fixtures2.html">Fixtures2</a>
+						</li>
 							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
 						<ul>
@@ -262,6 +264,11 @@
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.html">ExtensionLoadedBundle<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionLoadedBundle.DependencyInjection.html">DependencyInjection</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.html">ExtensionNotValidBundle<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionNotValidBundle.DependencyInjection.html">DependencyInjection</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.HttpKernel.Tests.Fixtures.ExtensionPresentBundle.html">ExtensionPresentBundle<span></span></a>
@@ -431,7 +438,7 @@ important to fix than others of the same level.</p>
 				<b>Author:</b>
 				Nicolas Grekas &lt;<a
 href="mailto:p&#64;tchwork.com">p&#64;<!-- -->tchwork.com</a>&gt;<br>
-		<b>Located at</b> <a href="source-class-Symfony.Component.Debug.ErrorHandler.html#24-660" title="Go to source code">vendor/symfony/debug/Symfony/Component/Debug/ErrorHandler.php</a><br>
+		<b>Located at</b> <a href="source-class-Symfony.Component.Debug.ErrorHandler.html#25-681" title="Go to source code">vendor/symfony/debug/Symfony/Component/Debug/ErrorHandler.php</a><br>
 	</div>
 
 
@@ -449,7 +456,7 @@ href="mailto:p&#64;tchwork.com">p&#64;<!-- -->tchwork.com</a>&gt;<br>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_register">#</a>
-		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#110-151" title="Go to source code">register</a>( <span><code><a href="class-Symfony.Component.Debug.ErrorHandler.html">Symfony\Component\Debug\ErrorHandler</a></code>|null|integer <var>$handler</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#111-152" title="Go to source code">register</a>( <span><code><a href="class-Symfony.Component.Debug.ErrorHandler.html">Symfony\Component\Debug\ErrorHandler</a></code>|null|integer <var>$handler</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			
@@ -494,7 +501,7 @@ href="mailto:p&#64;tchwork.com">p&#64;<!-- -->tchwork.com</a>&gt;<br>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setDefaultLogger">#</a>
-		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#153-183" title="Go to source code">setDefaultLogger</a>( <span><code><a href="class-Psr.Log.LoggerInterface.html">Psr\Log\LoggerInterface</a></code> <var>$logger</var></span>, <span>array|integer <var>$levels</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#154-184" title="Go to source code">setDefaultLogger</a>( <span><code><a href="class-Psr.Log.LoggerInterface.html">Psr\Log\LoggerInterface</a></code> <var>$logger</var></span>, <span>array|integer <var>$levels</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
@@ -537,7 +544,7 @@ constants</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setLoggers">#</a>
-		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#185-220" title="Go to source code">setLoggers</a>( <span>array <var>$loggers</var></span> )</code>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#186-221" title="Go to source code">setLoggers</a>( <span>array <var>$loggers</var></span> )</code>
 
 		<div class="description short">
 			
@@ -583,7 +590,7 @@ constants</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setExceptionHandler">#</a>
-		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#222-240" title="Go to source code">setExceptionHandler</a>( <span>callable <var>$handler</var></span> )</code>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#223-241" title="Go to source code">setExceptionHandler</a>( <span>callable <var>$handler</var></span> )</code>
 
 		<div class="description short">
 			
@@ -629,17 +636,19 @@ constants</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_throwAt">#</a>
-		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#242-263" title="Go to source code">throwAt</a>( <span>integer <var>$levels</var></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#243-264" title="Go to source code">throwAt</a>( <span>integer <var>$levels</var></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
-<p>Sets the error levels that are to be thrown.</p>
+<p>Sets the PHP error levels that throw an exception when a PHP error
+occurs.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Sets the error levels that are to be thrown.</p>
+<p>Sets the PHP error levels that throw an exception when a PHP error
+occurs.</p>
 
 
 
@@ -673,17 +682,17 @@ constants</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_scopeAt">#</a>
-		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#265-282" title="Go to source code">scopeAt</a>( <span>integer <var>$levels</var></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#266-283" title="Go to source code">scopeAt</a>( <span>integer <var>$levels</var></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
-<p>Sets the error levels that are logged or thrown with their local scope.</p>
+<p>Sets the PHP error levels for which local variables are preserved.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Sets the error levels that are logged or thrown with their local scope.</p>
+<p>Sets the PHP error levels for which local variables are preserved.</p>
 
 
 
@@ -717,17 +726,17 @@ constants</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_traceAt">#</a>
-		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#284-301" title="Go to source code">traceAt</a>( <span>integer <var>$levels</var></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#285-302" title="Go to source code">traceAt</a>( <span>integer <var>$levels</var></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
-<p>Sets the error levels that are logged with their stack trace.</p>
+<p>Sets the PHP error levels for which the stack trace is preserved.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Sets the error levels that are logged with their stack trace.</p>
+<p>Sets the PHP error levels for which the stack trace is preserved.</p>
 
 
 
@@ -761,7 +770,7 @@ constants</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_screamAt">#</a>
-		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#303-320" title="Go to source code">screamAt</a>( <span>integer <var>$levels</var></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#304-321" title="Go to source code">screamAt</a>( <span>integer <var>$levels</var></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
@@ -805,7 +814,7 @@ constants</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stackErrors">#</a>
-		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#527-541" title="Go to source code">stackErrors</a>( )</code>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#548-562" title="Go to source code">stackErrors</a>( )</code>
 
 		<div class="description short">
 			
@@ -848,17 +857,17 @@ unstackErrors() is called.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_unstackErrors">#</a>
-		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#543-566" title="Go to source code">unstackErrors</a>( )</code>
+		<code><a href="source-class-Symfony.Component.Debug.ErrorHandler.html#564-587" title="Go to source code">unstackErrors</a>( )</code>
 
 		<div class="description short">
 			
-<p>Unstacks stacked errors and forwards to the logger</p>
+<p>Unstacks stacked errors and forwards to the logger.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Unstacks stacked errors and forwards to the logger</p>
+<p>Unstacks stacked errors and forwards to the logger.</p>
 
 
 
