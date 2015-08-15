@@ -408,7 +408,7 @@
 		<b>Namespace:</b> <a href="namespace-AnySrc.html">AnySrc</a>\<a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a><br>
 		
 
-		<b>Located at</b> <a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#5-162" title="Go to source code">lib/AnySrc/MarkdownBlog/PageSearch.php</a><br>
+		<b>Located at</b> <a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#5-228" title="Go to source code">lib/AnySrc/MarkdownBlog/PageSearch.php</a><br>
 	</div>
 
 
@@ -426,7 +426,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#18-21" title="Go to source code">__construct</a>( <span><code><a href="class-AnySrc.MarkdownBlog.PageCollection.html">AnySrc\MarkdownBlog\PageCollection</a></code> <var>$collection</var></span> )</code>
+		<code><a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#51-54" title="Go to source code">__construct</a>( <span><code><a href="class-AnySrc.MarkdownBlog.PageCollection.html">AnySrc\MarkdownBlog\PageCollection</a></code> <var>$collection</var></span> )</code>
 
 		<div class="description short">
 			
@@ -448,24 +448,41 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			<code><a href="class-AnySrc.MarkdownBlog.PageCollection.html">AnySrc\MarkdownBlog\PageCollection</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_search">#</a>
-		<code><a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#23-129" title="Go to source code">search</a>( <span>mixed <var>$q</var></span>, <span>mixed <var>$maximumscore</var> = <span class="php-num">2</span></span>, <span>mixed <var>$ignorehiddeninparent</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#57-171" title="Go to source code">search</a>( <span>string <var>$q</var></span>, <span>float <var>$maximumscore</var> = <span class="php-num">2</span></span>, <span>boolean <var>$ignorehiddeninparent</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			
+<p>Perform search</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Perform search</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$q</var></dt>
+					<dd><code>string</code><br>$q</dd>
+					<dt><var>$maximumscore</var></dt>
+					<dd><code>float</code><br>$maximumscore</dd>
+					<dt><var>$ignorehiddeninparent</var></dt>
+					<dd><code>boolean</code><br>$ignorehiddeninparent</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-AnySrc.MarkdownBlog.PageCollection.html">AnySrc\MarkdownBlog\PageCollection</a></code></code><br>
+				</div>
 
 
 
@@ -477,24 +494,32 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getContainspatterns">#</a>
-		<code><a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#132-135" title="Go to source code">getContainspatterns</a>( )</code>
+		<code><a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#174-181" title="Go to source code">getContainspatterns</a>( )</code>
 
 		<div class="description short">
 			
+<p>Contains last search pattern hits?</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Contains last search pattern hits?</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
 
 
 
@@ -506,24 +531,32 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getContainstitles">#</a>
-		<code><a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#137-140" title="Go to source code">getContainstitles</a>( )</code>
+		<code><a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#183-190" title="Go to source code">getContainstitles</a>( )</code>
 
 		<div class="description short">
 			
+<p>Contains last search title hits?</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Contains last search title hits?</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
 
 
 
@@ -535,24 +568,32 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getContainscontents">#</a>
-		<code><a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#142-145" title="Go to source code">getContainscontents</a>( )</code>
+		<code><a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#192-199" title="Go to source code">getContainscontents</a>( )</code>
 
 		<div class="description short">
 			
+<p>Contains last search content hits?</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Contains last search content hits?</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
 
 
 
@@ -564,24 +605,32 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getContainstags">#</a>
-		<code><a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#147-150" title="Go to source code">getContainstags</a>( )</code>
+		<code><a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#201-208" title="Go to source code">getContainstags</a>( )</code>
 
 		<div class="description short">
 			
+<p>Contains last search tag hits?</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Contains last search tag hits?</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
 
 
 
@@ -593,24 +642,32 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getContainsfolders">#</a>
-		<code><a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#152-155" title="Go to source code">getContainsfolders</a>( )</code>
+		<code><a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#210-217" title="Go to source code">getContainsfolders</a>( )</code>
 
 		<div class="description short">
 			
+<p>Contains last search folder hits?</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Contains last search folder hits?</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
 
 
 
@@ -622,24 +679,32 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getContainsstates">#</a>
-		<code><a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#157-160" title="Go to source code">getContainsstates</a>( )</code>
+		<code><a href="source-class-AnySrc.MarkdownBlog.PageSearch.html#219-226" title="Go to source code">getContainsstates</a>( )</code>
 
 		<div class="description short">
 			
+<p>Contains last search state hits?</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Contains last search state hits?</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
 
 
 
