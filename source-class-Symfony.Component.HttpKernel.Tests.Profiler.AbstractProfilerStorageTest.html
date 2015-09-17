@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0">
 	<meta name="robots" content="noindex">
 
-	<title>File vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Tests/Profiler/AbstractProfilerStorageTest.php | AnySrc Markdown Blog</title>
+	<title>File vendor/symfony/http-kernel/Tests/Profiler/AbstractProfilerStorageTest.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?2844671961"></script>
+	<script type="text/javascript" src="elementlist.js?1063707655"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -26,8 +26,13 @@
 						</li>
 				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
 						<ul>
-				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.LinkBlog.html">LinkBlog</a>
 						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-AnySrc.Security.html">Security</a>
 						</li>
 				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
@@ -95,6 +100,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
 						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.DataCollector.html">DataCollector</a>
+						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
 						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
@@ -128,6 +135,53 @@
 							</ul></li></ul></li>
 				<li class="active"><a href="namespace-Symfony.Component.html">Component<span></span></a>
 						<ul>
+				<li><a href="namespace-Symfony.Component.Console.html">Console<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Question.html">Question</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tester.html">Tester</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Fixtures.html">Fixtures</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Tester.html">Tester</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
@@ -313,6 +367,8 @@
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.html">Fixtures<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.OtherAnnotatedClasses.html">OtherAnnotatedClasses</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
@@ -644,12 +700,28 @@
 </span><span id="247" class="l"><a class="l" href="#247">247: </a>        <span class="php-var">$this</span>-&gt;assertCount(<span class="php-num">3</span>, <span class="php-var">$this</span>-&gt;getStorage()-&gt;find(<span class="php-quote">'127.0.0.1'</span>, <span class="php-quote">'http://example.net/'</span>, <span class="php-num">3</span>, <span class="php-quote">'GET'</span>), <span class="php-quote">'-&gt;find() method returns incorrect number of entries'</span>);
 </span><span id="248" class="l"><a class="l" href="#248">248: </a>    }
 </span><span id="249" class="l"><a class="l" href="#249">249: </a>
-</span><span id="250" class="l"><a class="l" href="#250">250: </a>    <span class="php-comment">/**
-</span></span><span id="251" class="l"><a class="l" href="#251">251: </a><span class="php-comment">     * @return \Symfony\Component\HttpKernel\Profiler\ProfilerStorageInterface
-</span></span><span id="252" class="l"><a class="l" href="#252">252: </a><span class="php-comment">     */</span>
-</span><span id="253" class="l"><a class="l" href="#253">253: </a>    <span class="php-keyword1">abstract</span> <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_getStorage" href="#_getStorage">getStorage</a>();
-</span><span id="254" class="l"><a class="l" href="#254">254: </a>}
-</span><span id="255" class="l"><a class="l" href="#255">255: </a></span></code></pre>
+</span><span id="250" class="l"><a class="l" href="#250">250: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testStatusCode" href="#_testStatusCode">testStatusCode</a>()
+</span><span id="251" class="l"><a class="l" href="#251">251: </a>    {
+</span><span id="252" class="l"><a class="l" href="#252">252: </a>        <span class="php-var">$profile</span> = <span class="php-keyword1">new</span> Profile(<span class="php-quote">'token1'</span>);
+</span><span id="253" class="l"><a class="l" href="#253">253: </a>        <span class="php-var">$profile</span>-&gt;setStatusCode(<span class="php-num">200</span>);
+</span><span id="254" class="l"><a class="l" href="#254">254: </a>        <span class="php-var">$this</span>-&gt;getStorage()-&gt;write(<span class="php-var">$profile</span>);
+</span><span id="255" class="l"><a class="l" href="#255">255: </a>
+</span><span id="256" class="l"><a class="l" href="#256">256: </a>        <span class="php-var">$profile</span> = <span class="php-keyword1">new</span> Profile(<span class="php-quote">'token2'</span>);
+</span><span id="257" class="l"><a class="l" href="#257">257: </a>        <span class="php-var">$profile</span>-&gt;setStatusCode(<span class="php-num">404</span>);
+</span><span id="258" class="l"><a class="l" href="#258">258: </a>        <span class="php-var">$this</span>-&gt;getStorage()-&gt;write(<span class="php-var">$profile</span>);
+</span><span id="259" class="l"><a class="l" href="#259">259: </a>
+</span><span id="260" class="l"><a class="l" href="#260">260: </a>        <span class="php-var">$tokens</span> = <span class="php-var">$this</span>-&gt;getStorage()-&gt;find(<span class="php-quote">''</span>, <span class="php-quote">''</span>, <span class="php-num">10</span>, <span class="php-quote">''</span>);
+</span><span id="261" class="l"><a class="l" href="#261">261: </a>        <span class="php-var">$this</span>-&gt;assertCount(<span class="php-num">2</span>, <span class="php-var">$tokens</span>);
+</span><span id="262" class="l"><a class="l" href="#262">262: </a>        <span class="php-var">$this</span>-&gt;assertContains(<span class="php-var">$tokens</span>[<span class="php-num">0</span>][<span class="php-quote">'status_code'</span>], <span class="php-keyword1">array</span>(<span class="php-num">200</span>, <span class="php-num">404</span>));
+</span><span id="263" class="l"><a class="l" href="#263">263: </a>        <span class="php-var">$this</span>-&gt;assertContains(<span class="php-var">$tokens</span>[<span class="php-num">1</span>][<span class="php-quote">'status_code'</span>], <span class="php-keyword1">array</span>(<span class="php-num">200</span>, <span class="php-num">404</span>));
+</span><span id="264" class="l"><a class="l" href="#264">264: </a>    }
+</span><span id="265" class="l"><a class="l" href="#265">265: </a>
+</span><span id="266" class="l"><a class="l" href="#266">266: </a>    <span class="php-comment">/**
+</span></span><span id="267" class="l"><a class="l" href="#267">267: </a><span class="php-comment">     * @return \Symfony\Component\HttpKernel\Profiler\ProfilerStorageInterface
+</span></span><span id="268" class="l"><a class="l" href="#268">268: </a><span class="php-comment">     */</span>
+</span><span id="269" class="l"><a class="l" href="#269">269: </a>    <span class="php-keyword1">abstract</span> <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_getStorage" href="#_getStorage">getStorage</a>();
+</span><span id="270" class="l"><a class="l" href="#270">270: </a>}
+</span><span id="271" class="l"><a class="l" href="#271">271: </a></span></code></pre>
 
 	<div id="footer">
 		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

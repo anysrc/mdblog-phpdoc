@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0">
 	<meta name="robots" content="noindex">
 
-	<title>File vendor/symfony/http-kernel/Symfony/Component/HttpKernel/EventListener/LocaleListener.php | AnySrc Markdown Blog</title>
+	<title>File vendor/symfony/http-kernel/EventListener/LocaleListener.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?2844671961"></script>
+	<script type="text/javascript" src="elementlist.js?1063707655"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -26,8 +26,13 @@
 						</li>
 				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
 						<ul>
-				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.LinkBlog.html">LinkBlog</a>
 						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-AnySrc.Security.html">Security</a>
 						</li>
 				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
@@ -95,6 +100,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
 						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.DataCollector.html">DataCollector</a>
+						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
 						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
@@ -128,6 +135,53 @@
 							</ul></li></ul></li>
 				<li class="active"><a href="namespace-Symfony.Component.html">Component<span></span></a>
 						<ul>
+				<li><a href="namespace-Symfony.Component.Console.html">Console<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Question.html">Question</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tester.html">Tester</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Fixtures.html">Fixtures</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Tester.html">Tester</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
@@ -314,6 +368,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.OtherAnnotatedClasses.html">OtherAnnotatedClasses</a>
+						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
 						<ul>
@@ -456,62 +512,64 @@
 </span></span><span id="54" class="l"><a class="l" href="#54"> 54: </a><span class="php-comment">     *
 </span></span><span id="55" class="l"><a class="l" href="#55"> 55: </a><span class="php-comment">     * @param Request|null $request A Request instance
 </span></span><span id="56" class="l"><a class="l" href="#56"> 56: </a><span class="php-comment">     *
-</span></span><span id="57" class="l"><a class="l" href="#57"> 57: </a><span class="php-comment">     * @deprecated Deprecated since version 2.4, to be removed in 3.0.
+</span></span><span id="57" class="l"><a class="l" href="#57"> 57: </a><span class="php-comment">     * @deprecated since version 2.4, to be removed in 3.0.
 </span></span><span id="58" class="l"><a class="l" href="#58"> 58: </a><span class="php-comment">     */</span>
 </span><span id="59" class="l"><a class="l" href="#59"> 59: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_setRequest" href="#_setRequest">setRequest</a>(Request <span class="php-var">$request</span> = <span class="php-keyword1">null</span>)
 </span><span id="60" class="l"><a class="l" href="#60"> 60: </a>    {
-</span><span id="61" class="l"><a class="l" href="#61"> 61: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">null</span> === <span class="php-var">$request</span>) {
-</span><span id="62" class="l"><a class="l" href="#62"> 62: </a>            <span class="php-keyword1">return</span>;
-</span><span id="63" class="l"><a class="l" href="#63"> 63: </a>        }
-</span><span id="64" class="l"><a class="l" href="#64"> 64: </a>
-</span><span id="65" class="l"><a class="l" href="#65"> 65: </a>        <span class="php-var">$this</span>-&gt;<span class="php-keyword2">setLocale</span>(<span class="php-var">$request</span>);
-</span><span id="66" class="l"><a class="l" href="#66"> 66: </a>        <span class="php-var">$this</span>-&gt;setRouterContext(<span class="php-var">$request</span>);
-</span><span id="67" class="l"><a class="l" href="#67"> 67: </a>    }
-</span><span id="68" class="l"><a class="l" href="#68"> 68: </a>
-</span><span id="69" class="l"><a class="l" href="#69"> 69: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_onKernelRequest" href="#_onKernelRequest">onKernelRequest</a>(GetResponseEvent <span class="php-var">$event</span>)
-</span><span id="70" class="l"><a class="l" href="#70"> 70: </a>    {
-</span><span id="71" class="l"><a class="l" href="#71"> 71: </a>        <span class="php-var">$request</span> = <span class="php-var">$event</span>-&gt;getRequest();
-</span><span id="72" class="l"><a class="l" href="#72"> 72: </a>        <span class="php-var">$request</span>-&gt;setDefaultLocale(<span class="php-var">$this</span>-&gt;defaultLocale);
-</span><span id="73" class="l"><a class="l" href="#73"> 73: </a>
-</span><span id="74" class="l"><a class="l" href="#74"> 74: </a>        <span class="php-var">$this</span>-&gt;<span class="php-keyword2">setLocale</span>(<span class="php-var">$request</span>);
-</span><span id="75" class="l"><a class="l" href="#75"> 75: </a>        <span class="php-var">$this</span>-&gt;setRouterContext(<span class="php-var">$request</span>);
-</span><span id="76" class="l"><a class="l" href="#76"> 76: </a>    }
-</span><span id="77" class="l"><a class="l" href="#77"> 77: </a>
-</span><span id="78" class="l"><a class="l" href="#78"> 78: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_onKernelFinishRequest" href="#_onKernelFinishRequest">onKernelFinishRequest</a>(FinishRequestEvent <span class="php-var">$event</span>)
-</span><span id="79" class="l"><a class="l" href="#79"> 79: </a>    {
-</span><span id="80" class="l"><a class="l" href="#80"> 80: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">null</span> === <span class="php-var">$this</span>-&gt;requestStack) {
-</span><span id="81" class="l"><a class="l" href="#81"> 81: </a>            <span class="php-keyword1">return</span>; <span class="php-comment">// removed when requestStack is required</span>
-</span><span id="82" class="l"><a class="l" href="#82"> 82: </a>        }
-</span><span id="83" class="l"><a class="l" href="#83"> 83: </a>
-</span><span id="84" class="l"><a class="l" href="#84"> 84: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">null</span> !== <span class="php-var">$parentRequest</span> = <span class="php-var">$this</span>-&gt;requestStack-&gt;getParentRequest()) {
-</span><span id="85" class="l"><a class="l" href="#85"> 85: </a>            <span class="php-var">$this</span>-&gt;setRouterContext(<span class="php-var">$parentRequest</span>);
-</span><span id="86" class="l"><a class="l" href="#86"> 86: </a>        }
-</span><span id="87" class="l"><a class="l" href="#87"> 87: </a>    }
-</span><span id="88" class="l"><a class="l" href="#88"> 88: </a>
-</span><span id="89" class="l"><a class="l" href="#89"> 89: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <span class="php-keyword2">setLocale</span>(Request <span class="php-var">$request</span>)
-</span><span id="90" class="l"><a class="l" href="#90"> 90: </a>    {
-</span><span id="91" class="l"><a class="l" href="#91"> 91: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$locale</span> = <span class="php-var">$request</span>-&gt;attributes-&gt;get(<span class="php-quote">'_locale'</span>)) {
-</span><span id="92" class="l"><a class="l" href="#92"> 92: </a>            <span class="php-var">$request</span>-&gt;<span class="php-keyword2">setLocale</span>(<span class="php-var">$locale</span>);
-</span><span id="93" class="l"><a class="l" href="#93"> 93: </a>        }
-</span><span id="94" class="l"><a class="l" href="#94"> 94: </a>    }
-</span><span id="95" class="l"><a class="l" href="#95"> 95: </a>
-</span><span id="96" class="l"><a class="l" href="#96"> 96: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_setRouterContext" href="#_setRouterContext">setRouterContext</a>(Request <span class="php-var">$request</span>)
-</span><span id="97" class="l"><a class="l" href="#97"> 97: </a>    {
-</span><span id="98" class="l"><a class="l" href="#98"> 98: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">null</span> !== <span class="php-var">$this</span>-&gt;router) {
-</span><span id="99" class="l"><a class="l" href="#99"> 99: </a>            <span class="php-var">$this</span>-&gt;router-&gt;getContext()-&gt;setParameter(<span class="php-quote">'_locale'</span>, <span class="php-var">$request</span>-&gt;getLocale());
-</span><span id="100" class="l"><a class="l" href="#100">100: </a>        }
-</span><span id="101" class="l"><a class="l" href="#101">101: </a>    }
-</span><span id="102" class="l"><a class="l" href="#102">102: </a>
-</span><span id="103" class="l"><a class="l" href="#103">103: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> <a id="_getSubscribedEvents" href="#_getSubscribedEvents">getSubscribedEvents</a>()
-</span><span id="104" class="l"><a class="l" href="#104">104: </a>    {
-</span><span id="105" class="l"><a class="l" href="#105">105: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">array</span>(
-</span><span id="106" class="l"><a class="l" href="#106">106: </a>            <span class="php-comment">// must be registered after the Router to have access to the _locale</span>
-</span><span id="107" class="l"><a class="l" href="#107">107: </a>            KernelEvents::REQUEST =&gt; <span class="php-keyword1">array</span>(<span class="php-keyword1">array</span>(<span class="php-quote">'onKernelRequest'</span>, <span class="php-num">16</span>)),
-</span><span id="108" class="l"><a class="l" href="#108">108: </a>            KernelEvents::FINISH_REQUEST =&gt; <span class="php-keyword1">array</span>(<span class="php-keyword1">array</span>(<span class="php-quote">'onKernelFinishRequest'</span>, <span class="php-num">0</span>)),
-</span><span id="109" class="l"><a class="l" href="#109">109: </a>        );
-</span><span id="110" class="l"><a class="l" href="#110">110: </a>    }
-</span><span id="111" class="l"><a class="l" href="#111">111: </a>}
-</span><span id="112" class="l"><a class="l" href="#112">112: </a></span></code></pre>
+</span><span id="61" class="l"><a class="l" href="#61"> 61: </a>        @<span class="php-keyword2">trigger_error</span>(<span class="php-quote">'The '</span>.__METHOD__.<span class="php-quote">' method is deprecated since version 2.4 and will be removed in 3.0.'</span>, E_USER_DEPRECATED);
+</span><span id="62" class="l"><a class="l" href="#62"> 62: </a>
+</span><span id="63" class="l"><a class="l" href="#63"> 63: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">null</span> === <span class="php-var">$request</span>) {
+</span><span id="64" class="l"><a class="l" href="#64"> 64: </a>            <span class="php-keyword1">return</span>;
+</span><span id="65" class="l"><a class="l" href="#65"> 65: </a>        }
+</span><span id="66" class="l"><a class="l" href="#66"> 66: </a>
+</span><span id="67" class="l"><a class="l" href="#67"> 67: </a>        <span class="php-var">$this</span>-&gt;<span class="php-keyword2">setLocale</span>(<span class="php-var">$request</span>);
+</span><span id="68" class="l"><a class="l" href="#68"> 68: </a>        <span class="php-var">$this</span>-&gt;setRouterContext(<span class="php-var">$request</span>);
+</span><span id="69" class="l"><a class="l" href="#69"> 69: </a>    }
+</span><span id="70" class="l"><a class="l" href="#70"> 70: </a>
+</span><span id="71" class="l"><a class="l" href="#71"> 71: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_onKernelRequest" href="#_onKernelRequest">onKernelRequest</a>(GetResponseEvent <span class="php-var">$event</span>)
+</span><span id="72" class="l"><a class="l" href="#72"> 72: </a>    {
+</span><span id="73" class="l"><a class="l" href="#73"> 73: </a>        <span class="php-var">$request</span> = <span class="php-var">$event</span>-&gt;getRequest();
+</span><span id="74" class="l"><a class="l" href="#74"> 74: </a>        <span class="php-var">$request</span>-&gt;setDefaultLocale(<span class="php-var">$this</span>-&gt;defaultLocale);
+</span><span id="75" class="l"><a class="l" href="#75"> 75: </a>
+</span><span id="76" class="l"><a class="l" href="#76"> 76: </a>        <span class="php-var">$this</span>-&gt;<span class="php-keyword2">setLocale</span>(<span class="php-var">$request</span>);
+</span><span id="77" class="l"><a class="l" href="#77"> 77: </a>        <span class="php-var">$this</span>-&gt;setRouterContext(<span class="php-var">$request</span>);
+</span><span id="78" class="l"><a class="l" href="#78"> 78: </a>    }
+</span><span id="79" class="l"><a class="l" href="#79"> 79: </a>
+</span><span id="80" class="l"><a class="l" href="#80"> 80: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_onKernelFinishRequest" href="#_onKernelFinishRequest">onKernelFinishRequest</a>(FinishRequestEvent <span class="php-var">$event</span>)
+</span><span id="81" class="l"><a class="l" href="#81"> 81: </a>    {
+</span><span id="82" class="l"><a class="l" href="#82"> 82: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">null</span> === <span class="php-var">$this</span>-&gt;requestStack) {
+</span><span id="83" class="l"><a class="l" href="#83"> 83: </a>            <span class="php-keyword1">return</span>; <span class="php-comment">// removed when requestStack is required</span>
+</span><span id="84" class="l"><a class="l" href="#84"> 84: </a>        }
+</span><span id="85" class="l"><a class="l" href="#85"> 85: </a>
+</span><span id="86" class="l"><a class="l" href="#86"> 86: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">null</span> !== <span class="php-var">$parentRequest</span> = <span class="php-var">$this</span>-&gt;requestStack-&gt;getParentRequest()) {
+</span><span id="87" class="l"><a class="l" href="#87"> 87: </a>            <span class="php-var">$this</span>-&gt;setRouterContext(<span class="php-var">$parentRequest</span>);
+</span><span id="88" class="l"><a class="l" href="#88"> 88: </a>        }
+</span><span id="89" class="l"><a class="l" href="#89"> 89: </a>    }
+</span><span id="90" class="l"><a class="l" href="#90"> 90: </a>
+</span><span id="91" class="l"><a class="l" href="#91"> 91: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <span class="php-keyword2">setLocale</span>(Request <span class="php-var">$request</span>)
+</span><span id="92" class="l"><a class="l" href="#92"> 92: </a>    {
+</span><span id="93" class="l"><a class="l" href="#93"> 93: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$locale</span> = <span class="php-var">$request</span>-&gt;attributes-&gt;get(<span class="php-quote">'_locale'</span>)) {
+</span><span id="94" class="l"><a class="l" href="#94"> 94: </a>            <span class="php-var">$request</span>-&gt;<span class="php-keyword2">setLocale</span>(<span class="php-var">$locale</span>);
+</span><span id="95" class="l"><a class="l" href="#95"> 95: </a>        }
+</span><span id="96" class="l"><a class="l" href="#96"> 96: </a>    }
+</span><span id="97" class="l"><a class="l" href="#97"> 97: </a>
+</span><span id="98" class="l"><a class="l" href="#98"> 98: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_setRouterContext" href="#_setRouterContext">setRouterContext</a>(Request <span class="php-var">$request</span>)
+</span><span id="99" class="l"><a class="l" href="#99"> 99: </a>    {
+</span><span id="100" class="l"><a class="l" href="#100">100: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">null</span> !== <span class="php-var">$this</span>-&gt;router) {
+</span><span id="101" class="l"><a class="l" href="#101">101: </a>            <span class="php-var">$this</span>-&gt;router-&gt;getContext()-&gt;setParameter(<span class="php-quote">'_locale'</span>, <span class="php-var">$request</span>-&gt;getLocale());
+</span><span id="102" class="l"><a class="l" href="#102">102: </a>        }
+</span><span id="103" class="l"><a class="l" href="#103">103: </a>    }
+</span><span id="104" class="l"><a class="l" href="#104">104: </a>
+</span><span id="105" class="l"><a class="l" href="#105">105: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> <a id="_getSubscribedEvents" href="#_getSubscribedEvents">getSubscribedEvents</a>()
+</span><span id="106" class="l"><a class="l" href="#106">106: </a>    {
+</span><span id="107" class="l"><a class="l" href="#107">107: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">array</span>(
+</span><span id="108" class="l"><a class="l" href="#108">108: </a>            <span class="php-comment">// must be registered after the Router to have access to the _locale</span>
+</span><span id="109" class="l"><a class="l" href="#109">109: </a>            KernelEvents::REQUEST =&gt; <span class="php-keyword1">array</span>(<span class="php-keyword1">array</span>(<span class="php-quote">'onKernelRequest'</span>, <span class="php-num">16</span>)),
+</span><span id="110" class="l"><a class="l" href="#110">110: </a>            KernelEvents::FINISH_REQUEST =&gt; <span class="php-keyword1">array</span>(<span class="php-keyword1">array</span>(<span class="php-quote">'onKernelFinishRequest'</span>, <span class="php-num">0</span>)),
+</span><span id="111" class="l"><a class="l" href="#111">111: </a>        );
+</span><span id="112" class="l"><a class="l" href="#112">112: </a>    }
+</span><span id="113" class="l"><a class="l" href="#113">113: </a>}
+</span><span id="114" class="l"><a class="l" href="#114">114: </a></span></code></pre>
 
 	<div id="footer">
 		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

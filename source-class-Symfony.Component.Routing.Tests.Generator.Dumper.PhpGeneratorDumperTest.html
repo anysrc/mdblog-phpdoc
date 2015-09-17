@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0">
 	<meta name="robots" content="noindex">
 
-	<title>File vendor/symfony/routing/Symfony/Component/Routing/Tests/Generator/Dumper/PhpGeneratorDumperTest.php | AnySrc Markdown Blog</title>
+	<title>File vendor/symfony/routing/Tests/Generator/Dumper/PhpGeneratorDumperTest.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?2844671961"></script>
+	<script type="text/javascript" src="elementlist.js?1063707655"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -26,8 +26,13 @@
 						</li>
 				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
 						<ul>
-				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.LinkBlog.html">LinkBlog</a>
 						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-AnySrc.Security.html">Security</a>
 						</li>
 				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
@@ -95,6 +100,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
 						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.DataCollector.html">DataCollector</a>
+						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
 						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
@@ -128,6 +135,53 @@
 							</ul></li></ul></li>
 				<li class="active"><a href="namespace-Symfony.Component.html">Component<span></span></a>
 						<ul>
+				<li><a href="namespace-Symfony.Component.Console.html">Console<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Question.html">Question</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tester.html">Tester</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Fixtures.html">Fixtures</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Tester.html">Tester</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
@@ -314,6 +368,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.OtherAnnotatedClasses.html">OtherAnnotatedClasses</a>
+						</li>
 							</ul></li>
 				<li class="active"><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
 						<ul>
@@ -427,7 +483,7 @@
 </span><span id="39" class="l"><a class="l" href="#39"> 39: </a>
 </span><span id="40" class="l"><a class="l" href="#40"> 40: </a>        <span class="php-var">$this</span>-&gt;routeCollection = <span class="php-keyword1">new</span> RouteCollection();
 </span><span id="41" class="l"><a class="l" href="#41"> 41: </a>        <span class="php-var">$this</span>-&gt;generatorDumper = <span class="php-keyword1">new</span> PhpGeneratorDumper(<span class="php-var">$this</span>-&gt;routeCollection);
-</span><span id="42" class="l"><a class="l" href="#42"> 42: </a>        <span class="php-var">$this</span>-&gt;testTmpFilepath = <span class="php-keyword2">sys_get_temp_dir</span>().DIRECTORY_SEPARATOR.<span class="php-quote">'php_generator.php'</span>;
+</span><span id="42" class="l"><a class="l" href="#42"> 42: </a>        <span class="php-var">$this</span>-&gt;testTmpFilepath = <span class="php-keyword2">sys_get_temp_dir</span>().DIRECTORY_SEPARATOR.<span class="php-quote">'php_generator.'</span>.<span class="php-var">$this</span>-&gt;getName().<span class="php-quote">'.php'</span>;
 </span><span id="43" class="l"><a class="l" href="#43"> 43: </a>        @<span class="php-keyword2">unlink</span>(<span class="php-var">$this</span>-&gt;testTmpFilepath);
 </span><span id="44" class="l"><a class="l" href="#44"> 44: </a>    }
 </span><span id="45" class="l"><a class="l" href="#45"> 45: </a>
@@ -506,37 +562,28 @@
 </span><span id="118" class="l"><a class="l" href="#118">118: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testDumpWithSchemeRequirement" href="#_testDumpWithSchemeRequirement">testDumpWithSchemeRequirement</a>()
 </span><span id="119" class="l"><a class="l" href="#119">119: </a>    {
 </span><span id="120" class="l"><a class="l" href="#120">120: </a>        <span class="php-var">$this</span>-&gt;routeCollection-&gt;add(<span class="php-quote">'Test1'</span>, <span class="php-keyword1">new</span> Route(<span class="php-quote">'/testing'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">array</span>(), <span class="php-keyword1">array</span>(), <span class="php-quote">''</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'ftp'</span>, <span class="php-quote">'https'</span>)));
-</span><span id="121" class="l"><a class="l" href="#121">121: </a>        <span class="php-var">$this</span>-&gt;routeCollection-&gt;add(<span class="php-quote">'Test2'</span>, <span class="php-keyword1">new</span> Route(<span class="php-quote">'/testing_bc'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">array</span>(<span class="php-quote">'_scheme'</span> =&gt; <span class="php-quote">'https'</span>))); <span class="php-comment">// BC</span>
-</span><span id="122" class="l"><a class="l" href="#122">122: </a>
-</span><span id="123" class="l"><a class="l" href="#123">123: </a>        <span class="php-keyword2">file_put_contents</span>(<span class="php-var">$this</span>-&gt;testTmpFilepath, <span class="php-var">$this</span>-&gt;generatorDumper-&gt;dump(<span class="php-keyword1">array</span>(<span class="php-quote">'class'</span> =&gt; <span class="php-quote">'SchemeUrlGenerator'</span>)));
-</span><span id="124" class="l"><a class="l" href="#124">124: </a>        <span class="php-keyword1">include</span> <span class="php-var">$this</span>-&gt;testTmpFilepath;
-</span><span id="125" class="l"><a class="l" href="#125">125: </a>
-</span><span id="126" class="l"><a class="l" href="#126">126: </a>        <span class="php-var">$projectUrlGenerator</span> = <span class="php-keyword1">new</span> \SchemeUrlGenerator(<span class="php-keyword1">new</span> RequestContext(<span class="php-quote">'/app.php'</span>));
-</span><span id="127" class="l"><a class="l" href="#127">127: </a>
-</span><span id="128" class="l"><a class="l" href="#128">128: </a>        <span class="php-var">$absoluteUrl</span> = <span class="php-var">$projectUrlGenerator</span>-&gt;generate(<span class="php-quote">'Test1'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">true</span>);
-</span><span id="129" class="l"><a class="l" href="#129">129: </a>        <span class="php-var">$absoluteUrlBC</span> = <span class="php-var">$projectUrlGenerator</span>-&gt;generate(<span class="php-quote">'Test2'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">true</span>);
-</span><span id="130" class="l"><a class="l" href="#130">130: </a>        <span class="php-var">$relativeUrl</span> = <span class="php-var">$projectUrlGenerator</span>-&gt;generate(<span class="php-quote">'Test1'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">false</span>);
-</span><span id="131" class="l"><a class="l" href="#131">131: </a>        <span class="php-var">$relativeUrlBC</span> = <span class="php-var">$projectUrlGenerator</span>-&gt;generate(<span class="php-quote">'Test2'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">false</span>);
+</span><span id="121" class="l"><a class="l" href="#121">121: </a>
+</span><span id="122" class="l"><a class="l" href="#122">122: </a>        <span class="php-keyword2">file_put_contents</span>(<span class="php-var">$this</span>-&gt;testTmpFilepath, <span class="php-var">$this</span>-&gt;generatorDumper-&gt;dump(<span class="php-keyword1">array</span>(<span class="php-quote">'class'</span> =&gt; <span class="php-quote">'SchemeUrlGenerator'</span>)));
+</span><span id="123" class="l"><a class="l" href="#123">123: </a>        <span class="php-keyword1">include</span> <span class="php-var">$this</span>-&gt;testTmpFilepath;
+</span><span id="124" class="l"><a class="l" href="#124">124: </a>
+</span><span id="125" class="l"><a class="l" href="#125">125: </a>        <span class="php-var">$projectUrlGenerator</span> = <span class="php-keyword1">new</span> \SchemeUrlGenerator(<span class="php-keyword1">new</span> RequestContext(<span class="php-quote">'/app.php'</span>));
+</span><span id="126" class="l"><a class="l" href="#126">126: </a>
+</span><span id="127" class="l"><a class="l" href="#127">127: </a>        <span class="php-var">$absoluteUrl</span> = <span class="php-var">$projectUrlGenerator</span>-&gt;generate(<span class="php-quote">'Test1'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">true</span>);
+</span><span id="128" class="l"><a class="l" href="#128">128: </a>        <span class="php-var">$relativeUrl</span> = <span class="php-var">$projectUrlGenerator</span>-&gt;generate(<span class="php-quote">'Test1'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">false</span>);
+</span><span id="129" class="l"><a class="l" href="#129">129: </a>
+</span><span id="130" class="l"><a class="l" href="#130">130: </a>        <span class="php-var">$this</span>-&gt;assertEquals(<span class="php-var">$absoluteUrl</span>, <span class="php-quote">'ftp://localhost/app.php/testing'</span>);
+</span><span id="131" class="l"><a class="l" href="#131">131: </a>        <span class="php-var">$this</span>-&gt;assertEquals(<span class="php-var">$relativeUrl</span>, <span class="php-quote">'ftp://localhost/app.php/testing'</span>);
 </span><span id="132" class="l"><a class="l" href="#132">132: </a>
-</span><span id="133" class="l"><a class="l" href="#133">133: </a>        <span class="php-var">$this</span>-&gt;assertEquals(<span class="php-var">$absoluteUrl</span>, <span class="php-quote">'ftp://localhost/app.php/testing'</span>);
-</span><span id="134" class="l"><a class="l" href="#134">134: </a>        <span class="php-var">$this</span>-&gt;assertEquals(<span class="php-var">$absoluteUrlBC</span>, <span class="php-quote">'https://localhost/app.php/testing_bc'</span>);
-</span><span id="135" class="l"><a class="l" href="#135">135: </a>        <span class="php-var">$this</span>-&gt;assertEquals(<span class="php-var">$relativeUrl</span>, <span class="php-quote">'ftp://localhost/app.php/testing'</span>);
-</span><span id="136" class="l"><a class="l" href="#136">136: </a>        <span class="php-var">$this</span>-&gt;assertEquals(<span class="php-var">$relativeUrlBC</span>, <span class="php-quote">'https://localhost/app.php/testing_bc'</span>);
+</span><span id="133" class="l"><a class="l" href="#133">133: </a>        <span class="php-var">$projectUrlGenerator</span> = <span class="php-keyword1">new</span> \SchemeUrlGenerator(<span class="php-keyword1">new</span> RequestContext(<span class="php-quote">'/app.php'</span>, <span class="php-quote">'GET'</span>, <span class="php-quote">'localhost'</span>, <span class="php-quote">'https'</span>));
+</span><span id="134" class="l"><a class="l" href="#134">134: </a>
+</span><span id="135" class="l"><a class="l" href="#135">135: </a>        <span class="php-var">$absoluteUrl</span> = <span class="php-var">$projectUrlGenerator</span>-&gt;generate(<span class="php-quote">'Test1'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">true</span>);
+</span><span id="136" class="l"><a class="l" href="#136">136: </a>        <span class="php-var">$relativeUrl</span> = <span class="php-var">$projectUrlGenerator</span>-&gt;generate(<span class="php-quote">'Test1'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">false</span>);
 </span><span id="137" class="l"><a class="l" href="#137">137: </a>
-</span><span id="138" class="l"><a class="l" href="#138">138: </a>        <span class="php-var">$projectUrlGenerator</span> = <span class="php-keyword1">new</span> \SchemeUrlGenerator(<span class="php-keyword1">new</span> RequestContext(<span class="php-quote">'/app.php'</span>, <span class="php-quote">'GET'</span>, <span class="php-quote">'localhost'</span>, <span class="php-quote">'https'</span>));
-</span><span id="139" class="l"><a class="l" href="#139">139: </a>
-</span><span id="140" class="l"><a class="l" href="#140">140: </a>        <span class="php-var">$absoluteUrl</span> = <span class="php-var">$projectUrlGenerator</span>-&gt;generate(<span class="php-quote">'Test1'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">true</span>);
-</span><span id="141" class="l"><a class="l" href="#141">141: </a>        <span class="php-var">$absoluteUrlBC</span> = <span class="php-var">$projectUrlGenerator</span>-&gt;generate(<span class="php-quote">'Test2'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">true</span>);
-</span><span id="142" class="l"><a class="l" href="#142">142: </a>        <span class="php-var">$relativeUrl</span> = <span class="php-var">$projectUrlGenerator</span>-&gt;generate(<span class="php-quote">'Test1'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">false</span>);
-</span><span id="143" class="l"><a class="l" href="#143">143: </a>        <span class="php-var">$relativeUrlBC</span> = <span class="php-var">$projectUrlGenerator</span>-&gt;generate(<span class="php-quote">'Test2'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">false</span>);
-</span><span id="144" class="l"><a class="l" href="#144">144: </a>
-</span><span id="145" class="l"><a class="l" href="#145">145: </a>        <span class="php-var">$this</span>-&gt;assertEquals(<span class="php-var">$absoluteUrl</span>, <span class="php-quote">'https://localhost/app.php/testing'</span>);
-</span><span id="146" class="l"><a class="l" href="#146">146: </a>        <span class="php-var">$this</span>-&gt;assertEquals(<span class="php-var">$absoluteUrlBC</span>, <span class="php-quote">'https://localhost/app.php/testing_bc'</span>);
-</span><span id="147" class="l"><a class="l" href="#147">147: </a>        <span class="php-var">$this</span>-&gt;assertEquals(<span class="php-var">$relativeUrl</span>, <span class="php-quote">'/app.php/testing'</span>);
-</span><span id="148" class="l"><a class="l" href="#148">148: </a>        <span class="php-var">$this</span>-&gt;assertEquals(<span class="php-var">$relativeUrlBC</span>, <span class="php-quote">'/app.php/testing_bc'</span>);
-</span><span id="149" class="l"><a class="l" href="#149">149: </a>    }
-</span><span id="150" class="l"><a class="l" href="#150">150: </a>}
-</span><span id="151" class="l"><a class="l" href="#151">151: </a></span></code></pre>
+</span><span id="138" class="l"><a class="l" href="#138">138: </a>        <span class="php-var">$this</span>-&gt;assertEquals(<span class="php-var">$absoluteUrl</span>, <span class="php-quote">'https://localhost/app.php/testing'</span>);
+</span><span id="139" class="l"><a class="l" href="#139">139: </a>        <span class="php-var">$this</span>-&gt;assertEquals(<span class="php-var">$relativeUrl</span>, <span class="php-quote">'/app.php/testing'</span>);
+</span><span id="140" class="l"><a class="l" href="#140">140: </a>    }
+</span><span id="141" class="l"><a class="l" href="#141">141: </a>}
+</span><span id="142" class="l"><a class="l" href="#142">142: </a></span></code></pre>
 
 	<div id="footer">
 		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

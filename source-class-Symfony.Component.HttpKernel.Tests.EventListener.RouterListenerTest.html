@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0">
 	<meta name="robots" content="noindex">
 
-	<title>File vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Tests/EventListener/RouterListenerTest.php | AnySrc Markdown Blog</title>
+	<title>File vendor/symfony/http-kernel/Tests/EventListener/RouterListenerTest.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?2844671961"></script>
+	<script type="text/javascript" src="elementlist.js?1063707655"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -26,8 +26,13 @@
 						</li>
 				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
 						<ul>
-				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.LinkBlog.html">LinkBlog</a>
 						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-AnySrc.Security.html">Security</a>
 						</li>
 				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
@@ -95,6 +100,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
 						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.DataCollector.html">DataCollector</a>
+						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
 						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
@@ -128,6 +135,53 @@
 							</ul></li></ul></li>
 				<li class="active"><a href="namespace-Symfony.Component.html">Component<span></span></a>
 						<ul>
+				<li><a href="namespace-Symfony.Component.Console.html">Console<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Question.html">Question</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tester.html">Tester</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Fixtures.html">Fixtures</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Tester.html">Tester</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
@@ -313,6 +367,8 @@
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.html">Fixtures<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.OtherAnnotatedClasses.html">OtherAnnotatedClasses</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
@@ -532,8 +588,38 @@
 </span><span id="128" class="l"><a class="l" href="#128">128: </a>
 </span><span id="129" class="l"><a class="l" href="#129">129: </a>        <span class="php-var">$this</span>-&gt;assertEquals(<span class="php-quote">'GET'</span>, <span class="php-var">$context</span>-&gt;getMethod());
 </span><span id="130" class="l"><a class="l" href="#130">130: </a>    }
-</span><span id="131" class="l"><a class="l" href="#131">131: </a>}
-</span><span id="132" class="l"><a class="l" href="#132">132: </a></span></code></pre>
+</span><span id="131" class="l"><a class="l" href="#131">131: </a>
+</span><span id="132" class="l"><a class="l" href="#132">132: </a>    <span class="php-comment">/**
+</span></span><span id="133" class="l"><a class="l" href="#133">133: </a><span class="php-comment">     * @dataProvider getLoggingParameterData
+</span></span><span id="134" class="l"><a class="l" href="#134">134: </a><span class="php-comment">     */</span>
+</span><span id="135" class="l"><a class="l" href="#135">135: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testLoggingParameter" href="#_testLoggingParameter">testLoggingParameter</a>(<span class="php-var">$parameter</span>, <span class="php-var">$log</span>)
+</span><span id="136" class="l"><a class="l" href="#136">136: </a>    {
+</span><span id="137" class="l"><a class="l" href="#137">137: </a>        <span class="php-var">$requestMatcher</span> = <span class="php-var">$this</span>-&gt;getMock(<span class="php-quote">'Symfony\Component\Routing\Matcher\RequestMatcherInterface'</span>);
+</span><span id="138" class="l"><a class="l" href="#138">138: </a>        <span class="php-var">$requestMatcher</span>-&gt;expects(<span class="php-var">$this</span>-&gt;once())
+</span><span id="139" class="l"><a class="l" href="#139">139: </a>          -&gt;method(<span class="php-quote">'matchRequest'</span>)
+</span><span id="140" class="l"><a class="l" href="#140">140: </a>          -&gt;will(<span class="php-var">$this</span>-&gt;returnValue(<span class="php-var">$parameter</span>));
+</span><span id="141" class="l"><a class="l" href="#141">141: </a>
+</span><span id="142" class="l"><a class="l" href="#142">142: </a>        <span class="php-var">$logger</span> = <span class="php-var">$this</span>-&gt;getMock(<span class="php-quote">'Psr\Log\LoggerInterface'</span>);
+</span><span id="143" class="l"><a class="l" href="#143">143: </a>        <span class="php-var">$logger</span>-&gt;expects(<span class="php-var">$this</span>-&gt;once())
+</span><span id="144" class="l"><a class="l" href="#144">144: </a>          -&gt;method(<span class="php-quote">'info'</span>)
+</span><span id="145" class="l"><a class="l" href="#145">145: </a>          -&gt;with(<span class="php-var">$this</span>-&gt;equalTo(<span class="php-var">$log</span>));
+</span><span id="146" class="l"><a class="l" href="#146">146: </a>
+</span><span id="147" class="l"><a class="l" href="#147">147: </a>        <span class="php-var">$kernel</span> = <span class="php-var">$this</span>-&gt;getMock(<span class="php-quote">'Symfony\Component\HttpKernel\HttpKernelInterface'</span>);
+</span><span id="148" class="l"><a class="l" href="#148">148: </a>        <span class="php-var">$request</span> = Request::create(<span class="php-quote">'http://localhost/'</span>);
+</span><span id="149" class="l"><a class="l" href="#149">149: </a>
+</span><span id="150" class="l"><a class="l" href="#150">150: </a>        <span class="php-var">$listener</span> = <span class="php-keyword1">new</span> RouterListener(<span class="php-var">$requestMatcher</span>, <span class="php-keyword1">new</span> RequestContext(), <span class="php-var">$logger</span>, <span class="php-var">$this</span>-&gt;requestStack);
+</span><span id="151" class="l"><a class="l" href="#151">151: </a>        <span class="php-var">$listener</span>-&gt;onKernelRequest(<span class="php-keyword1">new</span> GetResponseEvent(<span class="php-var">$kernel</span>, <span class="php-var">$request</span>, HttpKernelInterface::MASTER_REQUEST));
+</span><span id="152" class="l"><a class="l" href="#152">152: </a>    }
+</span><span id="153" class="l"><a class="l" href="#153">153: </a>
+</span><span id="154" class="l"><a class="l" href="#154">154: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getLoggingParameterData" href="#_getLoggingParameterData">getLoggingParameterData</a>()
+</span><span id="155" class="l"><a class="l" href="#155">155: </a>    {
+</span><span id="156" class="l"><a class="l" href="#156">156: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">array</span>(
+</span><span id="157" class="l"><a class="l" href="#157">157: </a>            <span class="php-keyword1">array</span>(<span class="php-keyword1">array</span>(<span class="php-quote">'_route'</span> =&gt; <span class="php-quote">'foo'</span>), <span class="php-quote">'Matched route &quot;foo&quot;.'</span>),
+</span><span id="158" class="l"><a class="l" href="#158">158: </a>            <span class="php-keyword1">array</span>(<span class="php-keyword1">array</span>(), <span class="php-quote">'Matched route &quot;n/a&quot;.'</span>),
+</span><span id="159" class="l"><a class="l" href="#159">159: </a>        );
+</span><span id="160" class="l"><a class="l" href="#160">160: </a>    }
+</span><span id="161" class="l"><a class="l" href="#161">161: </a>}
+</span><span id="162" class="l"><a class="l" href="#162">162: </a></span></code></pre>
 
 	<div id="footer">
 		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

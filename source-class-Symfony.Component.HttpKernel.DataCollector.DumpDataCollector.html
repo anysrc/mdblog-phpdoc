@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0">
 	<meta name="robots" content="noindex">
 
-	<title>File vendor/symfony/http-kernel/Symfony/Component/HttpKernel/DataCollector/DumpDataCollector.php | AnySrc Markdown Blog</title>
+	<title>File vendor/symfony/http-kernel/DataCollector/DumpDataCollector.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?2844671961"></script>
+	<script type="text/javascript" src="elementlist.js?1063707655"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -26,8 +26,13 @@
 						</li>
 				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
 						<ul>
-				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.LinkBlog.html">LinkBlog</a>
 						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-AnySrc.Security.html">Security</a>
 						</li>
 				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
@@ -95,6 +100,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
 						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.DataCollector.html">DataCollector</a>
+						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
 						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
@@ -128,6 +135,53 @@
 							</ul></li></ul></li>
 				<li class="active"><a href="namespace-Symfony.Component.html">Component<span></span></a>
 						<ul>
+				<li><a href="namespace-Symfony.Component.Console.html">Console<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Question.html">Question</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tester.html">Tester</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Fixtures.html">Fixtures</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Tester.html">Tester</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
@@ -314,6 +368,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.OtherAnnotatedClasses.html">OtherAnnotatedClasses</a>
+						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
 						<ul>
@@ -471,7 +527,7 @@
 </span><span id="69" class="l"><a class="l" href="#69"> 69: </a>            <span class="php-var">$this</span>-&gt;isCollected = <span class="php-keyword1">false</span>;
 </span><span id="70" class="l"><a class="l" href="#70"> 70: </a>        }
 </span><span id="71" class="l"><a class="l" href="#71"> 71: </a>
-</span><span id="72" class="l"><a class="l" href="#72"> 72: </a>        <span class="php-var">$trace</span> = PHP_VERSION_ID &gt;= <span class="php-num">50306</span> ? DEBUG_BACKTRACE_PROVIDE_OBJECT | DEBUG_BACKTRACE_IGNORE_ARGS : <span class="php-keyword1">true</span>;
+</span><span id="72" class="l"><a class="l" href="#72"> 72: </a>        <span class="php-var">$trace</span> = DEBUG_BACKTRACE_PROVIDE_OBJECT | DEBUG_BACKTRACE_IGNORE_ARGS;
 </span><span id="73" class="l"><a class="l" href="#73"> 73: </a>        <span class="php-keyword1">if</span> (PHP_VERSION_ID &gt;= <span class="php-num">50400</span>) {
 </span><span id="74" class="l"><a class="l" href="#74"> 74: </a>            <span class="php-var">$trace</span> = <span class="php-keyword2">debug_backtrace</span>(<span class="php-var">$trace</span>, <span class="php-num">7</span>);
 </span><span id="75" class="l"><a class="l" href="#75"> 75: </a>        } <span class="php-keyword1">else</span> {
@@ -522,7 +578,7 @@
 </span><span id="120" class="l"><a class="l" href="#120">120: </a>        }
 </span><span id="121" class="l"><a class="l" href="#121">121: </a>
 </span><span id="122" class="l"><a class="l" href="#122">122: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">false</span> === <span class="php-var">$name</span>) {
-</span><span id="123" class="l"><a class="l" href="#123">123: </a>            <span class="php-var">$name</span> = <span class="php-keyword2">strtr</span>(<span class="php-var">$file</span>, <span class="php-quote">'\\'</span>, <span class="php-quote">'/'</span>);
+</span><span id="123" class="l"><a class="l" href="#123">123: </a>            <span class="php-var">$name</span> = <span class="php-keyword2">str_replace</span>(<span class="php-quote">'\\'</span>, <span class="php-quote">'/'</span>, <span class="php-var">$file</span>);
 </span><span id="124" class="l"><a class="l" href="#124">124: </a>            <span class="php-var">$name</span> = <span class="php-keyword2">substr</span>(<span class="php-var">$name</span>, <span class="php-keyword2">strrpos</span>(<span class="php-var">$name</span>, <span class="php-quote">'/'</span>) + <span class="php-num">1</span>);
 </span><span id="125" class="l"><a class="l" href="#125">125: </a>        }
 </span><span id="126" class="l"><a class="l" href="#126">126: </a>
@@ -606,99 +662,104 @@
 </span><span id="204" class="l"><a class="l" href="#204">204: </a>        <span class="php-var">$dumps</span> = <span class="php-keyword1">array</span>();
 </span><span id="205" class="l"><a class="l" href="#205">205: </a>
 </span><span id="206" class="l"><a class="l" href="#206">206: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;data <span class="php-keyword1">as</span> <span class="php-var">$dump</span>) {
-</span><span id="207" class="l"><a class="l" href="#207">207: </a>            <span class="php-var">$dumper</span>-&gt;dump(<span class="php-var">$dump</span>[<span class="php-quote">'data'</span>]-&gt;getLimitedClone(<span class="php-var">$maxDepthLimit</span>, <span class="php-var">$maxItemsPerDepth</span>));
-</span><span id="208" class="l"><a class="l" href="#208">208: </a>            <span class="php-keyword2">rewind</span>(<span class="php-var">$data</span>);
-</span><span id="209" class="l"><a class="l" href="#209">209: </a>            <span class="php-var">$dump</span>[<span class="php-quote">'data'</span>] = <span class="php-keyword2">stream_get_contents</span>(<span class="php-var">$data</span>);
-</span><span id="210" class="l"><a class="l" href="#210">210: </a>            <span class="php-keyword2">ftruncate</span>(<span class="php-var">$data</span>, <span class="php-num">0</span>);
-</span><span id="211" class="l"><a class="l" href="#211">211: </a>            <span class="php-keyword2">rewind</span>(<span class="php-var">$data</span>);
-</span><span id="212" class="l"><a class="l" href="#212">212: </a>            <span class="php-var">$dumps</span>[] = <span class="php-var">$dump</span>;
-</span><span id="213" class="l"><a class="l" href="#213">213: </a>        }
-</span><span id="214" class="l"><a class="l" href="#214">214: </a>
-</span><span id="215" class="l"><a class="l" href="#215">215: </a>        <span class="php-keyword1">return</span> <span class="php-var">$dumps</span>;
-</span><span id="216" class="l"><a class="l" href="#216">216: </a>    }
-</span><span id="217" class="l"><a class="l" href="#217">217: </a>
-</span><span id="218" class="l"><a class="l" href="#218">218: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getName" href="#_getName">getName</a>()
-</span><span id="219" class="l"><a class="l" href="#219">219: </a>    {
-</span><span id="220" class="l"><a class="l" href="#220">220: </a>        <span class="php-keyword1">return</span> <span class="php-quote">'dump'</span>;
+</span><span id="207" class="l"><a class="l" href="#207">207: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">method_exists</span>(<span class="php-var">$dump</span>[<span class="php-quote">'data'</span>], <span class="php-quote">'withMaxDepth'</span>)) {
+</span><span id="208" class="l"><a class="l" href="#208">208: </a>                <span class="php-var">$dumper</span>-&gt;dump(<span class="php-var">$dump</span>[<span class="php-quote">'data'</span>]-&gt;withMaxDepth(<span class="php-var">$maxDepthLimit</span>)-&gt;withMaxItemsPerDepth(<span class="php-var">$maxItemsPerDepth</span>));
+</span><span id="209" class="l"><a class="l" href="#209">209: </a>            } <span class="php-keyword1">else</span> {
+</span><span id="210" class="l"><a class="l" href="#210">210: </a>                <span class="php-comment">// getLimitedClone is @deprecated, to be removed in 3.0</span>
+</span><span id="211" class="l"><a class="l" href="#211">211: </a>                <span class="php-var">$dumper</span>-&gt;dump(<span class="php-var">$dump</span>[<span class="php-quote">'data'</span>]-&gt;getLimitedClone(<span class="php-var">$maxDepthLimit</span>, <span class="php-var">$maxItemsPerDepth</span>));
+</span><span id="212" class="l"><a class="l" href="#212">212: </a>            }
+</span><span id="213" class="l"><a class="l" href="#213">213: </a>            <span class="php-keyword2">rewind</span>(<span class="php-var">$data</span>);
+</span><span id="214" class="l"><a class="l" href="#214">214: </a>            <span class="php-var">$dump</span>[<span class="php-quote">'data'</span>] = <span class="php-keyword2">stream_get_contents</span>(<span class="php-var">$data</span>);
+</span><span id="215" class="l"><a class="l" href="#215">215: </a>            <span class="php-keyword2">ftruncate</span>(<span class="php-var">$data</span>, <span class="php-num">0</span>);
+</span><span id="216" class="l"><a class="l" href="#216">216: </a>            <span class="php-keyword2">rewind</span>(<span class="php-var">$data</span>);
+</span><span id="217" class="l"><a class="l" href="#217">217: </a>            <span class="php-var">$dumps</span>[] = <span class="php-var">$dump</span>;
+</span><span id="218" class="l"><a class="l" href="#218">218: </a>        }
+</span><span id="219" class="l"><a class="l" href="#219">219: </a>
+</span><span id="220" class="l"><a class="l" href="#220">220: </a>        <span class="php-keyword1">return</span> <span class="php-var">$dumps</span>;
 </span><span id="221" class="l"><a class="l" href="#221">221: </a>    }
 </span><span id="222" class="l"><a class="l" href="#222">222: </a>
-</span><span id="223" class="l"><a class="l" href="#223">223: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="___destruct" href="#___destruct">__destruct</a>()
+</span><span id="223" class="l"><a class="l" href="#223">223: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getName" href="#_getName">getName</a>()
 </span><span id="224" class="l"><a class="l" href="#224">224: </a>    {
-</span><span id="225" class="l"><a class="l" href="#225">225: </a>        <span class="php-keyword1">if</span> (<span class="php-num">0</span> === <span class="php-var">$this</span>-&gt;clonesCount-- &amp;&amp; !<span class="php-var">$this</span>-&gt;isCollected &amp;&amp; <span class="php-var">$this</span>-&gt;data) {
-</span><span id="226" class="l"><a class="l" href="#226">226: </a>            <span class="php-var">$this</span>-&gt;clonesCount = <span class="php-num">0</span>;
-</span><span id="227" class="l"><a class="l" href="#227">227: </a>            <span class="php-var">$this</span>-&gt;isCollected = <span class="php-keyword1">true</span>;
-</span><span id="228" class="l"><a class="l" href="#228">228: </a>
-</span><span id="229" class="l"><a class="l" href="#229">229: </a>            <span class="php-var">$h</span> = <span class="php-keyword2">headers_list</span>();
-</span><span id="230" class="l"><a class="l" href="#230">230: </a>            <span class="php-var">$i</span> = <span class="php-keyword2">count</span>(<span class="php-var">$h</span>);
-</span><span id="231" class="l"><a class="l" href="#231">231: </a>            <span class="php-keyword2">array_unshift</span>(<span class="php-var">$h</span>, <span class="php-quote">'Content-Type: '</span>.<span class="php-keyword2">ini_get</span>(<span class="php-quote">'default_mimetype'</span>));
-</span><span id="232" class="l"><a class="l" href="#232">232: </a>            <span class="php-keyword1">while</span> (<span class="php-num">0</span> !== <span class="php-keyword2">stripos</span>(<span class="php-var">$h</span>[<span class="php-var">$i</span>], <span class="php-quote">'Content-Type:'</span>)) {
-</span><span id="233" class="l"><a class="l" href="#233">233: </a>                --<span class="php-var">$i</span>;
-</span><span id="234" class="l"><a class="l" href="#234">234: </a>            }
-</span><span id="235" class="l"><a class="l" href="#235">235: </a>
-</span><span id="236" class="l"><a class="l" href="#236">236: </a>            <span class="php-keyword1">if</span> (<span class="php-quote">'cli'</span> !== PHP_SAPI &amp;&amp; <span class="php-keyword2">stripos</span>(<span class="php-var">$h</span>[<span class="php-var">$i</span>], <span class="php-quote">'html'</span>)) {
-</span><span id="237" class="l"><a class="l" href="#237">237: </a>                <span class="php-var">$this</span>-&gt;dumper = <span class="php-keyword1">new</span> HtmlDumper(<span class="php-quote">'php://output'</span>, <span class="php-var">$this</span>-&gt;charset);
-</span><span id="238" class="l"><a class="l" href="#238">238: </a>            } <span class="php-keyword1">else</span> {
-</span><span id="239" class="l"><a class="l" href="#239">239: </a>                <span class="php-var">$this</span>-&gt;dumper = <span class="php-keyword1">new</span> CliDumper(<span class="php-quote">'php://output'</span>, <span class="php-var">$this</span>-&gt;charset);
-</span><span id="240" class="l"><a class="l" href="#240">240: </a>            }
-</span><span id="241" class="l"><a class="l" href="#241">241: </a>
-</span><span id="242" class="l"><a class="l" href="#242">242: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;data <span class="php-keyword1">as</span> <span class="php-var">$i</span> =&gt; <span class="php-var">$dump</span>) {
-</span><span id="243" class="l"><a class="l" href="#243">243: </a>                <span class="php-var">$this</span>-&gt;data[<span class="php-var">$i</span>] = <span class="php-keyword1">null</span>;
-</span><span id="244" class="l"><a class="l" href="#244">244: </a>                <span class="php-var">$this</span>-&gt;doDump(<span class="php-var">$dump</span>[<span class="php-quote">'data'</span>], <span class="php-var">$dump</span>[<span class="php-quote">'name'</span>], <span class="php-var">$dump</span>[<span class="php-quote">'file'</span>], <span class="php-var">$dump</span>[<span class="php-quote">'line'</span>]);
+</span><span id="225" class="l"><a class="l" href="#225">225: </a>        <span class="php-keyword1">return</span> <span class="php-quote">'dump'</span>;
+</span><span id="226" class="l"><a class="l" href="#226">226: </a>    }
+</span><span id="227" class="l"><a class="l" href="#227">227: </a>
+</span><span id="228" class="l"><a class="l" href="#228">228: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="___destruct" href="#___destruct">__destruct</a>()
+</span><span id="229" class="l"><a class="l" href="#229">229: </a>    {
+</span><span id="230" class="l"><a class="l" href="#230">230: </a>        <span class="php-keyword1">if</span> (<span class="php-num">0</span> === <span class="php-var">$this</span>-&gt;clonesCount-- &amp;&amp; !<span class="php-var">$this</span>-&gt;isCollected &amp;&amp; <span class="php-var">$this</span>-&gt;data) {
+</span><span id="231" class="l"><a class="l" href="#231">231: </a>            <span class="php-var">$this</span>-&gt;clonesCount = <span class="php-num">0</span>;
+</span><span id="232" class="l"><a class="l" href="#232">232: </a>            <span class="php-var">$this</span>-&gt;isCollected = <span class="php-keyword1">true</span>;
+</span><span id="233" class="l"><a class="l" href="#233">233: </a>
+</span><span id="234" class="l"><a class="l" href="#234">234: </a>            <span class="php-var">$h</span> = <span class="php-keyword2">headers_list</span>();
+</span><span id="235" class="l"><a class="l" href="#235">235: </a>            <span class="php-var">$i</span> = <span class="php-keyword2">count</span>(<span class="php-var">$h</span>);
+</span><span id="236" class="l"><a class="l" href="#236">236: </a>            <span class="php-keyword2">array_unshift</span>(<span class="php-var">$h</span>, <span class="php-quote">'Content-Type: '</span>.<span class="php-keyword2">ini_get</span>(<span class="php-quote">'default_mimetype'</span>));
+</span><span id="237" class="l"><a class="l" href="#237">237: </a>            <span class="php-keyword1">while</span> (<span class="php-num">0</span> !== <span class="php-keyword2">stripos</span>(<span class="php-var">$h</span>[<span class="php-var">$i</span>], <span class="php-quote">'Content-Type:'</span>)) {
+</span><span id="238" class="l"><a class="l" href="#238">238: </a>                --<span class="php-var">$i</span>;
+</span><span id="239" class="l"><a class="l" href="#239">239: </a>            }
+</span><span id="240" class="l"><a class="l" href="#240">240: </a>
+</span><span id="241" class="l"><a class="l" href="#241">241: </a>            <span class="php-keyword1">if</span> (<span class="php-quote">'cli'</span> !== PHP_SAPI &amp;&amp; <span class="php-keyword2">stripos</span>(<span class="php-var">$h</span>[<span class="php-var">$i</span>], <span class="php-quote">'html'</span>)) {
+</span><span id="242" class="l"><a class="l" href="#242">242: </a>                <span class="php-var">$this</span>-&gt;dumper = <span class="php-keyword1">new</span> HtmlDumper(<span class="php-quote">'php://output'</span>, <span class="php-var">$this</span>-&gt;charset);
+</span><span id="243" class="l"><a class="l" href="#243">243: </a>            } <span class="php-keyword1">else</span> {
+</span><span id="244" class="l"><a class="l" href="#244">244: </a>                <span class="php-var">$this</span>-&gt;dumper = <span class="php-keyword1">new</span> CliDumper(<span class="php-quote">'php://output'</span>, <span class="php-var">$this</span>-&gt;charset);
 </span><span id="245" class="l"><a class="l" href="#245">245: </a>            }
 </span><span id="246" class="l"><a class="l" href="#246">246: </a>
-</span><span id="247" class="l"><a class="l" href="#247">247: </a>            <span class="php-var">$this</span>-&gt;data = <span class="php-keyword1">array</span>();
-</span><span id="248" class="l"><a class="l" href="#248">248: </a>            <span class="php-var">$this</span>-&gt;dataCount = <span class="php-num">0</span>;
-</span><span id="249" class="l"><a class="l" href="#249">249: </a>        }
-</span><span id="250" class="l"><a class="l" href="#250">250: </a>    }
+</span><span id="247" class="l"><a class="l" href="#247">247: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;data <span class="php-keyword1">as</span> <span class="php-var">$i</span> =&gt; <span class="php-var">$dump</span>) {
+</span><span id="248" class="l"><a class="l" href="#248">248: </a>                <span class="php-var">$this</span>-&gt;data[<span class="php-var">$i</span>] = <span class="php-keyword1">null</span>;
+</span><span id="249" class="l"><a class="l" href="#249">249: </a>                <span class="php-var">$this</span>-&gt;doDump(<span class="php-var">$dump</span>[<span class="php-quote">'data'</span>], <span class="php-var">$dump</span>[<span class="php-quote">'name'</span>], <span class="php-var">$dump</span>[<span class="php-quote">'file'</span>], <span class="php-var">$dump</span>[<span class="php-quote">'line'</span>]);
+</span><span id="250" class="l"><a class="l" href="#250">250: </a>            }
 </span><span id="251" class="l"><a class="l" href="#251">251: </a>
-</span><span id="252" class="l"><a class="l" href="#252">252: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_doDump" href="#_doDump">doDump</a>(<span class="php-var">$data</span>, <span class="php-var">$name</span>, <span class="php-var">$file</span>, <span class="php-var">$line</span>)
-</span><span id="253" class="l"><a class="l" href="#253">253: </a>    {
-</span><span id="254" class="l"><a class="l" href="#254">254: </a>        <span class="php-keyword1">if</span> (PHP_VERSION_ID &gt;= <span class="php-num">50400</span> &amp;&amp; <span class="php-var">$this</span>-&gt;dumper <span class="php-keyword1">instanceof</span> CliDumper) {
-</span><span id="255" class="l"><a class="l" href="#255">255: </a>            <span class="php-var">$contextDumper</span> = <span class="php-keyword1">function</span> (<span class="php-var">$name</span>, <span class="php-var">$file</span>, <span class="php-var">$line</span>, <span class="php-var">$fileLinkFormat</span>) {
-</span><span id="256" class="l"><a class="l" href="#256">256: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$this</span> <span class="php-keyword1">instanceof</span> HtmlDumper) {
-</span><span id="257" class="l"><a class="l" href="#257">257: </a>                    <span class="php-keyword1">if</span> (<span class="php-quote">''</span> !== <span class="php-var">$file</span>) {
-</span><span id="258" class="l"><a class="l" href="#258">258: </a>                        <span class="php-var">$s</span> = <span class="php-var">$this</span>-&gt;style(<span class="php-quote">'meta'</span>, <span class="php-quote">'%s'</span>);
-</span><span id="259" class="l"><a class="l" href="#259">259: </a>                        <span class="php-var">$name</span> = <span class="php-keyword2">strip_tags</span>(<span class="php-var">$this</span>-&gt;style(<span class="php-quote">''</span>, <span class="php-var">$name</span>));
-</span><span id="260" class="l"><a class="l" href="#260">260: </a>                        <span class="php-var">$file</span> = <span class="php-keyword2">strip_tags</span>(<span class="php-var">$this</span>-&gt;style(<span class="php-quote">''</span>, <span class="php-var">$file</span>));
-</span><span id="261" class="l"><a class="l" href="#261">261: </a>                        <span class="php-keyword1">if</span> (<span class="php-var">$fileLinkFormat</span>) {
-</span><span id="262" class="l"><a class="l" href="#262">262: </a>                            <span class="php-var">$link</span> = <span class="php-keyword2">strtr</span>(<span class="php-keyword2">strip_tags</span>(<span class="php-var">$this</span>-&gt;style(<span class="php-quote">''</span>, <span class="php-var">$fileLinkFormat</span>)), <span class="php-keyword1">array</span>(<span class="php-quote">'%f'</span> =&gt; <span class="php-var">$file</span>, <span class="php-quote">'%l'</span> =&gt; (int) <span class="php-var">$line</span>));
-</span><span id="263" class="l"><a class="l" href="#263">263: </a>                            <span class="php-var">$name</span> = <span class="php-keyword2">sprintf</span>(<span class="php-quote">'&lt;a href=&quot;%s&quot; title=&quot;%s&quot;&gt;'</span>.<span class="php-var">$s</span>.<span class="php-quote">'&lt;/a&gt;'</span>, <span class="php-var">$link</span>, <span class="php-var">$file</span>, <span class="php-var">$name</span>);
-</span><span id="264" class="l"><a class="l" href="#264">264: </a>                        } <span class="php-keyword1">else</span> {
-</span><span id="265" class="l"><a class="l" href="#265">265: </a>                            <span class="php-var">$name</span> = <span class="php-keyword2">sprintf</span>(<span class="php-quote">'&lt;abbr title=&quot;%s&quot;&gt;'</span>.<span class="php-var">$s</span>.<span class="php-quote">'&lt;/abbr&gt;'</span>, <span class="php-var">$file</span>, <span class="php-var">$name</span>);
-</span><span id="266" class="l"><a class="l" href="#266">266: </a>                        }
-</span><span id="267" class="l"><a class="l" href="#267">267: </a>                    } <span class="php-keyword1">else</span> {
-</span><span id="268" class="l"><a class="l" href="#268">268: </a>                        <span class="php-var">$name</span> = <span class="php-var">$this</span>-&gt;style(<span class="php-quote">'meta'</span>, <span class="php-var">$name</span>);
-</span><span id="269" class="l"><a class="l" href="#269">269: </a>                    }
-</span><span id="270" class="l"><a class="l" href="#270">270: </a>                    <span class="php-var">$this</span>-&gt;line = <span class="php-var">$name</span>.<span class="php-quote">' on line '</span>.<span class="php-var">$this</span>-&gt;style(<span class="php-quote">'meta'</span>, <span class="php-var">$line</span>).<span class="php-quote">':'</span>;
-</span><span id="271" class="l"><a class="l" href="#271">271: </a>                } <span class="php-keyword1">else</span> {
-</span><span id="272" class="l"><a class="l" href="#272">272: </a>                    <span class="php-var">$this</span>-&gt;line = <span class="php-var">$this</span>-&gt;style(<span class="php-quote">'meta'</span>, <span class="php-var">$name</span>).<span class="php-quote">' on line '</span>.<span class="php-var">$this</span>-&gt;style(<span class="php-quote">'meta'</span>, <span class="php-var">$line</span>).<span class="php-quote">':'</span>;
-</span><span id="273" class="l"><a class="l" href="#273">273: </a>                }
-</span><span id="274" class="l"><a class="l" href="#274">274: </a>                <span class="php-var">$this</span>-&gt;dumpLine(<span class="php-num">0</span>);
-</span><span id="275" class="l"><a class="l" href="#275">275: </a>            };
-</span><span id="276" class="l"><a class="l" href="#276">276: </a>            <span class="php-var">$contextDumper</span> = <span class="php-var">$contextDumper</span>-&gt;bindTo(<span class="php-var">$this</span>-&gt;dumper, <span class="php-var">$this</span>-&gt;dumper);
-</span><span id="277" class="l"><a class="l" href="#277">277: </a>            <span class="php-var">$contextDumper</span>(<span class="php-var">$name</span>, <span class="php-var">$file</span>, <span class="php-var">$line</span>, <span class="php-var">$this</span>-&gt;fileLinkFormat);
-</span><span id="278" class="l"><a class="l" href="#278">278: </a>        } <span class="php-keyword1">else</span> {
-</span><span id="279" class="l"><a class="l" href="#279">279: </a>            <span class="php-var">$cloner</span> = <span class="php-keyword1">new</span> VarCloner();
-</span><span id="280" class="l"><a class="l" href="#280">280: </a>            <span class="php-var">$this</span>-&gt;dumper-&gt;dump(<span class="php-var">$cloner</span>-&gt;cloneVar(<span class="php-var">$name</span>.<span class="php-quote">' on line '</span>.<span class="php-var">$line</span>.<span class="php-quote">':'</span>));
-</span><span id="281" class="l"><a class="l" href="#281">281: </a>        }
-</span><span id="282" class="l"><a class="l" href="#282">282: </a>        <span class="php-var">$this</span>-&gt;dumper-&gt;dump(<span class="php-var">$data</span>);
-</span><span id="283" class="l"><a class="l" href="#283">283: </a>    }
-</span><span id="284" class="l"><a class="l" href="#284">284: </a>
-</span><span id="285" class="l"><a class="l" href="#285">285: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_htmlEncode" href="#_htmlEncode">htmlEncode</a>(<span class="php-var">$s</span>)
-</span><span id="286" class="l"><a class="l" href="#286">286: </a>    {
-</span><span id="287" class="l"><a class="l" href="#287">287: </a>        <span class="php-var">$html</span> = <span class="php-quote">''</span>;
-</span><span id="288" class="l"><a class="l" href="#288">288: </a>
-</span><span id="289" class="l"><a class="l" href="#289">289: </a>        <span class="php-var">$dumper</span> = <span class="php-keyword1">new</span> HtmlDumper(<span class="php-keyword1">function</span> (<span class="php-var">$line</span>) <span class="php-keyword1">use</span> (&amp;<span class="php-var">$html</span>) {<span class="php-var">$html</span> .= <span class="php-var">$line</span>;}, <span class="php-var">$this</span>-&gt;charset);
-</span><span id="290" class="l"><a class="l" href="#290">290: </a>        <span class="php-var">$dumper</span>-&gt;setDumpHeader(<span class="php-quote">''</span>);
-</span><span id="291" class="l"><a class="l" href="#291">291: </a>        <span class="php-var">$dumper</span>-&gt;setDumpBoundaries(<span class="php-quote">''</span>, <span class="php-quote">''</span>);
-</span><span id="292" class="l"><a class="l" href="#292">292: </a>
-</span><span id="293" class="l"><a class="l" href="#293">293: </a>        <span class="php-var">$cloner</span> = <span class="php-keyword1">new</span> VarCloner();
-</span><span id="294" class="l"><a class="l" href="#294">294: </a>        <span class="php-var">$dumper</span>-&gt;dump(<span class="php-var">$cloner</span>-&gt;cloneVar(<span class="php-var">$s</span>));
-</span><span id="295" class="l"><a class="l" href="#295">295: </a>
-</span><span id="296" class="l"><a class="l" href="#296">296: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">substr</span>(<span class="php-keyword2">strip_tags</span>(<span class="php-var">$html</span>), <span class="php-num">1</span>, -<span class="php-num">1</span>);
-</span><span id="297" class="l"><a class="l" href="#297">297: </a>    }
-</span><span id="298" class="l"><a class="l" href="#298">298: </a>}
-</span><span id="299" class="l"><a class="l" href="#299">299: </a></span></code></pre>
+</span><span id="252" class="l"><a class="l" href="#252">252: </a>            <span class="php-var">$this</span>-&gt;data = <span class="php-keyword1">array</span>();
+</span><span id="253" class="l"><a class="l" href="#253">253: </a>            <span class="php-var">$this</span>-&gt;dataCount = <span class="php-num">0</span>;
+</span><span id="254" class="l"><a class="l" href="#254">254: </a>        }
+</span><span id="255" class="l"><a class="l" href="#255">255: </a>    }
+</span><span id="256" class="l"><a class="l" href="#256">256: </a>
+</span><span id="257" class="l"><a class="l" href="#257">257: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_doDump" href="#_doDump">doDump</a>(<span class="php-var">$data</span>, <span class="php-var">$name</span>, <span class="php-var">$file</span>, <span class="php-var">$line</span>)
+</span><span id="258" class="l"><a class="l" href="#258">258: </a>    {
+</span><span id="259" class="l"><a class="l" href="#259">259: </a>        <span class="php-keyword1">if</span> (PHP_VERSION_ID &gt;= <span class="php-num">50400</span> &amp;&amp; <span class="php-var">$this</span>-&gt;dumper <span class="php-keyword1">instanceof</span> CliDumper) {
+</span><span id="260" class="l"><a class="l" href="#260">260: </a>            <span class="php-var">$contextDumper</span> = <span class="php-keyword1">function</span> (<span class="php-var">$name</span>, <span class="php-var">$file</span>, <span class="php-var">$line</span>, <span class="php-var">$fileLinkFormat</span>) {
+</span><span id="261" class="l"><a class="l" href="#261">261: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$this</span> <span class="php-keyword1">instanceof</span> HtmlDumper) {
+</span><span id="262" class="l"><a class="l" href="#262">262: </a>                    <span class="php-keyword1">if</span> (<span class="php-quote">''</span> !== <span class="php-var">$file</span>) {
+</span><span id="263" class="l"><a class="l" href="#263">263: </a>                        <span class="php-var">$s</span> = <span class="php-var">$this</span>-&gt;style(<span class="php-quote">'meta'</span>, <span class="php-quote">'%s'</span>);
+</span><span id="264" class="l"><a class="l" href="#264">264: </a>                        <span class="php-var">$name</span> = <span class="php-keyword2">strip_tags</span>(<span class="php-var">$this</span>-&gt;style(<span class="php-quote">''</span>, <span class="php-var">$name</span>));
+</span><span id="265" class="l"><a class="l" href="#265">265: </a>                        <span class="php-var">$file</span> = <span class="php-keyword2">strip_tags</span>(<span class="php-var">$this</span>-&gt;style(<span class="php-quote">''</span>, <span class="php-var">$file</span>));
+</span><span id="266" class="l"><a class="l" href="#266">266: </a>                        <span class="php-keyword1">if</span> (<span class="php-var">$fileLinkFormat</span>) {
+</span><span id="267" class="l"><a class="l" href="#267">267: </a>                            <span class="php-var">$link</span> = <span class="php-keyword2">strtr</span>(<span class="php-keyword2">strip_tags</span>(<span class="php-var">$this</span>-&gt;style(<span class="php-quote">''</span>, <span class="php-var">$fileLinkFormat</span>)), <span class="php-keyword1">array</span>(<span class="php-quote">'%f'</span> =&gt; <span class="php-var">$file</span>, <span class="php-quote">'%l'</span> =&gt; (int) <span class="php-var">$line</span>));
+</span><span id="268" class="l"><a class="l" href="#268">268: </a>                            <span class="php-var">$name</span> = <span class="php-keyword2">sprintf</span>(<span class="php-quote">'&lt;a href=&quot;%s&quot; title=&quot;%s&quot;&gt;'</span>.<span class="php-var">$s</span>.<span class="php-quote">'&lt;/a&gt;'</span>, <span class="php-var">$link</span>, <span class="php-var">$file</span>, <span class="php-var">$name</span>);
+</span><span id="269" class="l"><a class="l" href="#269">269: </a>                        } <span class="php-keyword1">else</span> {
+</span><span id="270" class="l"><a class="l" href="#270">270: </a>                            <span class="php-var">$name</span> = <span class="php-keyword2">sprintf</span>(<span class="php-quote">'&lt;abbr title=&quot;%s&quot;&gt;'</span>.<span class="php-var">$s</span>.<span class="php-quote">'&lt;/abbr&gt;'</span>, <span class="php-var">$file</span>, <span class="php-var">$name</span>);
+</span><span id="271" class="l"><a class="l" href="#271">271: </a>                        }
+</span><span id="272" class="l"><a class="l" href="#272">272: </a>                    } <span class="php-keyword1">else</span> {
+</span><span id="273" class="l"><a class="l" href="#273">273: </a>                        <span class="php-var">$name</span> = <span class="php-var">$this</span>-&gt;style(<span class="php-quote">'meta'</span>, <span class="php-var">$name</span>);
+</span><span id="274" class="l"><a class="l" href="#274">274: </a>                    }
+</span><span id="275" class="l"><a class="l" href="#275">275: </a>                    <span class="php-var">$this</span>-&gt;line = <span class="php-var">$name</span>.<span class="php-quote">' on line '</span>.<span class="php-var">$this</span>-&gt;style(<span class="php-quote">'meta'</span>, <span class="php-var">$line</span>).<span class="php-quote">':'</span>;
+</span><span id="276" class="l"><a class="l" href="#276">276: </a>                } <span class="php-keyword1">else</span> {
+</span><span id="277" class="l"><a class="l" href="#277">277: </a>                    <span class="php-var">$this</span>-&gt;line = <span class="php-var">$this</span>-&gt;style(<span class="php-quote">'meta'</span>, <span class="php-var">$name</span>).<span class="php-quote">' on line '</span>.<span class="php-var">$this</span>-&gt;style(<span class="php-quote">'meta'</span>, <span class="php-var">$line</span>).<span class="php-quote">':'</span>;
+</span><span id="278" class="l"><a class="l" href="#278">278: </a>                }
+</span><span id="279" class="l"><a class="l" href="#279">279: </a>                <span class="php-var">$this</span>-&gt;dumpLine(<span class="php-num">0</span>);
+</span><span id="280" class="l"><a class="l" href="#280">280: </a>            };
+</span><span id="281" class="l"><a class="l" href="#281">281: </a>            <span class="php-var">$contextDumper</span> = <span class="php-var">$contextDumper</span>-&gt;bindTo(<span class="php-var">$this</span>-&gt;dumper, <span class="php-var">$this</span>-&gt;dumper);
+</span><span id="282" class="l"><a class="l" href="#282">282: </a>            <span class="php-var">$contextDumper</span>(<span class="php-var">$name</span>, <span class="php-var">$file</span>, <span class="php-var">$line</span>, <span class="php-var">$this</span>-&gt;fileLinkFormat);
+</span><span id="283" class="l"><a class="l" href="#283">283: </a>        } <span class="php-keyword1">else</span> {
+</span><span id="284" class="l"><a class="l" href="#284">284: </a>            <span class="php-var">$cloner</span> = <span class="php-keyword1">new</span> VarCloner();
+</span><span id="285" class="l"><a class="l" href="#285">285: </a>            <span class="php-var">$this</span>-&gt;dumper-&gt;dump(<span class="php-var">$cloner</span>-&gt;cloneVar(<span class="php-var">$name</span>.<span class="php-quote">' on line '</span>.<span class="php-var">$line</span>.<span class="php-quote">':'</span>));
+</span><span id="286" class="l"><a class="l" href="#286">286: </a>        }
+</span><span id="287" class="l"><a class="l" href="#287">287: </a>        <span class="php-var">$this</span>-&gt;dumper-&gt;dump(<span class="php-var">$data</span>);
+</span><span id="288" class="l"><a class="l" href="#288">288: </a>    }
+</span><span id="289" class="l"><a class="l" href="#289">289: </a>
+</span><span id="290" class="l"><a class="l" href="#290">290: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_htmlEncode" href="#_htmlEncode">htmlEncode</a>(<span class="php-var">$s</span>)
+</span><span id="291" class="l"><a class="l" href="#291">291: </a>    {
+</span><span id="292" class="l"><a class="l" href="#292">292: </a>        <span class="php-var">$html</span> = <span class="php-quote">''</span>;
+</span><span id="293" class="l"><a class="l" href="#293">293: </a>
+</span><span id="294" class="l"><a class="l" href="#294">294: </a>        <span class="php-var">$dumper</span> = <span class="php-keyword1">new</span> HtmlDumper(<span class="php-keyword1">function</span> (<span class="php-var">$line</span>) <span class="php-keyword1">use</span> (&amp;<span class="php-var">$html</span>) {<span class="php-var">$html</span> .= <span class="php-var">$line</span>;}, <span class="php-var">$this</span>-&gt;charset);
+</span><span id="295" class="l"><a class="l" href="#295">295: </a>        <span class="php-var">$dumper</span>-&gt;setDumpHeader(<span class="php-quote">''</span>);
+</span><span id="296" class="l"><a class="l" href="#296">296: </a>        <span class="php-var">$dumper</span>-&gt;setDumpBoundaries(<span class="php-quote">''</span>, <span class="php-quote">''</span>);
+</span><span id="297" class="l"><a class="l" href="#297">297: </a>
+</span><span id="298" class="l"><a class="l" href="#298">298: </a>        <span class="php-var">$cloner</span> = <span class="php-keyword1">new</span> VarCloner();
+</span><span id="299" class="l"><a class="l" href="#299">299: </a>        <span class="php-var">$dumper</span>-&gt;dump(<span class="php-var">$cloner</span>-&gt;cloneVar(<span class="php-var">$s</span>));
+</span><span id="300" class="l"><a class="l" href="#300">300: </a>
+</span><span id="301" class="l"><a class="l" href="#301">301: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">substr</span>(<span class="php-keyword2">strip_tags</span>(<span class="php-var">$html</span>), <span class="php-num">1</span>, -<span class="php-num">1</span>);
+</span><span id="302" class="l"><a class="l" href="#302">302: </a>    }
+</span><span id="303" class="l"><a class="l" href="#303">303: </a>}
+</span><span id="304" class="l"><a class="l" href="#304">304: </a></span></code></pre>
 
 	<div id="footer">
 		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0">
 	<meta name="robots" content="noindex">
 
-	<title>File vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Tests/JsonResponseTest.php | AnySrc Markdown Blog</title>
+	<title>File vendor/symfony/http-foundation/Tests/JsonResponseTest.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?2844671961"></script>
+	<script type="text/javascript" src="elementlist.js?1063707655"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -26,8 +26,13 @@
 						</li>
 				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
 						<ul>
-				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.LinkBlog.html">LinkBlog</a>
 						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-AnySrc.Security.html">Security</a>
 						</li>
 				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
@@ -95,6 +100,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
 						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.DataCollector.html">DataCollector</a>
+						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
 						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
@@ -128,6 +135,53 @@
 							</ul></li></ul></li>
 				<li class="active"><a href="namespace-Symfony.Component.html">Component<span></span></a>
 						<ul>
+				<li><a href="namespace-Symfony.Component.Console.html">Console<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Question.html">Question</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tester.html">Tester</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Fixtures.html">Fixtures</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Tester.html">Tester</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
@@ -314,6 +368,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.OtherAnnotatedClasses.html">OtherAnnotatedClasses</a>
+						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
 						<ul>
@@ -373,6 +429,10 @@
 
 
 
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-Symfony.Component.HttpFoundation.Tests.time.html">time</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -614,34 +674,31 @@
 </span><span id="203" class="l"><a class="l" href="#203">203: </a>    }
 </span><span id="204" class="l"><a class="l" href="#204">204: </a>
 </span><span id="205" class="l"><a class="l" href="#205">205: </a>    <span class="php-comment">/**
-</span></span><span id="206" class="l"><a class="l" href="#206">206: </a><span class="php-comment">     * @expectedException Exception
-</span></span><span id="207" class="l"><a class="l" href="#207">207: </a><span class="php-comment">     * @expectedExceptionMessage Failed calling Symfony\Component\HttpFoundation\Tests\JsonSerializableObject::jsonSerialize()
-</span></span><span id="208" class="l"><a class="l" href="#208">208: </a><span class="php-comment">     * @link http://php.net/manual/en/jsonserializable.jsonserialize.php#114688
-</span></span><span id="209" class="l"><a class="l" href="#209">209: </a><span class="php-comment">     */</span>
-</span><span id="210" class="l"><a class="l" href="#210">210: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testSetContentJsonSerializeError" href="#_testSetContentJsonSerializeError">testSetContentJsonSerializeError</a>()
-</span><span id="211" class="l"><a class="l" href="#211">211: </a>    {
-</span><span id="212" class="l"><a class="l" href="#212">212: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword2">interface_exists</span>(<span class="php-quote">'JsonSerializable'</span>)) {
-</span><span id="213" class="l"><a class="l" href="#213">213: </a>            <span class="php-var">$this</span>-&gt;markTestSkipped(<span class="php-quote">'Interface JsonSerializable is available in PHP 5.4+'</span>);
-</span><span id="214" class="l"><a class="l" href="#214">214: </a>        }
-</span><span id="215" class="l"><a class="l" href="#215">215: </a>
-</span><span id="216" class="l"><a class="l" href="#216">216: </a>        <span class="php-var">$serializable</span> = <span class="php-keyword1">new</span> JsonSerializableObject();
-</span><span id="217" class="l"><a class="l" href="#217">217: </a>
-</span><span id="218" class="l"><a class="l" href="#218">218: </a>        JsonResponse::create(<span class="php-var">$serializable</span>);
-</span><span id="219" class="l"><a class="l" href="#219">219: </a>    }
-</span><span id="220" class="l"><a class="l" href="#220">220: </a>}
-</span><span id="221" class="l"><a class="l" href="#221">221: </a>
-</span><span id="222" class="l"><a class="l" href="#222">222: </a><span class="php-keyword1">if</span> (<span class="php-keyword2">interface_exists</span>(<span class="php-quote">'JsonSerializable'</span>)) {
-</span><span id="223" class="l"><a class="l" href="#223">223: </a>    <span class="php-keyword1">class</span> <a id="JsonSerializableObject" href="#JsonSerializableObject">JsonSerializableObject</a> <span class="php-keyword1">implements</span> \JsonSerializable
-</span><span id="224" class="l"><a class="l" href="#224">224: </a>    {
-</span><span id="225" class="l"><a class="l" href="#225">225: </a>        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_jsonSerialize" href="#_jsonSerialize">jsonSerialize</a>()
-</span><span id="226" class="l"><a class="l" href="#226">226: </a>        {
-</span><span id="227" class="l"><a class="l" href="#227">227: </a>            <span class="php-keyword2">trigger_error</span>(<span class="php-quote">'This error is expected'</span>, E_USER_WARNING);
-</span><span id="228" class="l"><a class="l" href="#228">228: </a>
-</span><span id="229" class="l"><a class="l" href="#229">229: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">array</span>();
-</span><span id="230" class="l"><a class="l" href="#230">230: </a>        }
-</span><span id="231" class="l"><a class="l" href="#231">231: </a>    }
-</span><span id="232" class="l"><a class="l" href="#232">232: </a>}
-</span><span id="233" class="l"><a class="l" href="#233">233: </a></span></code></pre>
+</span></span><span id="206" class="l"><a class="l" href="#206">206: </a><span class="php-comment">     * @expectedException \Exception
+</span></span><span id="207" class="l"><a class="l" href="#207">207: </a><span class="php-comment">     * @expectedExceptionMessage This error is expected
+</span></span><span id="208" class="l"><a class="l" href="#208">208: </a><span class="php-comment">     */</span>
+</span><span id="209" class="l"><a class="l" href="#209">209: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testSetContentJsonSerializeError" href="#_testSetContentJsonSerializeError">testSetContentJsonSerializeError</a>()
+</span><span id="210" class="l"><a class="l" href="#210">210: </a>    {
+</span><span id="211" class="l"><a class="l" href="#211">211: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword2">interface_exists</span>(<span class="php-quote">'JsonSerializable'</span>)) {
+</span><span id="212" class="l"><a class="l" href="#212">212: </a>            <span class="php-var">$this</span>-&gt;markTestSkipped(<span class="php-quote">'Interface JsonSerializable is available in PHP 5.4+'</span>);
+</span><span id="213" class="l"><a class="l" href="#213">213: </a>        }
+</span><span id="214" class="l"><a class="l" href="#214">214: </a>
+</span><span id="215" class="l"><a class="l" href="#215">215: </a>        <span class="php-var">$serializable</span> = <span class="php-keyword1">new</span> JsonSerializableObject();
+</span><span id="216" class="l"><a class="l" href="#216">216: </a>
+</span><span id="217" class="l"><a class="l" href="#217">217: </a>        JsonResponse::create(<span class="php-var">$serializable</span>);
+</span><span id="218" class="l"><a class="l" href="#218">218: </a>    }
+</span><span id="219" class="l"><a class="l" href="#219">219: </a>}
+</span><span id="220" class="l"><a class="l" href="#220">220: </a>
+</span><span id="221" class="l"><a class="l" href="#221">221: </a><span class="php-keyword1">if</span> (<span class="php-keyword2">interface_exists</span>(<span class="php-quote">'JsonSerializable'</span>)) {
+</span><span id="222" class="l"><a class="l" href="#222">222: </a>    <span class="php-keyword1">class</span> <a id="JsonSerializableObject" href="#JsonSerializableObject">JsonSerializableObject</a> <span class="php-keyword1">implements</span> \JsonSerializable
+</span><span id="223" class="l"><a class="l" href="#223">223: </a>    {
+</span><span id="224" class="l"><a class="l" href="#224">224: </a>        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_jsonSerialize" href="#_jsonSerialize">jsonSerialize</a>()
+</span><span id="225" class="l"><a class="l" href="#225">225: </a>        {
+</span><span id="226" class="l"><a class="l" href="#226">226: </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> \Exception(<span class="php-quote">'This error is expected'</span>);
+</span><span id="227" class="l"><a class="l" href="#227">227: </a>        }
+</span><span id="228" class="l"><a class="l" href="#228">228: </a>    }
+</span><span id="229" class="l"><a class="l" href="#229">229: </a>}
+</span><span id="230" class="l"><a class="l" href="#230">230: </a></span></code></pre>
 
 	<div id="footer">
 		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

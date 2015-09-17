@@ -8,7 +8,7 @@
 	<title>File vendor/composer/ClassLoader.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?2844671961"></script>
+	<script type="text/javascript" src="elementlist.js?1063707655"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -26,8 +26,13 @@
 						</li>
 				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
 						<ul>
-				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.LinkBlog.html">LinkBlog</a>
 						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-AnySrc.Security.html">Security</a>
 						</li>
 				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
@@ -95,6 +100,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
 						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.DataCollector.html">DataCollector</a>
+						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
 						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
@@ -128,6 +135,53 @@
 							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.html">Component<span></span></a>
 						<ul>
+				<li><a href="namespace-Symfony.Component.Console.html">Console<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Question.html">Question</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tester.html">Tester</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Fixtures.html">Fixtures</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Tester.html">Tester</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
@@ -313,6 +367,8 @@
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.html">Fixtures<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.OtherAnnotatedClasses.html">OtherAnnotatedClasses</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
@@ -743,7 +799,7 @@
 </span><span id="351" class="l"><a class="l" href="#351">351: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;prefixLengthsPsr4[<span class="php-var">$first</span>] <span class="php-keyword1">as</span> <span class="php-var">$prefix</span> =&gt; <span class="php-var">$length</span>) {
 </span><span id="352" class="l"><a class="l" href="#352">352: </a>                <span class="php-keyword1">if</span> (<span class="php-num">0</span> === <span class="php-keyword2">strpos</span>(<span class="php-var">$class</span>, <span class="php-var">$prefix</span>)) {
 </span><span id="353" class="l"><a class="l" href="#353">353: </a>                    <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;prefixDirsPsr4[<span class="php-var">$prefix</span>] <span class="php-keyword1">as</span> <span class="php-var">$dir</span>) {
-</span><span id="354" class="l"><a class="l" href="#354">354: </a>                        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_file</span>(<span class="php-var">$file</span> = <span class="php-var">$dir</span> . DIRECTORY_SEPARATOR . <span class="php-keyword2">substr</span>(<span class="php-var">$logicalPathPsr4</span>, <span class="php-var">$length</span>))) {
+</span><span id="354" class="l"><a class="l" href="#354">354: </a>                        <span class="php-keyword1">if</span> (<span class="php-keyword2">file_exists</span>(<span class="php-var">$file</span> = <span class="php-var">$dir</span> . DIRECTORY_SEPARATOR . <span class="php-keyword2">substr</span>(<span class="php-var">$logicalPathPsr4</span>, <span class="php-var">$length</span>))) {
 </span><span id="355" class="l"><a class="l" href="#355">355: </a>                            <span class="php-keyword1">return</span> <span class="php-var">$file</span>;
 </span><span id="356" class="l"><a class="l" href="#356">356: </a>                        }
 </span><span id="357" class="l"><a class="l" href="#357">357: </a>                    }
@@ -753,7 +809,7 @@
 </span><span id="361" class="l"><a class="l" href="#361">361: </a>
 </span><span id="362" class="l"><a class="l" href="#362">362: </a>        <span class="php-comment">// PSR-4 fallback dirs</span>
 </span><span id="363" class="l"><a class="l" href="#363">363: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;fallbackDirsPsr4 <span class="php-keyword1">as</span> <span class="php-var">$dir</span>) {
-</span><span id="364" class="l"><a class="l" href="#364">364: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">is_file</span>(<span class="php-var">$file</span> = <span class="php-var">$dir</span> . DIRECTORY_SEPARATOR . <span class="php-var">$logicalPathPsr4</span>)) {
+</span><span id="364" class="l"><a class="l" href="#364">364: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">file_exists</span>(<span class="php-var">$file</span> = <span class="php-var">$dir</span> . DIRECTORY_SEPARATOR . <span class="php-var">$logicalPathPsr4</span>)) {
 </span><span id="365" class="l"><a class="l" href="#365">365: </a>                <span class="php-keyword1">return</span> <span class="php-var">$file</span>;
 </span><span id="366" class="l"><a class="l" href="#366">366: </a>            }
 </span><span id="367" class="l"><a class="l" href="#367">367: </a>        }
@@ -772,7 +828,7 @@
 </span><span id="380" class="l"><a class="l" href="#380">380: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;prefixesPsr0[<span class="php-var">$first</span>] <span class="php-keyword1">as</span> <span class="php-var">$prefix</span> =&gt; <span class="php-var">$dirs</span>) {
 </span><span id="381" class="l"><a class="l" href="#381">381: </a>                <span class="php-keyword1">if</span> (<span class="php-num">0</span> === <span class="php-keyword2">strpos</span>(<span class="php-var">$class</span>, <span class="php-var">$prefix</span>)) {
 </span><span id="382" class="l"><a class="l" href="#382">382: </a>                    <span class="php-keyword1">foreach</span> (<span class="php-var">$dirs</span> <span class="php-keyword1">as</span> <span class="php-var">$dir</span>) {
-</span><span id="383" class="l"><a class="l" href="#383">383: </a>                        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_file</span>(<span class="php-var">$file</span> = <span class="php-var">$dir</span> . DIRECTORY_SEPARATOR . <span class="php-var">$logicalPathPsr0</span>)) {
+</span><span id="383" class="l"><a class="l" href="#383">383: </a>                        <span class="php-keyword1">if</span> (<span class="php-keyword2">file_exists</span>(<span class="php-var">$file</span> = <span class="php-var">$dir</span> . DIRECTORY_SEPARATOR . <span class="php-var">$logicalPathPsr0</span>)) {
 </span><span id="384" class="l"><a class="l" href="#384">384: </a>                            <span class="php-keyword1">return</span> <span class="php-var">$file</span>;
 </span><span id="385" class="l"><a class="l" href="#385">385: </a>                        }
 </span><span id="386" class="l"><a class="l" href="#386">386: </a>                    }
@@ -782,7 +838,7 @@
 </span><span id="390" class="l"><a class="l" href="#390">390: </a>
 </span><span id="391" class="l"><a class="l" href="#391">391: </a>        <span class="php-comment">// PSR-0 fallback dirs</span>
 </span><span id="392" class="l"><a class="l" href="#392">392: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;fallbackDirsPsr0 <span class="php-keyword1">as</span> <span class="php-var">$dir</span>) {
-</span><span id="393" class="l"><a class="l" href="#393">393: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">is_file</span>(<span class="php-var">$file</span> = <span class="php-var">$dir</span> . DIRECTORY_SEPARATOR . <span class="php-var">$logicalPathPsr0</span>)) {
+</span><span id="393" class="l"><a class="l" href="#393">393: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">file_exists</span>(<span class="php-var">$file</span> = <span class="php-var">$dir</span> . DIRECTORY_SEPARATOR . <span class="php-var">$logicalPathPsr0</span>)) {
 </span><span id="394" class="l"><a class="l" href="#394">394: </a>                <span class="php-keyword1">return</span> <span class="php-var">$file</span>;
 </span><span id="395" class="l"><a class="l" href="#395">395: </a>            }
 </span><span id="396" class="l"><a class="l" href="#396">396: </a>        }

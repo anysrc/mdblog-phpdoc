@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0">
 	<meta name="robots" content="noindex">
 
-	<title>File vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php | AnySrc Markdown Blog</title>
+	<title>File vendor/symfony/http-foundation/Session/Flash/FlashBag.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?2844671961"></script>
+	<script type="text/javascript" src="elementlist.js?1063707655"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -26,8 +26,13 @@
 						</li>
 				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
 						<ul>
-				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.LinkBlog.html">LinkBlog</a>
 						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-AnySrc.Security.html">Security</a>
 						</li>
 				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
@@ -95,6 +100,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
 						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.DataCollector.html">DataCollector</a>
+						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
 						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
@@ -128,6 +135,53 @@
 							</ul></li></ul></li>
 				<li class="active"><a href="namespace-Symfony.Component.html">Component<span></span></a>
 						<ul>
+				<li><a href="namespace-Symfony.Component.Console.html">Console<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Question.html">Question</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tester.html">Tester</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Fixtures.html">Fixtures</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Tester.html">Tester</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
@@ -313,6 +367,8 @@
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.html">Fixtures<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.OtherAnnotatedClasses.html">OtherAnnotatedClasses</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
@@ -562,16 +618,18 @@
 </span><span id="169" class="l"><a class="l" href="#169">169: </a>    <span class="php-comment">/**
 </span></span><span id="170" class="l"><a class="l" href="#170">170: </a><span class="php-comment">     * Returns an iterator for flashes.
 </span></span><span id="171" class="l"><a class="l" href="#171">171: </a><span class="php-comment">     *
-</span></span><span id="172" class="l"><a class="l" href="#172">172: </a><span class="php-comment">     * @deprecated Will be removed in 3.0.
+</span></span><span id="172" class="l"><a class="l" href="#172">172: </a><span class="php-comment">     * @deprecated since version 2.4, to be removed in 3.0.
 </span></span><span id="173" class="l"><a class="l" href="#173">173: </a><span class="php-comment">     *
 </span></span><span id="174" class="l"><a class="l" href="#174">174: </a><span class="php-comment">     * @return \ArrayIterator An \ArrayIterator instance
 </span></span><span id="175" class="l"><a class="l" href="#175">175: </a><span class="php-comment">     */</span>
 </span><span id="176" class="l"><a class="l" href="#176">176: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getIterator" href="#_getIterator">getIterator</a>()
 </span><span id="177" class="l"><a class="l" href="#177">177: </a>    {
-</span><span id="178" class="l"><a class="l" href="#178">178: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">new</span> \ArrayIterator(<span class="php-var">$this</span>-&gt;all());
-</span><span id="179" class="l"><a class="l" href="#179">179: </a>    }
-</span><span id="180" class="l"><a class="l" href="#180">180: </a>}
-</span><span id="181" class="l"><a class="l" href="#181">181: </a></span></code></pre>
+</span><span id="178" class="l"><a class="l" href="#178">178: </a>        @<span class="php-keyword2">trigger_error</span>(<span class="php-quote">'The '</span>.__METHOD__.<span class="php-quote">' method is deprecated since version 2.4 and will be removed in 3.0.'</span>, E_USER_DEPRECATED);
+</span><span id="179" class="l"><a class="l" href="#179">179: </a>
+</span><span id="180" class="l"><a class="l" href="#180">180: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">new</span> \ArrayIterator(<span class="php-var">$this</span>-&gt;all());
+</span><span id="181" class="l"><a class="l" href="#181">181: </a>    }
+</span><span id="182" class="l"><a class="l" href="#182">182: </a>}
+</span><span id="183" class="l"><a class="l" href="#183">183: </a></span></code></pre>
 
 	<div id="footer">
 		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

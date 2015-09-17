@@ -7,7 +7,7 @@
 	<title>Class Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?2844671961"></script>
+	<script type="text/javascript" src="elementlist.js?1063707655"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -25,8 +25,13 @@
 						</li>
 				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
 						<ul>
-				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.LinkBlog.html">LinkBlog</a>
 						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-AnySrc.Security.html">Security</a>
 						</li>
 				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
@@ -94,6 +99,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
 						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.DataCollector.html">DataCollector</a>
+						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
 						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
@@ -127,6 +134,53 @@
 							</ul></li></ul></li>
 				<li class="active"><a href="namespace-Symfony.Component.html">Component<span></span></a>
 						<ul>
+				<li><a href="namespace-Symfony.Component.Console.html">Console<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Question.html">Question</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tester.html">Tester</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Fixtures.html">Fixtures</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Tester.html">Tester</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
@@ -313,6 +367,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.OtherAnnotatedClasses.html">OtherAnnotatedClasses</a>
+						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
 						<ul>
@@ -432,7 +488,7 @@
 				<b>Author:</b>
 				Drak &lt;<a
 href="mailto:drak&#64;zikula.org">drak&#64;<!-- -->zikula.org</a>&gt;<br>
-		<b>Located at</b> <a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#20-414" title="Go to source code">vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Session/Storage/NativeSessionStorage.php</a><br>
+		<b>Located at</b> <a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#20-420" title="Go to source code">vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php</a><br>
 	</div>
 
 
@@ -743,7 +799,7 @@ user-land code. Setting during runtime has no effect). cache_limiter, "nocache" 
 
 		<td class="name"><div>
 		<a class="anchor" href="#_regenerate">#</a>
-		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#193-207" title="Go to source code">regenerate</a>( <span>boolean <var>$destroy</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$lifetime</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#193-213" title="Go to source code">regenerate</a>( <span>boolean <var>$destroy</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$lifetime</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
@@ -795,7 +851,7 @@ session. Time is in seconds, and is not a Unix timestamp.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_save">#</a>
-		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#209-223" title="Go to source code">save</a>( )</code>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#215-229" title="Go to source code">save</a>( )</code>
 
 		<div class="description short">
 			
@@ -835,7 +891,7 @@ closed.<br>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#225-240" title="Go to source code">clear</a>( )</code>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#231-246" title="Go to source code">clear</a>( )</code>
 
 		<div class="description short">
 			
@@ -870,7 +926,7 @@ closed.<br>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_registerBag">#</a>
-		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#242-248" title="Go to source code">registerBag</a>( <span><code><a href="class-Symfony.Component.HttpFoundation.Session.SessionBagInterface.html">Symfony\Component\HttpFoundation\Session\SessionBagInterface</a></code> <var>$bag</var></span> )</code>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#248-254" title="Go to source code">registerBag</a>( <span><code><a href="class-Symfony.Component.HttpFoundation.Session.SessionBagInterface.html">Symfony\Component\HttpFoundation\Session\SessionBagInterface</a></code> <var>$bag</var></span> )</code>
 
 		<div class="description short">
 			
@@ -910,7 +966,7 @@ closed.<br>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBag">#</a>
-		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#250-266" title="Go to source code">getBag</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#256-272" title="Go to source code">getBag</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -958,7 +1014,7 @@ closed.<br>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setMetadataBag">#</a>
-		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#268-280" title="Go to source code">setMetadataBag</a>( <span><code><a href="class-Symfony.Component.HttpFoundation.Session.Storage.MetadataBag.html">Symfony\Component\HttpFoundation\Session\Storage\MetadataBag</a></code> <var>$metaBag</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#274-286" title="Go to source code">setMetadataBag</a>( <span><code><a href="class-Symfony.Component.HttpFoundation.Session.Storage.MetadataBag.html">Symfony\Component\HttpFoundation\Session\Storage\MetadataBag</a></code> <var>$metaBag</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
@@ -996,7 +1052,7 @@ closed.<br>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMetadataBag">#</a>
-		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#282-290" title="Go to source code">getMetadataBag</a>( )</code>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#288-296" title="Go to source code">getMetadataBag</a>( )</code>
 
 		<div class="description short">
 			
@@ -1035,7 +1091,7 @@ closed.<br>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isStarted">#</a>
-		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#292-298" title="Go to source code">isStarted</a>( )</code>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#298-304" title="Go to source code">isStarted</a>( )</code>
 
 		<div class="description short">
 			
@@ -1074,7 +1130,7 @@ closed.<br>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setOptions">#</a>
-		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#300-329" title="Go to source code">setOptions</a>( <span>array <var>$options</var></span> )</code>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#306-335" title="Go to source code">setOptions</a>( <span>array <var>$options</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1120,7 +1176,7 @@ href="http://php.net/session.configuration">http://php.net/session.configuration
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setSaveHandler">#</a>
-		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#331-385" title="Go to source code">setSaveHandler</a>( <span><code><a href="class-Symfony.Component.HttpFoundation.Session.Storage.Proxy.AbstractProxy.html">Symfony\Component\HttpFoundation\Session\Storage\Proxy\AbstractProxy</a></code>|<code><a href="class-Symfony.Component.HttpFoundation.Session.Storage.Handler.NativeSessionHandler.html" class="invalid">Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeSessionHandler</a></code>|<code><a href="class-SessionHandlerInterface.html">SessionHandlerInterface</a></code>|null <var>$saveHandler</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Symfony.Component.HttpFoundation.Session.Storage.NativeSessionStorage.html#337-391" title="Go to source code">setSaveHandler</a>( <span><code><a href="class-Symfony.Component.HttpFoundation.Session.Storage.Proxy.AbstractProxy.html">Symfony\Component\HttpFoundation\Session\Storage\Proxy\AbstractProxy</a></code>|<code><a href="class-Symfony.Component.HttpFoundation.Session.Storage.Handler.NativeSessionHandler.html" class="invalid">Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeSessionHandler</a></code>|<code><a href="class-SessionHandlerInterface.html">SessionHandlerInterface</a></code>|null <var>$saveHandler</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			

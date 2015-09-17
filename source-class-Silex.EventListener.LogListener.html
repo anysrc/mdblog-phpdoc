@@ -8,7 +8,7 @@
 	<title>File vendor/silex/silex/src/Silex/EventListener/LogListener.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?2844671961"></script>
+	<script type="text/javascript" src="elementlist.js?1063707655"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -26,8 +26,13 @@
 						</li>
 				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
 						<ul>
-				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.LinkBlog.html">LinkBlog</a>
 						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-AnySrc.Security.html">Security</a>
 						</li>
 				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
@@ -95,6 +100,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
 						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.DataCollector.html">DataCollector</a>
+						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
 						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
@@ -128,6 +135,53 @@
 							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.html">Component<span></span></a>
 						<ul>
+				<li><a href="namespace-Symfony.Component.Console.html">Console<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Question.html">Question</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tester.html">Tester</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Fixtures.html">Fixtures</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Tester.html">Tester</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
@@ -314,6 +368,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.OtherAnnotatedClasses.html">OtherAnnotatedClasses</a>
+						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
 						<ul>
@@ -416,7 +472,7 @@
 </span><span id="24" class="l"><a class="l" href="#24"> 24: </a><span class="php-keyword1">use</span> Symfony\Component\HttpFoundation\RedirectResponse;
 </span><span id="25" class="l"><a class="l" href="#25"> 25: </a>
 </span><span id="26" class="l"><a class="l" href="#26"> 26: </a><span class="php-comment">/**
-</span></span><span id="27" class="l"><a class="l" href="#27"> 27: </a><span class="php-comment"> * Log request, response and exceptions
+</span></span><span id="27" class="l"><a class="l" href="#27"> 27: </a><span class="php-comment"> * Log request, response and exceptions.
 </span></span><span id="28" class="l"><a class="l" href="#28"> 28: </a><span class="php-comment"> */</span>
 </span><span id="29" class="l"><a class="l" href="#29"> 29: </a><span class="php-keyword1">class</span> <a id="LogListener" href="#LogListener">LogListener</a> <span class="php-keyword1">implements</span> EventSubscriberInterface
 </span><span id="30" class="l"><a class="l" href="#30"> 30: </a>{
@@ -428,7 +484,7 @@
 </span><span id="36" class="l"><a class="l" href="#36"> 36: </a>    }
 </span><span id="37" class="l"><a class="l" href="#37"> 37: </a>
 </span><span id="38" class="l"><a class="l" href="#38"> 38: </a>    <span class="php-comment">/**
-</span></span><span id="39" class="l"><a class="l" href="#39"> 39: </a><span class="php-comment">     * Logs master requests on event KernelEvents::REQUEST
+</span></span><span id="39" class="l"><a class="l" href="#39"> 39: </a><span class="php-comment">     * Logs master requests on event KernelEvents::REQUEST.
 </span></span><span id="40" class="l"><a class="l" href="#40"> 40: </a><span class="php-comment">     *
 </span></span><span id="41" class="l"><a class="l" href="#41"> 41: </a><span class="php-comment">     * @param GetResponseEvent $event
 </span></span><span id="42" class="l"><a class="l" href="#42"> 42: </a><span class="php-comment">     */</span>
@@ -442,7 +498,7 @@
 </span><span id="50" class="l"><a class="l" href="#50"> 50: </a>    }
 </span><span id="51" class="l"><a class="l" href="#51"> 51: </a>
 </span><span id="52" class="l"><a class="l" href="#52"> 52: </a>    <span class="php-comment">/**
-</span></span><span id="53" class="l"><a class="l" href="#53"> 53: </a><span class="php-comment">     * Logs master response on event KernelEvents::RESPONSE
+</span></span><span id="53" class="l"><a class="l" href="#53"> 53: </a><span class="php-comment">     * Logs master response on event KernelEvents::RESPONSE.
 </span></span><span id="54" class="l"><a class="l" href="#54"> 54: </a><span class="php-comment">     *
 </span></span><span id="55" class="l"><a class="l" href="#55"> 55: </a><span class="php-comment">     * @param FilterResponseEvent $event
 </span></span><span id="56" class="l"><a class="l" href="#56"> 56: </a><span class="php-comment">     */</span>
@@ -456,7 +512,7 @@
 </span><span id="64" class="l"><a class="l" href="#64"> 64: </a>    }
 </span><span id="65" class="l"><a class="l" href="#65"> 65: </a>
 </span><span id="66" class="l"><a class="l" href="#66"> 66: </a>    <span class="php-comment">/**
-</span></span><span id="67" class="l"><a class="l" href="#67"> 67: </a><span class="php-comment">     * Logs uncaught exceptions on event KernelEvents::EXCEPTION
+</span></span><span id="67" class="l"><a class="l" href="#67"> 67: </a><span class="php-comment">     * Logs uncaught exceptions on event KernelEvents::EXCEPTION.
 </span></span><span id="68" class="l"><a class="l" href="#68"> 68: </a><span class="php-comment">     *
 </span></span><span id="69" class="l"><a class="l" href="#69"> 69: </a><span class="php-comment">     * @param GetResponseForExceptionEvent $event
 </span></span><span id="70" class="l"><a class="l" href="#70"> 70: </a><span class="php-comment">     */</span>
@@ -466,7 +522,7 @@
 </span><span id="74" class="l"><a class="l" href="#74"> 74: </a>    }
 </span><span id="75" class="l"><a class="l" href="#75"> 75: </a>
 </span><span id="76" class="l"><a class="l" href="#76"> 76: </a>    <span class="php-comment">/**
-</span></span><span id="77" class="l"><a class="l" href="#77"> 77: </a><span class="php-comment">     * Logs a request
+</span></span><span id="77" class="l"><a class="l" href="#77"> 77: </a><span class="php-comment">     * Logs a request.
 </span></span><span id="78" class="l"><a class="l" href="#78"> 78: </a><span class="php-comment">     *
 </span></span><span id="79" class="l"><a class="l" href="#79"> 79: </a><span class="php-comment">     * @param Request $request
 </span></span><span id="80" class="l"><a class="l" href="#80"> 80: </a><span class="php-comment">     */</span>
@@ -476,7 +532,7 @@
 </span><span id="84" class="l"><a class="l" href="#84"> 84: </a>    }
 </span><span id="85" class="l"><a class="l" href="#85"> 85: </a>
 </span><span id="86" class="l"><a class="l" href="#86"> 86: </a>    <span class="php-comment">/**
-</span></span><span id="87" class="l"><a class="l" href="#87"> 87: </a><span class="php-comment">     * Logs a response
+</span></span><span id="87" class="l"><a class="l" href="#87"> 87: </a><span class="php-comment">     * Logs a response.
 </span></span><span id="88" class="l"><a class="l" href="#88"> 88: </a><span class="php-comment">     *
 </span></span><span id="89" class="l"><a class="l" href="#89"> 89: </a><span class="php-comment">     * @param Response $response
 </span></span><span id="90" class="l"><a class="l" href="#90"> 90: </a><span class="php-comment">     */</span>
@@ -490,9 +546,9 @@
 </span><span id="98" class="l"><a class="l" href="#98"> 98: </a>    }
 </span><span id="99" class="l"><a class="l" href="#99"> 99: </a>
 </span><span id="100" class="l"><a class="l" href="#100">100: </a>    <span class="php-comment">/**
-</span></span><span id="101" class="l"><a class="l" href="#101">101: </a><span class="php-comment">     * Logs an exception
+</span></span><span id="101" class="l"><a class="l" href="#101">101: </a><span class="php-comment">     * Logs an exception.
 </span></span><span id="102" class="l"><a class="l" href="#102">102: </a><span class="php-comment">     *
-</span></span><span id="103" class="l"><a class="l" href="#103">103: </a><span class="php-comment">     * @param Exception $e
+</span></span><span id="103" class="l"><a class="l" href="#103">103: </a><span class="php-comment">     * @param \Exception $e
 </span></span><span id="104" class="l"><a class="l" href="#104">104: </a><span class="php-comment">     */</span>
 </span><span id="105" class="l"><a class="l" href="#105">105: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_logException" href="#_logException">logException</a>(\Exception <span class="php-var">$e</span>)
 </span><span id="106" class="l"><a class="l" href="#106">106: </a>    {

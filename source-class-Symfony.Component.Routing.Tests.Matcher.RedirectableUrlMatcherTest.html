@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0">
 	<meta name="robots" content="noindex">
 
-	<title>File vendor/symfony/routing/Symfony/Component/Routing/Tests/Matcher/RedirectableUrlMatcherTest.php | AnySrc Markdown Blog</title>
+	<title>File vendor/symfony/routing/Tests/Matcher/RedirectableUrlMatcherTest.php | AnySrc Markdown Blog</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
-	<script type="text/javascript" src="elementlist.js?2844671961"></script>
+	<script type="text/javascript" src="elementlist.js?1063707655"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -26,8 +26,13 @@
 						</li>
 				<li><a href="namespace-AnySrc.html">AnySrc<span></span></a>
 						<ul>
-				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog</a>
+				<li><a href="namespace-AnySrc.MarkdownBlog.html">MarkdownBlog<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-AnySrc.MarkdownBlog.Plugin.LinkBlog.html">LinkBlog</a>
 						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-AnySrc.Security.html">Security</a>
 						</li>
 				<li><a href="namespace-AnySrc.Shell.html">Shell</a>
@@ -95,6 +100,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Bridge.Twig.Command.html">Command</a>
 						</li>
+				<li><a href="namespace-Symfony.Bridge.Twig.DataCollector.html">DataCollector</a>
+						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Extension.html">Extension</a>
 						</li>
 				<li><a href="namespace-Symfony.Bridge.Twig.Form.html">Form</a>
@@ -128,6 +135,53 @@
 							</ul></li></ul></li>
 				<li class="active"><a href="namespace-Symfony.Component.html">Component<span></span></a>
 						<ul>
+				<li><a href="namespace-Symfony.Component.Console.html">Console<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Question.html">Question</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tester.html">Tester</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Descriptor.html">Descriptor</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Fixtures.html">Fixtures</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Formatter.html">Formatter</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Input.html">Input</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Style.html">Style</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.Console.Tests.Tester.html">Tester</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-Symfony.Component.Debug.html">Debug<span></span></a>
 						<ul>
 				<li><a href="namespace-Symfony.Component.Debug.Exception.html">Exception</a>
@@ -314,6 +368,8 @@
 						<ul>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.AnnotatedClasses.html">AnnotatedClasses</a>
 						</li>
+				<li><a href="namespace-Symfony.Component.Routing.Tests.Fixtures.OtherAnnotatedClasses.html">OtherAnnotatedClasses</a>
+						</li>
 							</ul></li>
 				<li><a href="namespace-Symfony.Component.Routing.Tests.Generator.html">Generator<span></span></a>
 						<ul>
@@ -432,50 +488,35 @@
 </span><span id="41" class="l"><a class="l" href="#41">41: </a>        <span class="php-var">$matcher</span>-&gt;match(<span class="php-quote">'/foo'</span>);
 </span><span id="42" class="l"><a class="l" href="#42">42: </a>    }
 </span><span id="43" class="l"><a class="l" href="#43">43: </a>
-</span><span id="44" class="l"><a class="l" href="#44">44: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testSchemeRedirectBC" href="#_testSchemeRedirectBC">testSchemeRedirectBC</a>()
+</span><span id="44" class="l"><a class="l" href="#44">44: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testSchemeRedirectRedirectsToFirstScheme" href="#_testSchemeRedirectRedirectsToFirstScheme">testSchemeRedirectRedirectsToFirstScheme</a>()
 </span><span id="45" class="l"><a class="l" href="#45">45: </a>    {
 </span><span id="46" class="l"><a class="l" href="#46">46: </a>        <span class="php-var">$coll</span> = <span class="php-keyword1">new</span> RouteCollection();
-</span><span id="47" class="l"><a class="l" href="#47">47: </a>        <span class="php-var">$coll</span>-&gt;add(<span class="php-quote">'foo'</span>, <span class="php-keyword1">new</span> Route(<span class="php-quote">'/foo'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">array</span>(<span class="php-quote">'_scheme'</span> =&gt; <span class="php-quote">'https'</span>)));
+</span><span id="47" class="l"><a class="l" href="#47">47: </a>        <span class="php-var">$coll</span>-&gt;add(<span class="php-quote">'foo'</span>, <span class="php-keyword1">new</span> Route(<span class="php-quote">'/foo'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">array</span>(), <span class="php-keyword1">array</span>(), <span class="php-quote">''</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'FTP'</span>, <span class="php-quote">'HTTPS'</span>)));
 </span><span id="48" class="l"><a class="l" href="#48">48: </a>
 </span><span id="49" class="l"><a class="l" href="#49">49: </a>        <span class="php-var">$matcher</span> = <span class="php-var">$this</span>-&gt;getMockForAbstractClass(<span class="php-quote">'Symfony\Component\Routing\Matcher\RedirectableUrlMatcher'</span>, <span class="php-keyword1">array</span>(<span class="php-var">$coll</span>, <span class="php-keyword1">new</span> RequestContext()));
 </span><span id="50" class="l"><a class="l" href="#50">50: </a>        <span class="php-var">$matcher</span>
 </span><span id="51" class="l"><a class="l" href="#51">51: </a>            -&gt;expects(<span class="php-var">$this</span>-&gt;once())
 </span><span id="52" class="l"><a class="l" href="#52">52: </a>            -&gt;method(<span class="php-quote">'redirect'</span>)
-</span><span id="53" class="l"><a class="l" href="#53">53: </a>            -&gt;with(<span class="php-quote">'/foo'</span>, <span class="php-quote">'foo'</span>, <span class="php-quote">'https'</span>)
+</span><span id="53" class="l"><a class="l" href="#53">53: </a>            -&gt;with(<span class="php-quote">'/foo'</span>, <span class="php-quote">'foo'</span>, <span class="php-quote">'ftp'</span>)
 </span><span id="54" class="l"><a class="l" href="#54">54: </a>            -&gt;will(<span class="php-var">$this</span>-&gt;returnValue(<span class="php-keyword1">array</span>(<span class="php-quote">'_route'</span> =&gt; <span class="php-quote">'foo'</span>)))
 </span><span id="55" class="l"><a class="l" href="#55">55: </a>        ;
 </span><span id="56" class="l"><a class="l" href="#56">56: </a>        <span class="php-var">$matcher</span>-&gt;match(<span class="php-quote">'/foo'</span>);
 </span><span id="57" class="l"><a class="l" href="#57">57: </a>    }
 </span><span id="58" class="l"><a class="l" href="#58">58: </a>
-</span><span id="59" class="l"><a class="l" href="#59">59: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testSchemeRedirectRedirectsToFirstScheme" href="#_testSchemeRedirectRedirectsToFirstScheme">testSchemeRedirectRedirectsToFirstScheme</a>()
+</span><span id="59" class="l"><a class="l" href="#59">59: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testNoSchemaRedirectIfOnOfMultipleSchemesMatches" href="#_testNoSchemaRedirectIfOnOfMultipleSchemesMatches">testNoSchemaRedirectIfOnOfMultipleSchemesMatches</a>()
 </span><span id="60" class="l"><a class="l" href="#60">60: </a>    {
 </span><span id="61" class="l"><a class="l" href="#61">61: </a>        <span class="php-var">$coll</span> = <span class="php-keyword1">new</span> RouteCollection();
-</span><span id="62" class="l"><a class="l" href="#62">62: </a>        <span class="php-var">$coll</span>-&gt;add(<span class="php-quote">'foo'</span>, <span class="php-keyword1">new</span> Route(<span class="php-quote">'/foo'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">array</span>(), <span class="php-keyword1">array</span>(), <span class="php-quote">''</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'FTP'</span>, <span class="php-quote">'HTTPS'</span>)));
+</span><span id="62" class="l"><a class="l" href="#62">62: </a>        <span class="php-var">$coll</span>-&gt;add(<span class="php-quote">'foo'</span>, <span class="php-keyword1">new</span> Route(<span class="php-quote">'/foo'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">array</span>(), <span class="php-keyword1">array</span>(), <span class="php-quote">''</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'https'</span>, <span class="php-quote">'http'</span>)));
 </span><span id="63" class="l"><a class="l" href="#63">63: </a>
 </span><span id="64" class="l"><a class="l" href="#64">64: </a>        <span class="php-var">$matcher</span> = <span class="php-var">$this</span>-&gt;getMockForAbstractClass(<span class="php-quote">'Symfony\Component\Routing\Matcher\RedirectableUrlMatcher'</span>, <span class="php-keyword1">array</span>(<span class="php-var">$coll</span>, <span class="php-keyword1">new</span> RequestContext()));
 </span><span id="65" class="l"><a class="l" href="#65">65: </a>        <span class="php-var">$matcher</span>
-</span><span id="66" class="l"><a class="l" href="#66">66: </a>            -&gt;expects(<span class="php-var">$this</span>-&gt;once())
+</span><span id="66" class="l"><a class="l" href="#66">66: </a>            -&gt;expects(<span class="php-var">$this</span>-&gt;never())
 </span><span id="67" class="l"><a class="l" href="#67">67: </a>            -&gt;method(<span class="php-quote">'redirect'</span>)
-</span><span id="68" class="l"><a class="l" href="#68">68: </a>            -&gt;with(<span class="php-quote">'/foo'</span>, <span class="php-quote">'foo'</span>, <span class="php-quote">'ftp'</span>)
-</span><span id="69" class="l"><a class="l" href="#69">69: </a>            -&gt;will(<span class="php-var">$this</span>-&gt;returnValue(<span class="php-keyword1">array</span>(<span class="php-quote">'_route'</span> =&gt; <span class="php-quote">'foo'</span>)))
-</span><span id="70" class="l"><a class="l" href="#70">70: </a>        ;
-</span><span id="71" class="l"><a class="l" href="#71">71: </a>        <span class="php-var">$matcher</span>-&gt;match(<span class="php-quote">'/foo'</span>);
-</span><span id="72" class="l"><a class="l" href="#72">72: </a>    }
-</span><span id="73" class="l"><a class="l" href="#73">73: </a>
-</span><span id="74" class="l"><a class="l" href="#74">74: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testNoSchemaRedirectIfOnOfMultipleSchemesMatches" href="#_testNoSchemaRedirectIfOnOfMultipleSchemesMatches">testNoSchemaRedirectIfOnOfMultipleSchemesMatches</a>()
-</span><span id="75" class="l"><a class="l" href="#75">75: </a>    {
-</span><span id="76" class="l"><a class="l" href="#76">76: </a>        <span class="php-var">$coll</span> = <span class="php-keyword1">new</span> RouteCollection();
-</span><span id="77" class="l"><a class="l" href="#77">77: </a>        <span class="php-var">$coll</span>-&gt;add(<span class="php-quote">'foo'</span>, <span class="php-keyword1">new</span> Route(<span class="php-quote">'/foo'</span>, <span class="php-keyword1">array</span>(), <span class="php-keyword1">array</span>(), <span class="php-keyword1">array</span>(), <span class="php-quote">''</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'https'</span>, <span class="php-quote">'http'</span>)));
-</span><span id="78" class="l"><a class="l" href="#78">78: </a>
-</span><span id="79" class="l"><a class="l" href="#79">79: </a>        <span class="php-var">$matcher</span> = <span class="php-var">$this</span>-&gt;getMockForAbstractClass(<span class="php-quote">'Symfony\Component\Routing\Matcher\RedirectableUrlMatcher'</span>, <span class="php-keyword1">array</span>(<span class="php-var">$coll</span>, <span class="php-keyword1">new</span> RequestContext()));
-</span><span id="80" class="l"><a class="l" href="#80">80: </a>        <span class="php-var">$matcher</span>
-</span><span id="81" class="l"><a class="l" href="#81">81: </a>            -&gt;expects(<span class="php-var">$this</span>-&gt;never())
-</span><span id="82" class="l"><a class="l" href="#82">82: </a>            -&gt;method(<span class="php-quote">'redirect'</span>)
-</span><span id="83" class="l"><a class="l" href="#83">83: </a>        ;
-</span><span id="84" class="l"><a class="l" href="#84">84: </a>        <span class="php-var">$matcher</span>-&gt;match(<span class="php-quote">'/foo'</span>);
-</span><span id="85" class="l"><a class="l" href="#85">85: </a>    }
-</span><span id="86" class="l"><a class="l" href="#86">86: </a>}
-</span><span id="87" class="l"><a class="l" href="#87">87: </a></span></code></pre>
+</span><span id="68" class="l"><a class="l" href="#68">68: </a>        ;
+</span><span id="69" class="l"><a class="l" href="#69">69: </a>        <span class="php-var">$matcher</span>-&gt;match(<span class="php-quote">'/foo'</span>);
+</span><span id="70" class="l"><a class="l" href="#70">70: </a>    }
+</span><span id="71" class="l"><a class="l" href="#71">71: </a>}
+</span><span id="72" class="l"><a class="l" href="#72">72: </a></span></code></pre>
 
 	<div id="footer">
 		AnySrc Markdown Blog API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
